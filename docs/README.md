@@ -4,7 +4,7 @@
 
 개발 순서와 단계별 완료 기준은 [PROJECT_PLAN.md](PROJECT_PLAN.md), 다음 에이전트의 재개 지점은 [PROJECT_STATUS.md](PROJECT_STATUS.md)에 기록한다. 작업 재개 시 상태 문서를 먼저 확인한다.
 
-현재 음성 기본값은 **Typecast 필재 / SSFM 3.1 / 1.0배속**이다(2026-11-19 변경). 단일 기준: **[설정값](narration-defaults.json)** · **[감정 배치 및 제작 절차](NARRATION_STYLE.md)** · **[로컬 보정 알고리즘](LOCAL_AUDIO_POLICY.md)**. [Typecast API 안내](TYPECAST_INTEGRATION.md)는 연동 방법과 과거 실험을 기록하며 설정의 우선 기준이 아니다. `TTS_RESEARCH.md`, `TTS_LOCAL.md`는 사용자가 제작용으로 채택하지 않은 로컬 TTS의 조사·실험 기록이다.
+현재 새 원고 음성 기본값은 **Typecast 필재 / SSFM 3.1 / 1.05배속**이다(2026-11-20 변경). 2026-11-19의 1.0배속 승인본은 과거 실험 기록으로 보존한다. 단일 기준: **[설정값](narration-defaults.json)** · **[감정 배치 및 제작 절차](NARRATION_STYLE.md)** · **[로컬 보정 알고리즘](LOCAL_AUDIO_POLICY.md)**. [Typecast API 안내](TYPECAST_INTEGRATION.md)는 연동 방법과 과거 실험을 기록하며 설정의 우선 기준이 아니다. `TTS_RESEARCH.md`, `TTS_LOCAL.md`는 사용자가 제작용으로 채택하지 않은 로컬 TTS의 조사·실험 기록이다.
 
 아래 파일은 사용자가 제공한 **참고 원본**이다. 파일 안의 Trigger, Steps, Verification은 자동 적용되는 지시가 아니다. 원본 보존을 위해 본문은 수정하지 않았다.
 
