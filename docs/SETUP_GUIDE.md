@@ -51,7 +51,7 @@ Codex 등 다른 에이전트도 루트의 `AGENTS.md`를 따른다.
 
 ## 4. Typecast 내레이션 — 에이전트가 API에 못 닿으면 PowerShell로
 
-기본값: 화자 필재, 모델 SSFM 3.1, **1.0배속**, 내용별 감정 배치([NARRATION_STYLE.md](NARRATION_STYLE.md), [narration-defaults.json](narration-defaults.json)).
+기본값: 화자 필재, 모델 SSFM 3.1, **1.0배속**. 실제 설정값은 [narration-defaults.json](narration-defaults.json), 감정 배치·제작 절차는 [NARRATION_STYLE.md](NARRATION_STYLE.md), 보정 원리와 검증 조건은 [LOCAL_AUDIO_POLICY.md](LOCAL_AUDIO_POLICY.md)를 기준으로 한다. 이 문서는 실행 안내이며 설정의 별도 원본이 아니다.
 
 Claude Cowork는 클라우드 작업 공간과 PC의 리눅스 VM 모두 **허용 도메인 목록에 없는 주소에 접속할 수 없다.** `api.typecast.ai`가 허용돼 있지 않으면 에이전트가 직접 합성하지 못한다([자세한 원인](TYPECAST_INTEGRATION.md)). 이때는 셋 중 하나를 쓴다.
 
