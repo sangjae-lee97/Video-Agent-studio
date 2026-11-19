@@ -6,7 +6,7 @@
   "language": "kor",
   "output": {
     "audio_format": "wav",
-    "audio_tempo": 1.0,
+    "audio_tempo": 1.05,
     "audio_pitch": 0,
     "target_lufs": -18
   },
@@ -71,7 +71,7 @@
   },
   "smart_context": "actual adjacent script text; regenerate previous_text/next_text for each new script",
   "reference_request": "docs/piljae-approved-emphasis-request.json",
-  "notes": "2026-11-19: content-based emphasis plus local short-window gain approved. 2026-11-19 later: user changed the default synthesis tempo from 1.05x to 1.0x (1.05x sounded fast); approved pilot reference is also 1.0x. Never force 13 segments or reuse reference text/context for a new script.",
+  "notes": "2026-11-19: content-based emphasis plus local short-window gain approved. 2026-11-19: 1.0x was selected for the pilot and remains an archived approved listening reference. 2026-11-20: after reviewing the finished video, user chose 1.05x as the default tempo for NEW narration. Do not change the historical 1.0x audio, its timing, or its approval records. Never force 13 segments or reuse reference text/context for a new script.",
   "postprocessing": {
     "required": "inspect whole narration; log short-window gains, protected regions, peaks, source hashes and listening status",
     "policy_updated_on": "2026-11-19",

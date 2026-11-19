@@ -22,8 +22,8 @@
 - Flow 기본 3샷. 클립마다 대상 설명 전문, 사건, 카메라, 연속성을 명시한다. 단면·치수선·강조를 모두 후반작업으로 미루지 않는다.
 - 완성 영상의 주 화면 재생시간을 기준으로 Google Flow 약 30%, Codex가 직접 만드는 로컬 모션그래픽 약 70%를 배정한다. 본편에 이미 등장한 장면은 다시 쓰지 않고, 자막이나 라벨을 겹친 시간은 한 번만 센다.
 - 편집 타임라인과 생성 길이를 구분한다. 16:9 출발점을 원본 문서의 9:16으로 임의 변경하지 않는다.
-- 내레이션 기본값은 Typecast 필재/SSFM 3.1/1.0배속이다(2026-11-19 사용자 변경: 1.05배속이 빠르게 들림). 음성 작업 전에 docs/NARRATION_STYLE.md와 docs/narration-defaults.json을 읽고 내용별 감정 기준을 적용한다. 1.05·1.1배속은 이력이며 기본값으로 복원하지 않는다. 변경 요청이 없으면 화자·속도를 다시 묻지 않는다.
-- 2026-11-19 사용자가 내용별 감정 배치와 로컬 short-window 보정 방식을 승인했다. `docs/NARRATION_STYLE.md`, `docs/narration-defaults.json`, `docs/NARRATION_APPROVAL.json`이 현재 기준이다. 현재 승인 음성과 새 원고 기본 속도 모두 1.0배속이다. 이전 7구간 감정표·미승인 표시는 실험 이력으로만 읽는다.
+- **2026-11-20 최신 내레이션 기본값은 Typecast 필재/SSFM 3.1/1.05배속**이다(완성 영상 검토 후 사용자 변경). 음성 작업 전에 docs/NARRATION_STYLE.md와 docs/narration-defaults.json을 읽고 내용별 감정 기준을 적용한다. 2026-11-19의 1.0배속은 과거 실험·승인본으로 보존하고 새 원고의 기본값으로 복원하지 않는다. 변경 요청이 없으면 화자·속도를 다시 묻지 않는다.
+- 2026-11-19 사용자가 내용별 감정 배치와 로컬 short-window 보정 방식을 승인했다. `docs/NARRATION_STYLE.md`, `docs/narration-defaults.json`, `docs/NARRATION_APPROVAL.json`이 현재 기준이다. 기존 승인 음성은 1.0배속(92.610초)으로 보존하되 **새 원고의 기본 속도는 1.05배속**이다. 이전 7구간 감정표·미승인 표시는 실험 이력으로만 읽는다.
 - 후처리는 `scripts/balance_narration_phrases.py --mode short-window`를 명시해 원본 전체에 적용한다. 약 200ms 말소리를 주변과 비교해 최대 +3dB만 올리고 문장 시작/끝 0.2초와 애매한 영역은 보존한다. Auphonic·추가 후처리 API·특정 문구/초별 튜닝·전체 정규화·감쇠는 제외한다. 방식 승인과 새 원고의 품질 검증은 구분한다. 이전 phrase 모드·normalize_narration.py·boost_sentence_middles.py는 실험 이력이다.
 - PFA 파일럿을 재개하는 작업은 `docs/VIDEO_HANDOFF_PROMPT.md`에서 시작한다. pfa-pilot의 활성 계획과 exports/CURRENT.md는 승인 음성 92.610초 기준이다. 95.180초의 보관 패키지를 사용하지 않는다. 이 파일럿의 심장 조직은 적갈색, 단면은 분홍색으로 지시한다.
 
