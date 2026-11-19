@@ -4,7 +4,7 @@
   "user_statement": "좋아. 일단 이 방식으로 정하자. 감정 넣는 기준이랑 음량 보정 규칙을 나중에 다른 원고에도 똑같이 적용할 수 있게 기록해줘.",
   "voice": "Piljae",
   "model": "ssfm-v31",
-  "future_default_tempo": 1.05,
+  "future_default_tempo": 1.0,
   "reference_tempo": 1.0,
   "duration_seconds": 92.61,
   "audio_path": "outputs/typecast-piljae-pfa-emphasis-1.0x-v1/local-short-window-v1/narration_balanced.wav",
