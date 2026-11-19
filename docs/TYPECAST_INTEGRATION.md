@@ -4,9 +4,9 @@
 
 ## 현재 결정
 
-2026-11-19 최신 기준: 새 원고의 Typecast 합성 기본 속도는 **1.0배속**이며 필재·SSFM 3.1과 내용별 감정 배치, 로컬 short-window 보정 방식을 사용한다. **설정값은 [narration-defaults.json](narration-defaults.json), 감정 배치와 제작 절차는 [NARRATION_STYLE.md](NARRATION_STYLE.md), 보정 알고리즘은 [LOCAL_AUDIO_POLICY.md](LOCAL_AUDIO_POLICY.md)** 를 기준으로 한다. [승인 기록](NARRATION_APPROVAL.json)과 [승인 강조 요청](piljae-approved-emphasis-request.json)은 특정 승인본의 증거다. 아래 1.05배속/7구간 사례는 과거 실험 이력이며 현재 기본 설정으로 사용하지 않는다.
+2026-11-20 최신 기준: 새 원고의 Typecast 합성 기본 속도는 **1.05배속**이며 필재·SSFM 3.1과 내용별 감정 배치, 로컬 short-window 보정 방식을 사용한다. **설정값은 [narration-defaults.json](narration-defaults.json), 감정 배치와 제작 절차는 [NARRATION_STYLE.md](NARRATION_STYLE.md), 보정 알고리즘은 [LOCAL_AUDIO_POLICY.md](LOCAL_AUDIO_POLICY.md)** 를 기준으로 한다. [승인 기록](NARRATION_APPROVAL.json)과 [승인 강조 요청](piljae-approved-emphasis-request.json)은 특정 승인본의 증거다. 아래 1.05배속/7구간 사례는 과거 실험 이력이며 현재 기본 설정으로 사용하지 않는다.
 
-과거에는 필재/SSFM 3.1/1.05배속을 기본으로 사용했으나, 2026-11-19 사용자 결정으로 **1.0배속으로 변경**했다. [과거 참고 요청](piljae-approved-reference-request.json)과 아래 API 예시는 당시 테스트 이력으로 보존한다. 새 원고에는 위의 최신 설정·제작 기준을 적용한다.
+2026-11-19에는 1.0배속을 선택해 92.610초 승인 음성을 만들었으나, **2026-11-20 완성 영상 검토 후 새 원고의 기본 속도를 다시 1.05배속으로 변경**했다. 1.0배속은 과거 실험·승인본의 기록으로 남긴다. [과거 참고 요청](piljae-approved-reference-request.json)과 아래 API 예시의 수치는 각 실험 당시 설정이며, 최신 설정은 `narration-defaults.json`을 따른다.
 
 ## 조절 범위
 
@@ -91,7 +91,7 @@ Python 공식 SDK `typecast-python`을 별도 프로젝트 환경에 설치하�
 
 ## 다음 검증
 
-현재 사용자 승인 기준은 필재/SSFM 3.1/**1.0배속**, 내용별 감정 배치와 로컬 short-window 보정이다. 이 절의 1.1배속 샘플 결과 및 아래 '청취 평가 대기' 문구는 당시 실험 기록이며 최신 제작 상태를 대체하지 않는다. [Supertonic 3 조사](SUPERTONIC3_RESEARCH.md)는 Typecast를 대체하기로 확정한 것이 아니다.
+2026-11-20 기준 새 원고 기본값은 필재/SSFM 3.1/**1.05배속**, 내용별 감정 배치와 로컬 short-window 보정이다. 기존 1.0배속 승인 음성은 실험 이력으로 보존한다. 이 절의 1.1배속 샘플 결과 및 아래 '청취 평가 대기' 문구는 당시 실험 기록이며 최신 제작 상태를 대체하지 않는다. [Supertonic 3 조사](SUPERTONIC3_RESEARCH.md)는 Typecast를 대체하기로 확정한 것이 아니다.
 
 API 인증·필재 제공·모델 및 감정 목록 확인과 짧은 합성은 완료했다. 사용자 요청으로 기존 원고 앞 네 문장(화자명 제외 133자)을 SSFM 3.1, normal, audio_tempo=1.1, audio_pitch=0으로 생성했다. 결과 15.0초 WAV, 요청 소요 2.724초, 44.1kHz 모노 PCM16이며 WAV 재읽기 검사 통과. [측정 결과](typecast-piljae-sample-results.json). 합성은 한 번만 요청했다. 실제 발음·자연스러움은 청취 평가 대기이며 1.0배속과의 비교나 자막 정렬은 하지 않았다. 다음은 사용자 피드백 반영이다. SDK 설치나 제작 파이프라인 구현은 아직 하지 않았다.
 
