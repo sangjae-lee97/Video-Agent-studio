@@ -2,6 +2,16 @@
 
 사용자가 “좋아. 일단 이 방식으로 정하자”라고 승인한 기준은 **내용에 따른 감정 배치 → 전체 합성 → 원본 기반 로컬 음량 보정 → 검사·청취**다. 새 원고에도 이 순서를 적용한다. 특정 예시 문구나 시간대에 맞춘 예외를 추가하지 않는다.
 
+## 문서별 기준 역할
+
+- **설정값의 단일 기준:** [narration-defaults.json](narration-defaults.json) — 화자·모델·속도·감정 강도·로컬 보정 수치.
+- **제작 절차와 감정 판단 기준:** 이 문서(`NARRATION_STYLE.md`) — 의미별 감정 배치, 합성·정렬·보정·청취 순서.
+- **로컬 보정 원리와 검증 한계:** [LOCAL_AUDIO_POLICY.md](LOCAL_AUDIO_POLICY.md) — short-window 알고리즘, 보호 조건, 측정과 한계.
+- **API 구현 참고 및 과거 실험:** [TYPECAST_INTEGRATION.md](TYPECAST_INTEGRATION.md) — API와 연결 방법. 예전 속도·코드 예시는 현재 기본 설정을 덮어쓰지 않는다.
+- **승인본의 증거:** [NARRATION_APPROVAL.json](NARRATION_APPROVAL.json) — 날짜·입출력 해시·기준 음성. 새로운 기본값은 설정 JSON을 우선한다.
+
+같은 수치가 문서마다 충돌하면 `narration-defaults.json`의 현재값을 확인하고, 다른 문서는 이력인지 최신 기준인지 구분하여 정정한다. 과거 실험 기록은 삭제하지 않는다.
+
 ## 승인 범위와 기준 파일
 
 - 화자 Typecast 필재, 모델 SSFM 3.1, 한국어, 피치 0.
