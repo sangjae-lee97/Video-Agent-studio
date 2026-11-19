@@ -1,0 +1,21 @@
+{
+  "plan_hash": "a98b42b0387e",
+  "structural_validation": "passed",
+  "warnings": [
+    "장면 경계는 초안: 발화 정렬/자막 타이밍 확인 전 최종 편집에 사용하지 않기",
+    "Flow 생성 시도 예산 미정: 무제한 자동 재시도 금지",
+    "실제 미디어 생성/품질 검토 대기"
+  ],
+  "flow_clip_count": 1,
+  "planned_generation_seconds": 8,
+  "flow_attempt_budget": null,
+  "generation_attempts": 0,
+  "video_quality_review": "pending",
+  "files": [
+    "edit-sheet.md",
+    "flow-F01.txt",
+    "plan.json",
+    "script.md",
+    "sources.md"
+  ]
+}

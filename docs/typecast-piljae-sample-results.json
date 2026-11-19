@@ -1,0 +1,17 @@
+{
+  "checked_on": "2026-11-18",
+  "voice_id": "tc_68257f68bc6e3c161ab5078d",
+  "model": "ssfm-v31",
+  "audio_tempo": 1.1,
+  "emotion": "normal",
+  "text_characters": 133,
+  "duration_seconds": 15.0,
+  "request_seconds": 2.724,
+  "sample_rate": 44100,
+  "channels": 1,
+  "sample_width_bytes": 2,
+  "bytes": 1323044,
+  "audio_path": "C:\\dev\\Video-Agent-studio\\outputs\\typecast-piljae-1.1x\\sample.wav",
+  "listening_review": "pending",
+  "synthesis_requests": 1
+}

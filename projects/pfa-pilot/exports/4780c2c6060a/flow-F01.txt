@@ -1,0 +1,23 @@
+FORMAT: 8-second video, landscape 16:9. Hard cuts between shots.
+Keep the bottom 18% of frame visually clear for subtitles added later.
+
+SUBJECT: A single isolated adult human left atrium, a hollow deep brick-red muscular chamber, with warm rose-pink cut edges and four short dusty-rose pulmonary veins entering its back wall in two pairs. Show only this upper chamber, excluding ventricles, aorta and valves. An anterior removable tissue panel reveals the posterior wall. A silver five-spline catheter rests by one vein opening. All three views show the same colored teaching model.
+
+LOOK: Landscape 16:9. Rich red-brown atrial tissue remains clearly colored in the first frame, midtones and shadows. Rose cross-section, charcoal backdrop, soft directional side light. Keep deep tissue color under highlights; no white plaster, grey resin, porcelain or monochrome clay. The pale metallic catheter is distinct from tissue.
+
+SHOT 1 [0-2.5s]: The anterior teaching panel slides to the left, exposing the left-atrial cavity and posterior pulmonary-vein openings. This is a model section reveal, not a surgical incision.
+CAMERA: A short rightward lateral track reveals depth as the panel separates; chamber fills the central upper two-thirds.
+
+SHOT 2 [2.5-5s]: Hard cut to the catheter tip already positioned near one vein opening. A compact amber pulse highlight briefly expands from the tip into the adjacent tissue and repeats softly. This is a symbolic electric-field highlight, with no lightning, fire, smoke or charring.
+CAMERA: A single gentle push-in toward the tip and adjacent wall; keep the vein opening visible for orientation.
+
+SHOT 3 [5-8s]: Hard cut to the original exposed-cavity view. A thin amber outline draws around the posterior-wall target area between the pulmonary-vein openings, revealing the second region treated in this study. The outline completes by 7.7s and its tracing glow continues to 8.0s.
+CAMERA: A single upward tilt follows the posterior-wall outline, with the anterior panel still displaced to the left.
+
+TARGET HIGHLIGHTS: A localized amber pulse at the catheter tip and a fine amber trace strictly on the atrial posterior wall between the vein openings. Keep tissue red-brown across all cuts. No dimensions or measured electric field.
+
+CONTINUITY: Maintain the same red-brown chamber, pink cut plane, four vein connections, metallic catheter and light direction. Only the anterior panel separates. Keep the ventricles outside the frame throughout.
+
+EXCLUSIONS: no subtitles, no caption bar, no bottom text overlay, no burned-in captions, no karaoke-style word-by-word timing, no logos, no dissolve, no morph, no static hold, no empty ending, no background music, no speech or generated narration.
+
+AUDIO: Subtle soft clicks at cuts and low nonverbal pulse ticks, no realistic electrical arcing. No speech or music; production may mute this track.

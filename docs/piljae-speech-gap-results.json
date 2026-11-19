@@ -1,0 +1,121 @@
+{
+  "source": "C:\\dev\\Video-Agent-studio\\outputs\\typecast-piljae-pfa-full-1.0x\\narration.wav",
+  "source_sha256": "3f62ff17d0a0c11d9607638605f41cd6d6e7b39755982407d7df9ab0112b02de",
+  "output": "C:\\dev\\Video-Agent-studio\\outputs\\typecast-piljae-pfa-full-1.0x\\auto-level-v2\\narration_leveled.wav",
+  "filter": "acompressor=threshold=0.1:ratio=3:attack=5:release=80:knee=2.8,dynaudnorm=f=100:g=5:p=0.85:m=6:r=0.18:t=0.01:b=1,loudnorm=I=-16:TP=-2:LRA=5:print_format=json:measured_I=-18.06:measured_TP=-1.59:measured_LRA=1.80:measured_thresh=-28.47:offset=0.11",
+  "ffmpeg_version": "7.1-essentials_build-www.gyan.dev",
+  "duration_seconds": 95.18,
+  "sample_rate": 44100,
+  "before": {
+    "window_count": 182,
+    "p10_dbfs": -22.196,
+    "median_dbfs": -17.284,
+    "p90_dbfs": -14.581,
+    "p90_minus_p10_db": 7.615,
+    "windows_below_minus22_dbfs": 20,
+    "integrated_lufs": -18.04,
+    "true_peak_dbtp": 0.05,
+    "lra_lu": 3.9
+  },
+  "after": {
+    "window_count": 182,
+    "p10_dbfs": -16.419,
+    "median_dbfs": -14.975,
+    "p90_dbfs": -14.189,
+    "p90_minus_p10_db": 2.23,
+    "windows_below_minus22_dbfs": 0,
+    "integrated_lufs": -16.01,
+    "true_peak_dbtp": -2.0,
+    "lra_lu": 1.7
+  },
+  "measurement": "1s RMS windows, 0.5s hop; source 20ms frames > -40dBFS; minimum 30% active. This is an energy gate, not semantic speech detection.",
+  "sample_count_preserved": true,
+  "clipped_samples": 0,
+  "new_api_requests": 0,
+  "warnings": [],
+  "listening_review": "pending",
+  "gap_protection": {
+    "model_sha256": "1a153a22f4509e292a94e67d6f9b85e8deb25b4988682b7e174c65279d8788e3",
+    "speech_threshold": 0.2,
+    "padding_seconds": 0.096,
+    "boundary_fade_seconds": 0.048,
+    "max_attenuation_db": 18,
+    "speech_frame_fraction": 0.8847,
+    "regions": [
+      {
+        "start": 0.0,
+        "end": 0.128,
+        "attenuation_db": 13.42
+      },
+      {
+        "start": 3.776,
+        "end": 4.128,
+        "attenuation_db": 2.53
+      },
+      {
+        "start": 12.0,
+        "end": 12.416,
+        "attenuation_db": 13.75
+      },
+      {
+        "start": 17.184,
+        "end": 17.376,
+        "attenuation_db": 14.14
+      },
+      {
+        "start": 26.912,
+        "end": 27.168,
+        "attenuation_db": 9.04
+      },
+      {
+        "start": 41.44,
+        "end": 41.856,
+        "attenuation_db": 12.85
+      },
+      {
+        "start": 45.536,
+        "end": 45.792,
+        "attenuation_db": 14.0
+      },
+      {
+        "start": 55.488,
+        "end": 55.776,
+        "attenuation_db": 8.24
+      },
+      {
+        "start": 67.712,
+        "end": 67.872,
+        "attenuation_db": 14.57
+      },
+      {
+        "start": 70.208,
+        "end": 70.528,
+        "attenuation_db": 3.44
+      },
+      {
+        "start": 73.056,
+        "end": 73.44,
+        "attenuation_db": 4.33
+      }
+    ],
+    "outside_regions_unchanged": true
+  },
+  "output_sha256": "ca68c2aa02bf5e612bfbf12f0a0114dd7f9f30a5706a8f31a86b40dd895bad18",
+  "previous_leveled_sha256": "954fecd7ad7543c52749580169eb23a0996566c372b7d3ba8121ddaa029e344a",
+  "outside_reported_regions_pcm_identical_to_v1": true,
+  "comparison_ranges_seconds": [
+    [
+      10,
+      14
+    ],
+    [
+      25,
+      29
+    ],
+    [
+      53,
+      57
+    ]
+  ],
+  "comparison_duration_seconds": 28.0
+}

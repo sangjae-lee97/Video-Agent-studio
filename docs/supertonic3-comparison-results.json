@@ -1,0 +1,117 @@
+{
+  "model": "supertonic-3",
+  "model_revision": "aafc6e32416a594460b32413efc49d7fe4ce6d46",
+  "load_seconds": 0.571,
+  "language": "ko",
+  "text_characters": 133,
+  "text_sha256": "91461ad4d10f0106bc58047e62730f86afbc5b5be1e7ef8a8566ef9d12611f83",
+  "steps": 8,
+  "seed": 42,
+  "cpu_threads": 4,
+  "chunk_limit": 120,
+  "chunk_silence_seconds": 0.3,
+  "speed_method": "native synthesis duration control; no audio time stretch",
+  "listening_review": "pending",
+  "samples": [
+    {
+      "voice": "M1",
+      "speed": 1.0,
+      "file": "M1_1.0x.wav",
+      "duration_seconds": 20.989,
+      "generation_seconds": 3.156,
+      "rtf": 0.15,
+      "peak": 0.50489,
+      "sample_rate": 44100
+    },
+    {
+      "voice": "M1",
+      "speed": 1.1,
+      "file": "M1_1.1x.wav",
+      "duration_seconds": 19.108,
+      "generation_seconds": 3.702,
+      "rtf": 0.194,
+      "peak": 0.55392,
+      "sample_rate": 44100
+    },
+    {
+      "voice": "M2",
+      "speed": 1.0,
+      "file": "M2_1.0x.wav",
+      "duration_seconds": 20.501,
+      "generation_seconds": 4.123,
+      "rtf": 0.201,
+      "peak": 0.66542,
+      "sample_rate": 44100
+    },
+    {
+      "voice": "M2",
+      "speed": 1.1,
+      "file": "M2_1.1x.wav",
+      "duration_seconds": 18.69,
+      "generation_seconds": 3.684,
+      "rtf": 0.197,
+      "peak": 0.69442,
+      "sample_rate": 44100
+    },
+    {
+      "voice": "M3",
+      "speed": 1.0,
+      "file": "M3_1.0x.wav",
+      "duration_seconds": 17.297,
+      "generation_seconds": 3.501,
+      "rtf": 0.202,
+      "peak": 0.38045,
+      "sample_rate": 44100
+    },
+    {
+      "voice": "M3",
+      "speed": 1.1,
+      "file": "M3_1.1x.wav",
+      "duration_seconds": 15.764,
+      "generation_seconds": 3.068,
+      "rtf": 0.195,
+      "peak": 0.40857,
+      "sample_rate": 44100
+    },
+    {
+      "voice": "M4",
+      "speed": 1.0,
+      "file": "M4_1.0x.wav",
+      "duration_seconds": 19.596,
+      "generation_seconds": 3.825,
+      "rtf": 0.195,
+      "peak": 0.27593,
+      "sample_rate": 44100
+    },
+    {
+      "voice": "M4",
+      "speed": 1.1,
+      "file": "M4_1.1x.wav",
+      "duration_seconds": 17.924,
+      "generation_seconds": 3.537,
+      "rtf": 0.197,
+      "peak": 0.35357,
+      "sample_rate": 44100
+    },
+    {
+      "voice": "M5",
+      "speed": 1.0,
+      "file": "M5_1.0x.wav",
+      "duration_seconds": 20.85,
+      "generation_seconds": 3.96,
+      "rtf": 0.19,
+      "peak": 0.37532,
+      "sample_rate": 44100
+    },
+    {
+      "voice": "M5",
+      "speed": 1.1,
+      "file": "M5_1.1x.wav",
+      "duration_seconds": 19.039,
+      "generation_seconds": 3.604,
+      "rtf": 0.189,
+      "peak": 0.40939,
+      "sample_rate": 44100
+    }
+  ]
+}

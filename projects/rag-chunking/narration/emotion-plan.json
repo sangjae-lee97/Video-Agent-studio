@@ -1,0 +1,288 @@
+[
+  {
+    "source_lines": [
+      1,
+      1
+    ],
+    "role": "opening_question",
+    "intended_focus_not_spoken_instruction": "정답이 있는데 못 찾는다",
+    "prompt": {
+      "emotion_type": "smart",
+      "previous_text": "",
+      "next_text": "래그는 AI가 문서를 검색해서, 찾은 근거로 답하게 만드는 방식입니다.\n그런데 긴 문서를 통째로 다루면, 주제가 섞여 필요한 부분을 가려내기 어렵습니다."
+    }
+  },
+  {
+    "source_lines": [
+      2,
+      3
+    ],
+    "role": "explanation",
+    "intended_focus_not_spoken_instruction": "래그 정의, 통째로 넣으면 섞임",
+    "prompt": {
+      "emotion_type": "preset",
+      "emotion_preset": "normal",
+      "emotion_intensity": 0.8
+    }
+  },
+  {
+    "source_lines": [
+      4,
+      4
+    ],
+    "role": "clarification",
+    "intended_focus_not_spoken_instruction": "청크·청킹 정의",
+    "prompt": {
+      "emotion_type": "preset",
+      "emotion_preset": "normal",
+      "emotion_intensity": 1.0
+    }
+  },
+  {
+    "source_lines": [
+      5,
+      5
+    ],
+    "role": "definition_details",
+    "intended_focus_not_spoken_instruction": "자르기와 임베딩은 다른 작업",
+    "prompt": {
+      "emotion_type": "preset",
+      "emotion_preset": "normal",
+      "emotion_intensity": 0.8
+    }
+  },
+  {
+    "source_lines": [
+      6,
+      6
+    ],
+    "role": "safety_transition",
+    "intended_focus_not_spoken_instruction": "진짜 문제: 어디서 자르나",
+    "prompt": {
+      "emotion_type": "smart",
+      "previous_text": "그래서 문서를 검색할 수 있는 조각, 청크로 나눕니다. 이걸 청킹이라고 부릅니다.\n자른 조각은 다시 임베딩해서 벡터로 바꿉니다. 자르는 일과 숫자로 바꾸는 일은, 서로 다른 작업이죠.",
+      "next_text": "가장 단순한 건 글자 수마다 자르는 고정 크기 방식, 다른 하나는 빈 줄마다 자르는 문단 방식입니다.\n고정 크기는 예측이 쉽지만 문장 중간이 잘릴 수 있고, 문단 방식은 경계를 지키지만 조각 길이가 들쭉날쭉합니다."
+    }
+  },
+  {
+    "source_lines": [
+      7,
+      7
+    ],
+    "role": "balanced_comparison",
+    "intended_focus_not_spoken_instruction": "고정 크기 / 문단",
+    "prompt": {
+      "emotion_type": "preset",
+      "emotion_preset": "toneup",
+      "emotion_intensity": 0.55
+    }
+  },
+  {
+    "source_lines": [
+      8,
+      8
+    ],
+    "role": "explanation",
+    "intended_focus_not_spoken_instruction": "각각의 장단점",
+    "prompt": {
+      "emotion_type": "preset",
+      "emotion_preset": "normal",
+      "emotion_intensity": 0.8
+    }
+  },
+  {
+    "source_lines": [
+      9,
+      9
+    ],
+    "role": "risk_or_serious_event",
+    "intended_focus_not_spoken_instruction": "정답이 두 조각으로",
+    "prompt": {
+      "emotion_type": "preset",
+      "emotion_preset": "tonedown",
+      "emotion_intensity": 0.25
+    }
+  },
+  {
+    "source_lines": [
+      10,
+      10
+    ],
+    "role": "response_measures",
+    "intended_focus_not_spoken_instruction": "오버랩 정의",
+    "prompt": {
+      "emotion_type": "preset",
+      "emotion_preset": "normal",
+      "emotion_intensity": 0.8
+    }
+  },
+  {
+    "source_lines": [
+      11,
+      12
+    ],
+    "role": "definition_details",
+    "intended_focus_not_spoken_instruction": "160/30 → 130자 뒤",
+    "prompt": {
+      "emotion_type": "preset",
+      "emotion_preset": "normal",
+      "emotion_intensity": 0.8
+    }
+  },
+  {
+    "source_lines": [
+      13,
+      13
+    ],
+    "role": "safety_transition",
+    "intended_focus_not_spoken_instruction": "반전 질문",
+    "prompt": {
+      "emotion_type": "smart",
+      "previous_text": "백육십 자씩 자르고 삼십 자를 겹치면, 다음 조각은 백삼십 자 뒤에서 시작합니다.\n랭체인의 재귀 분할기는 빈 줄, 줄바꿈, 공백 순서로 자를 자리를 찾습니다.",
+      "next_text": "강의의 교육용 실험에서는 오히려 반대였습니다! 겹침을 육십 자로 늘리자 같은 문의 안내가 두 조각에 반복돼 위를 차지했고, 정답 조각은 이 위에서 삼 위로 밀렸습니다.\n단어 개수로 만든 교육용 벡터라 일반 법칙은 아닙니다. 그래서 자른 방식은, 반드시 검색 결과로 확인해야 합니다."
+    }
+  },
+  {
+    "source_lines": [
+      14,
+      14
+    ],
+    "role": "key_result",
+    "intended_focus_not_spoken_instruction": "오히려 밀렸다",
+    "prompt": {
+      "emotion_type": "preset",
+      "emotion_preset": "toneup",
+      "emotion_intensity": 0.6
+    }
+  },
+  {
+    "source_lines": [
+      15,
+      15
+    ],
+    "role": "uncertainty_limit",
+    "intended_focus_not_spoken_instruction": "일반 법칙 아님, 측정 필요",
+    "prompt": {
+      "emotion_type": "preset",
+      "emotion_preset": "normal",
+      "emotion_intensity": 1.0
+    }
+  },
+  {
+    "source_lines": [
+      16,
+      16
+    ],
+    "role": "explanation",
+    "intended_focus_not_spoken_instruction": "Hit@3",
+    "prompt": {
+      "emotion_type": "preset",
+      "emotion_preset": "normal",
+      "emotion_intensity": 0.8
+    }
+  },
+  {
+    "source_lines": [
+      17,
+      17
+    ],
+    "role": "definition_details",
+    "intended_focus_not_spoken_instruction": "MRR 계산",
+    "prompt": {
+      "emotion_type": "preset",
+      "emotion_preset": "normal",
+      "emotion_intensity": 0.8
+    }
+  },
+  {
+    "source_lines": [
+      18,
+      18
+    ],
+    "role": "balanced_comparison",
+    "intended_focus_not_spoken_instruction": "같은 Hit, 다른 MRR",
+    "prompt": {
+      "emotion_type": "preset",
+      "emotion_preset": "toneup",
+      "emotion_intensity": 0.55
+    }
+  },
+  {
+    "source_lines": [
+      19,
+      19
+    ],
+    "role": "clarification",
+    "intended_focus_not_spoken_instruction": "정답률 아님",
+    "prompt": {
+      "emotion_type": "preset",
+      "emotion_preset": "normal",
+      "emotion_intensity": 1.0
+    }
+  },
+  {
+    "source_lines": [
+      20,
+      20
+    ],
+    "role": "safety_transition",
+    "intended_focus_not_spoken_instruction": "찾았다고 맞나",
+    "prompt": {
+      "emotion_type": "smart",
+      "previous_text": "세 질문 모두 히트 앳 쓰리가 일이어도, 순위가 일, 이, 삼 위라면 엠알알은 약 영 점 육일일입니다.\n이건 정답률 육십일 퍼센트가 아니라, 정답을 얼마나 앞에서 찾았는지 보는 점수입니다.",
+      "next_text": "아닙니다. 모델이 찾은 문단을 잘못 읽거나, 없는 내용을 덧붙일 수도 있습니다.\n그래서 근거는 원문 그대로, 출처와 함께 보여 줍니다. 랭체인의 다큐먼트가 본문과 출처를 함께 담는 이유죠."
+    }
+  },
+  {
+    "source_lines": [
+      21,
+      21
+    ],
+    "role": "risk_or_serious_event",
+    "intended_focus_not_spoken_instruction": "잘못 읽고 덧붙일 수 있음",
+    "prompt": {
+      "emotion_type": "preset",
+      "emotion_preset": "tonedown",
+      "emotion_intensity": 0.25
+    }
+  },
+  {
+    "source_lines": [
+      22,
+      23
+    ],
+    "role": "response_measures",
+    "intended_focus_not_spoken_instruction": "원문+출처, Document, HOLD",
+    "prompt": {
+      "emotion_type": "preset",
+      "emotion_preset": "normal",
+      "emotion_intensity": 0.8
+    }
+  },
+  {
+    "source_lines": [
+      24,
+      25
+    ],
+    "role": "uncertainty_limit",
+    "intended_focus_not_spoken_instruction": "HOLD·temperature 한계",
+    "prompt": {
+      "emotion_type": "preset",
+      "emotion_preset": "normal",
+      "emotion_intensity": 1.0
+    }
+  },
+  {
+    "source_lines": [
+      26,
+      26
+    ],
+    "role": "balanced_conclusion",
+    "intended_focus_not_spoken_instruction": "별칭 결말",
+    "prompt": {
+      "emotion_type": "preset",
+      "emotion_preset": "normal",
+      "emotion_intensity": 1.0
+    }
+  }
+]

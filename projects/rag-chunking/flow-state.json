@@ -1,0 +1,61 @@
+{
+  "project": "rag-chunking",
+  "updated": "2026-11-19",
+  "current_step": "완성본 전달, 사용자 검토 대기",
+  "scenes": {
+    "F01": {
+      "status": "used_in_final",
+      "received": null,
+      "adopted_take": null,
+      "upscaled_1080p": true
+    },
+    "F02": {
+      "status": "used_in_final",
+      "received": null,
+      "adopted_take": null,
+      "upscaled_1080p": true
+    },
+    "F03": {
+      "status": "used_in_final",
+      "received": null,
+      "adopted_take": null,
+      "upscaled_1080p": true
+    },
+    "F04": {
+      "status": "used_in_final",
+      "received": null,
+      "adopted_take": null,
+      "upscaled_1080p": true,
+      "edit_fix": "label 겹침 60 overlay frames 19–37"
+    },
+    "F05": {
+      "status": "used_in_final",
+      "received": null,
+      "adopted_take": "retake Cards_on_desk_with_marks_7a2f4596",
+      "upscaled_1080p": true
+    },
+    "F06": {
+      "status": "used_in_final",
+      "received": null,
+      "adopted_take": null,
+      "upscaled_1080p": true
+    }
+  },
+  "waiting_for": [
+    "완성본 검토",
+    "청취 확인(5·12·18·25번 줄)"
+  ],
+  "next_action": "피드백 반영 또는 업로드",
+  "narration": {
+    "balanced": "narration/local-short-window-v2/narration_balanced.wav",
+    "status": "보정 완료, 청취 확인 대기"
+  },
+  "input_modes": {
+    "F01": "소재 · 이미지 없음",
+    "F02": "소재 F01-ingredient.png",
+    "F03": "소재 F01-ingredient.png",
+    "F04": "소재 F01-ingredient.png",
+    "F05": "소재 F01-ingredient.png",
+    "F06": "소재 F01-ingredient.png"
+  }
+}

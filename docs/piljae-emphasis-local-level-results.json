@@ -1,0 +1,52 @@
+{
+  "source_sha256": "fa3cce83a77e7117ce02405e8fb0384ef12bf4e630c682fd56f8670bae030feb",
+  "output_sha256": "85d5ecfa7f9da4b86abf81de378e5c4c119c1755b527ea7b08c444da6f0ecbdc",
+  "duration_seconds": 92.61,
+  "source_unchanged": true,
+  "all_23_sentence_first_and_last_0_2_seconds_identical": true,
+  "frame_count_and_sample_rate_unchanged": true,
+  "no_sample_attenuation": true,
+  "actual_pcm_changed_seconds": 31.205850340136056,
+  "gain_active_seconds": 32.112312925170066,
+  "new_clipped_samples": 0,
+  "original_full_scale_samples": 27,
+  "output_full_scale_samples": 27,
+  "before_loudness": {
+    "integrated_lufs": -18.09,
+    "true_peak_dbtp": 0.15,
+    "lra_lu": 3.4
+  },
+  "after_loudness": {
+    "integrated_lufs": -17.77,
+    "true_peak_dbtp": 0.15,
+    "lra_lu": 3.2
+  },
+  "diagnostic_only_intervals": [
+    {
+      "start": 11.92,
+      "end": 15.18,
+      "whole_interval_rms_increase_db": 0.6990581112451087
+    },
+    {
+      "start": 15.8,
+      "end": 19.74,
+      "whole_interval_rms_increase_db": 0.4586946302266201
+    },
+    {
+      "start": 12.5,
+      "end": 15,
+      "whole_interval_rms_increase_db": 1.0651710387912796
+    },
+    {
+      "start": 16.5,
+      "end": 19.5,
+      "whole_interval_rms_increase_db": 0.6617587938250789
+    }
+  ],
+  "gain_rules_unchanged": true,
+  "synthesis_requests": 0,
+  "listening_review": "approved_by_user",
+  "breath_classification_verified": false,
+  "listening_approved_on": "2026-11-19",
+  "final_video_mastering_status": "pending_peak_control"
+}

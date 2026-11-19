@@ -1,0 +1,22 @@
+FORMAT: 8-second video, landscape 16:9. Hard cuts between shots.
+
+SUBJECT: Use the supplied chart as the exact first frame. The chart is displayed on a real monitor at a quiet cardiology consultation. An adult patient and a clinician sit beside the same desk and consider whether PFA is suitable as an initial treatment.
+
+LOOK: Landscape 16:9, 720p. Start on the charcoal chart. As the room is revealed, use soft daylight, muted warm-grey walls and a natural, documentary look.
+
+SHOT 1 [0-2.3s]: The chart fills the first frame. Pull back to reveal the monitor bezel and the same graph on its screen. Keep the supplied chart intact.
+CAMERA: Straight, gentle pullback from the screen.
+
+SHOT 2 [2.3-4.6s]: The patient and clinician look at the monitor together. The patient turns toward the clinician, who listens.
+CAMERA: Cut to a medium two-shot from the patient’s side of the desk, keeping the monitor in view.
+
+SHOT 3 [4.6-8s]: On one sheet between them, two headings read “효과” and “위험” side by side. The clinician makes one open-hand gesture beneath both. By 6.4 seconds both headings and the gesture are clear. Let the hand settle.
+CAMERA: Cut over the patient’s shoulder to the sheet; the monitor stays softly visible behind it.
+
+ON-SCREEN TEXT: Print each heading once, at equal size and contrast. Leave the treatment decision open.
+
+CONTINUITY: Keep the same people, monitor, chart and desk orientation across all three shots. Preserve the original chart numbers and colors.
+
+EXCLUSIONS: no burned-in captions, no karaoke-style word-by-word timing, no logos, no dissolve, no morph, no static hold, no empty ending, no background music, no speech or generated narration.
+
+AUDIO: Quiet room tone only.

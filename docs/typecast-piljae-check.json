@@ -1,0 +1,57 @@
+{
+  "endpoint": "GET /v3/voices",
+  "checked_on": "2026-11-18",
+  "voice_count": 636,
+  "matches": [
+    {
+      "voice_id": "tc_68257f68bc6e3c161ab5078d",
+      "voice_name": {
+        "eng": "Piljae",
+        "kor": "필재"
+      },
+      "gender": "male",
+      "age": "middle_age",
+      "models": [
+        {
+          "version": "ssfm-v21",
+          "emotions": [
+            "angry",
+            "happy",
+            "normal",
+            "sad"
+          ]
+        },
+        {
+          "version": "ssfm-v30",
+          "emotions": [
+            "angry",
+            "happy",
+            "normal",
+            "sad",
+            "tonedown",
+            "toneup",
+            "whisper"
+          ]
+        },
+        {
+          "version": "ssfm-v31",
+          "emotions": [
+            "angry",
+            "happy",
+            "normal",
+            "sad",
+            "tonedown",
+            "toneup",
+            "whisper"
+          ]
+        }
+      ],
+      "use_cases": [
+        "Conversational",
+        "Radio/Podcast"
+      ],
+      "preview_url": "https://static2.typecast.ai/c/251023_preview/piljae_mixdown.mp3"
+    }
+  ],
+  "synthesis_requested": false
+}

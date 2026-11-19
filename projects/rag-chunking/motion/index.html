@@ -1,0 +1,8 @@
+<!DOCTYPE html><html><head><meta charset="utf-8"><style>html,body{margin:0;background:#000}canvas{display:block}</style></head>
+<body><canvas id="c" width="1920" height="1080"></canvas>
+<script src="lib.js"></script><script src="scenes.js"></script>
+<script>
+setCtx(document.getElementById('c').getContext('2d'));
+window.draw = (id, t) => { ctx.save(); ctx.clearRect(0,0,1920,1080); SCENES[id](t); ctx.restore(); };
+window.loadF06 = () => new Promise(r => { const im = new Image(); im.onload = () => { F06LAST = im; r(); }; im.onerror = () => r(); im.src = 'f06_last.png'; });
+</script></body></html>

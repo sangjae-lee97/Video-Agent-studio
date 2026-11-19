@@ -1,0 +1,249 @@
+[
+  {
+    "source_lines": [
+      1,
+      1
+    ],
+    "role": "opening_question",
+    "intended_focus_not_spoken_instruction": "숫자 하나 다른 두 모델",
+    "prompt": {
+      "emotion_type": "smart",
+      "previous_text": "",
+      "next_text": "이번 프로젝트는 브라더 프린터와 복합기 열 개 모델의 기술지원 질문에, 공식 문서로 답하는 래그 에이전트를 만드는 겁니다.\n서너 명이 한 팀으로, 닷새, 사십 시간 안에요."
+    }
+  },
+  {
+    "source_lines": [
+      2,
+      3
+    ],
+    "role": "explanation",
+    "intended_focus_not_spoken_instruction": "과제 정체",
+    "prompt": {
+      "emotion_type": "preset",
+      "emotion_preset": "normal",
+      "emotion_intensity": 0.8
+    }
+  },
+  {
+    "source_lines": [
+      4,
+      4
+    ],
+    "role": "definition_details",
+    "intended_focus_not_spoken_instruction": "PDF 2종 페이지",
+    "prompt": {
+      "emotion_type": "preset",
+      "emotion_preset": "normal",
+      "emotion_intensity": 0.8
+    }
+  },
+  {
+    "source_lines": [
+      5,
+      5
+    ],
+    "role": "safety_transition",
+    "intended_focus_not_spoken_instruction": "함정",
+    "prompt": {
+      "emotion_type": "smart",
+      "previous_text": "서너 명이 한 팀으로, 닷새, 사십 시간 안에요.\n자료는 한국어 공식 피디에프 두 권. 잉크젯 다섯 모델의 사백육십육 쪽, 흑백 레이저 다섯 모델의 육백삼십삼 쪽입니다.",
+      "next_text": "한 권에 다섯 모델이 함께 들어 있어서, 표의 한 행이나 각주 하나가 일부 모델에만 해당할 수 있습니다. 다른 모델의 절차를 그대로 가져오면, 그럴듯한 오답이 됩니다.\n그래서 조각마다 문서 아이디와 페이지, 그리고 적용 모델을 붙입니다. 어떤 주장이든 원문과 모델까지 거슬러 올라갈 수 있게요."
+    }
+  },
+  {
+    "source_lines": [
+      6,
+      6
+    ],
+    "role": "risk_or_serious_event",
+    "intended_focus_not_spoken_instruction": "다섯 모델이 한 권에",
+    "prompt": {
+      "emotion_type": "preset",
+      "emotion_preset": "tonedown",
+      "emotion_intensity": 0.25
+    }
+  },
+  {
+    "source_lines": [
+      7,
+      7
+    ],
+    "role": "response_measures",
+    "intended_focus_not_spoken_instruction": "메타데이터로 역추적",
+    "prompt": {
+      "emotion_type": "preset",
+      "emotion_preset": "normal",
+      "emotion_intensity": 0.8
+    }
+  },
+  {
+    "source_lines": [
+      8,
+      8
+    ],
+    "role": "balanced_comparison",
+    "intended_focus_not_spoken_instruction": "검색기 3종",
+    "prompt": {
+      "emotion_type": "preset",
+      "emotion_preset": "toneup",
+      "emotion_intensity": 0.55
+    }
+  },
+  {
+    "source_lines": [
+      9,
+      9
+    ],
+    "role": "explanation",
+    "intended_focus_not_spoken_instruction": "인용",
+    "prompt": {
+      "emotion_type": "preset",
+      "emotion_preset": "normal",
+      "emotion_intensity": 0.8
+    }
+  },
+  {
+    "source_lines": [
+      10,
+      10
+    ],
+    "role": "safety_transition",
+    "intended_focus_not_spoken_instruction": "반전 질문",
+    "prompt": {
+      "emotion_type": "smart",
+      "previous_text": "검색기는 세 가지를 같은 조건에서 비교합니다. 의미로 찾는 벡터 검색, 여기에 키워드 검색 비엠이십오를 더한 하이브리드, 그리고 후보를 다시 채점하는 리랭킹입니다.\n답변에는 실제로 찾아낸 문서의 제목과 페이지를 함께 인용합니다.",
+      "next_text": "답을 지어내지 않고, 확인할 수 없다고 말하는 게 정답입니다!\n반대로 답이 있는 질문을 거부하면, 오답으로 처리됩니다. 근거 부족과 검색 오류, 생성 오류도 따로 구분해서 보여 줘야 하죠."
+    }
+  },
+  {
+    "source_lines": [
+      11,
+      11
+    ],
+    "role": "key_result",
+    "intended_focus_not_spoken_instruction": "거부가 정답",
+    "prompt": {
+      "emotion_type": "preset",
+      "emotion_preset": "toneup",
+      "emotion_intensity": 0.6
+    }
+  },
+  {
+    "source_lines": [
+      12,
+      12
+    ],
+    "role": "uncertainty_limit",
+    "intended_focus_not_spoken_instruction": "부당 거부·오류 구분",
+    "prompt": {
+      "emotion_type": "preset",
+      "emotion_preset": "normal",
+      "emotion_intensity": 1.0
+    }
+  },
+  {
+    "source_lines": [
+      13,
+      13
+    ],
+    "role": "response_measures",
+    "intended_focus_not_spoken_instruction": "최적화·모델 비교",
+    "prompt": {
+      "emotion_type": "preset",
+      "emotion_preset": "normal",
+      "emotion_intensity": 0.8
+    }
+  },
+  {
+    "source_lines": [
+      14,
+      14
+    ],
+    "role": "explanation",
+    "intended_focus_not_spoken_instruction": "공개 10 / 비공개 100",
+    "prompt": {
+      "emotion_type": "preset",
+      "emotion_preset": "normal",
+      "emotion_intensity": 0.8
+    }
+  },
+  {
+    "source_lines": [
+      15,
+      15
+    ],
+    "role": "definition_details",
+    "intended_focus_not_spoken_instruction": "문항 유형",
+    "prompt": {
+      "emotion_type": "preset",
+      "emotion_preset": "normal",
+      "emotion_intensity": 0.8
+    }
+  },
+  {
+    "source_lines": [
+      16,
+      16
+    ],
+    "role": "key_result",
+    "intended_focus_not_spoken_instruction": "배점 45",
+    "prompt": {
+      "emotion_type": "preset",
+      "emotion_preset": "toneup",
+      "emotion_intensity": 0.6
+    }
+  },
+  {
+    "source_lines": [
+      17,
+      17
+    ],
+    "role": "risk_or_serious_event",
+    "intended_focus_not_spoken_instruction": "0.40 미만 → 효율 0점",
+    "prompt": {
+      "emotion_type": "preset",
+      "emotion_preset": "tonedown",
+      "emotion_intensity": 0.25
+    }
+  },
+  {
+    "source_lines": [
+      18,
+      18
+    ],
+    "role": "uncertainty_limit",
+    "intended_focus_not_spoken_instruction": "60초·실패 기록",
+    "prompt": {
+      "emotion_type": "preset",
+      "emotion_preset": "normal",
+      "emotion_intensity": 1.0
+    }
+  },
+  {
+    "source_lines": [
+      19,
+      19
+    ],
+    "role": "explanation",
+    "intended_focus_not_spoken_instruction": "재현",
+    "prompt": {
+      "emotion_type": "preset",
+      "emotion_preset": "normal",
+      "emotion_intensity": 0.8
+    }
+  },
+  {
+    "source_lines": [
+      20,
+      20
+    ],
+    "role": "balanced_conclusion",
+    "intended_focus_not_spoken_instruction": "결말",
+    "prompt": {
+      "emotion_type": "preset",
+      "emotion_preset": "normal",
+      "emotion_intensity": 1.0
+    }
+  }
+]

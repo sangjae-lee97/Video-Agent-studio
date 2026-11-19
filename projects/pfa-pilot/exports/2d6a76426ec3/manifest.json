@@ -1,0 +1,27 @@
+{
+  "plan_hash": "2d6a76426ec3",
+  "structural_validation": "passed",
+  "warnings": [
+    "실제 미디어 생성/품질 검토 대기"
+  ],
+  "flow_clip_count": 1,
+  "planned_generation_seconds": 8,
+  "flow_attempt_budget": 1,
+  "generation_attempts": null,
+  "video_quality_review": "pending",
+  "files": [
+    "captions.ko.srt",
+    "edit-sheet.md",
+    "flow-F09.txt",
+    "plan.json",
+    "script.md",
+    "sources.md"
+  ],
+  "imported_flow_assets": [
+    "projects/pfa-pilot/media/flow/F01-6cbe653d-1080p.mp4",
+    "projects/pfa-pilot/renders/F02-7days-flow-1080p.mp4",
+    "projects/pfa-pilot/renders/F03-44a227c2-flow1080-relabel.mp4",
+    "projects/pfa-pilot/media/flow/F05-faf62b0d-1080p.mp4"
+  ],
+  "additional_generation_attempts": 0
+}

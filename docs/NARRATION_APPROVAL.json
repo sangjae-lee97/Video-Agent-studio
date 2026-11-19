@@ -1,0 +1,26 @@
+{
+  "approved_on": "2026-11-19",
+  "approval_scope": "content-based emotion method, local short-window leveling method, and current listening reference; not all future output quality or final video mastering",
+  "user_statement": "좋아. 일단 이 방식으로 정하자. 감정 넣는 기준이랑 음량 보정 규칙을 나중에 다른 원고에도 똑같이 적용할 수 있게 기록해줘.",
+  "voice": "Piljae",
+  "model": "ssfm-v31",
+  "future_default_tempo": 1.05,
+  "reference_tempo": 1.0,
+  "duration_seconds": 92.61,
+  "audio_path": "outputs/typecast-piljae-pfa-emphasis-1.0x-v1/local-short-window-v1/narration_balanced.wav",
+  "audio_sha256": "85d5ecfa7f9da4b86abf81de378e5c4c119c1755b527ea7b08c444da6f0ecbdc",
+  "synthesis_original_path": "outputs/typecast-piljae-pfa-emphasis-1.0x-v1/narration.wav",
+  "synthesis_original_sha256": "fa3cce83a77e7117ce02405e8fb0384ef12bf4e630c682fd56f8670bae030feb",
+  "emotion_plan": "docs/piljae-approved-emphasis-plan.json",
+  "request": "docs/piljae-approved-emphasis-request.json",
+  "defaults": "docs/narration-defaults.json",
+  "measurement": "docs/piljae-emphasis-local-level-results.json",
+  "alignment": "outputs/typecast-piljae-pfa-emphasis-1.0x-v1/local-short-window-v1/sentence-boundaries.json",
+  "words": "outputs/typecast-piljae-pfa-emphasis-1.0x-v1/local-short-window-v1/transcription.json",
+  "known_limits": [
+    "Original 27 full-scale PCM samples and +0.15 dBTP remain; final video master peak control pending",
+    "ASR boundaries are estimates; two clause splits were manually merged against original text",
+    "Different-topic quality validation remains incomplete",
+    "Existing video plan uses older 95.180-second audio; retime before rendering"
+  ]
+}

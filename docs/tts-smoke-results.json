@@ -1,0 +1,60 @@
+{
+  "model": "Qwen3-TTS-12Hz-0.6B-CustomVoice",
+  "revision": "85e237c12c027371202489a0ec509ded67b5e4b5",
+  "speaker": "Sohee",
+  "language": "Korean",
+  "attention": "sdpa",
+  "seed": 42,
+  "torch": "2.9.1+cu128",
+  "cuda": "12.8",
+  "gpu": "NVIDIA GeForce RTX 5060 Laptop GPU",
+  "load_seconds": 3.428,
+  "listening_review": "pending_user_review",
+  "samples": [
+    {
+      "file": "01_explanation.wav",
+      "text": "복잡한 원리도 순서대로 보면 이해할 수 있습니다. 먼저 전체 모습을 보고, 안쪽 구조를 살펴봅니다. 마지막으로 각 부분이 어떻게 연결되는지 확인합니다.",
+      "sample_rate": 24000,
+      "duration_seconds": 16.08,
+      "generation_seconds": 28.439,
+      "rtf": 1.769,
+      "peak_allocated_mib": 2539.8,
+      "peak_reserved_mib": 2818.0,
+      "peak_amplitude": 0.640625,
+      "clipped_fraction": 0.0,
+      "sha256": "73735d2851a6c5e37349acf77fbeafe98f63fcd0b38be9cb9d109740158e7e6a"
+    },
+    {
+      "file": "02_numbers.wav",
+      "text": "이번 테스트 영상은 2분 30초입니다. 8초짜리 장면 3개를 연결하면 24초가 됩니다. AI와 API라는 영문 표현, 그리고 3.5퍼센트라는 숫자도 읽어 보겠습니다.",
+      "sample_rate": 24000,
+      "duration_seconds": 16.72,
+      "generation_seconds": 21.029,
+      "rtf": 1.258,
+      "peak_allocated_mib": 2558.9,
+      "peak_reserved_mib": 2972.0,
+      "peak_amplitude": 0.64453125,
+      "clipped_fraction": 0.0,
+      "sha256": "988a74f1d30b4b26f3c694d6b28efc5d7ca3fd5eb0f664345dd768d943fea0e5"
+    },
+    {
+      "file": "03_story.wav",
+      "text": "그럼 크기만 키우면 되는 것 아니냐고요? 잠깐, 진짜 문제는 따로 있습니다. 우리가 놓친 건 크기가 아니라 연결 방식입니다. 그래서 발상을 뒤집어 봅니다.",
+      "sample_rate": 24000,
+      "duration_seconds": 14.64,
+      "generation_seconds": 17.852,
+      "rtf": 1.219,
+      "peak_allocated_mib": 2496.1,
+      "peak_reserved_mib": 2972.0,
+      "peak_amplitude": 0.62109375,
+      "clipped_fraction": 0.0,
+      "sha256": "537af9cb47dafc86e993333141d4881f7852e99ac40a54dab22a677cdc0b2441"
+    }
+  ],
+  "checks": [
+    "CUDA arithmetic passed",
+    "pip check passed",
+    "3 mono PCM16 24kHz WAV files validated",
+    "no non-finite or silent output; no numeric clipping"
+  ]
+}

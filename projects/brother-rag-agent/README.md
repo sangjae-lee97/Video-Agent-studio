@@ -1,0 +1,28 @@
+# Brother 기술지원 RAG Agent — 프로젝트 가이드 요약
+
+출처: Teamsparta Notion 「3. Brother RAG Agent」 프로젝트 가이드(사용자가 채팅에 붙여 넣은 전문) — [analysis.md](analysis.md).
+
+| 단계 | 상태 | 파일 |
+|---|---|---|
+| 1 분석 | 완료 | analysis.md |
+| 2 낭독 대본 | 완료 (20줄·19구간·1,066자, 1.05배속 추정 약 130초) | script.md, narration/source.txt |
+| 3 Typecast 합성 | 완료 125.097초, 원본 포화 31샘플(최종 마스터에서 피크 처리) | narration/narration.wav, report.json |
+| 3b 정렬·보정 | 완료. 자동 앵커가 3번 줄에서 실패(ASR이 ‘안에요’를 ‘하네요’로 인식) → 에이전트가 VM에서 같은 Whisper small로 단어 시각을 다시 뽑아 20줄 끝 단어를 직접 대조·매핑. short-window 보정 새 포화 0. **청취 확인 대기** | narration/local-short-window-v1/ |
+| 4 편집표·Flow 요청 | 완료. 19구간(F6·M13), Flow 40.60초 = 32.5% | production-plan.json, flow-request.md, flow-state.json |
+| 5 Flow 수령 | 완료. F01·F02·F03 재생성 후 채택, F05는 한계 있는 채 채택 | media/flow/, flow-state.json |
+| 6 모션그래픽 | M01~M13 렌더(Playwright, 24fps). Flow 밝은 오피스 톤에 맞춘 밝은 팔레트(사용자 요청) | motion/ |
+| 7 자막 | 52큐, 발화 단어 시각 기반, 표시 표기 대조 | captions.ko.srt, make_srt.py |
+| 8 완성 | **renders/Brother-RAG-Agent_완성본_1080p.mp4** 125.125초·3003프레임·24fps, 통합 −17.7 LUFS(alimiter −1 dBFS), 썸네일 renders/Brother-RAG-Agent_썸네일.jpg | assemble.py, thumb.py |
+
+## 실제 편집 구간 (초)
+M00 0–3.000 · F01 –5.958 · F02 –13.000 · M01 –16.000 · M02 –24.292 · F03 –30.875 · M03 –36.208 · M04 –45.208 · M05 –54.417 · M06 –59.000 · F04 –66.208 · M07 –74.000 · M08 –81.917 · M09 –88.083 · M10 –96.583 · M11 –101.208 · M12 –106.583 · F05 –112.917 · F06 –119.000 · M13 –125.125. Flow 36.21초(28.9%).
+오프닝 개정(사용자 지적 2회): 0–3.0초는 모션 M00(블러 처리한 F01 화면 위에 DCP-T83**0**DW / DCP-T83**5**DW, 다른 숫자 앰버 강조, ‘숫자 하나 차이’), 3.0–5.958초는 F01 Shot 3(소스 119–189). F01 Shot 1·2를 이어 붙이면 비슷한 구도끼리 컷이 튀어 보였고, Shot 2 근접 컷은 글자 변형으로 0.54초밖에 못 썼다.
+
+## 검증 범위와 미해결
+- 확인함: 프레임 수·길이(영상·음성 125.125초), 장면 순서, 22개 시점 프레임 대조와 자막 겹침, F01→F02 연결 프레임, 로고 처리 영역, 썸네일 320×180 가독성.
+- 연속 시청 검수는 하지 않음(대표 프레임 검토).
+- F05: 로그 번호 칸 사선·깨진 영문(재생성 안 함). F03 0–2.46초 배경 원형 흔적은 흐림 후에도 희미하게 남음.
+- 청취 확인 대기: 3·4·12·16번 줄(위 목록).
+- 자막 합성은 컨테이너에서 rag-chunking의 공통 프로그램 사본(apply_captions_container.py)으로 했다.
+
+빈 `sources/` 폴더와 `narration/local-short-window-v1/tmpvrlm5c4h/`는 사용하지 않는다.

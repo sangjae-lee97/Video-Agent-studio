@@ -1,0 +1,161 @@
+{
+  "source": "C:\\dev\\Video-Agent-studio\\outputs\\typecast-piljae-pfa-full-1.0x\\narration.wav",
+  "source_sha256": "3f62ff17d0a0c11d9607638605f41cd6d6e7b39755982407d7df9ab0112b02de",
+  "output": "C:\\dev\\Video-Agent-studio\\outputs\\typecast-piljae-pfa-full-1.0x\\brief-edge-v1\\narration.wav",
+  "output_sha256": "ac6092c5ea3ce84e808e9822f12c28c7f91f59fa52ccf071b7cd7ce8f5fa626c",
+  "boundaries": "C:\\dev\\Video-Agent-studio\\outputs\\typecast-piljae-pfa-full-1.0x\\middle-only-v1\\sentence-boundaries.json",
+  "boundary_status": "ASR estimated boundaries; 23 sentences matched to original text order; conservative edge padding; not listening verified",
+  "duration_seconds": 95.18,
+  "sentence_edge_protection_seconds": 0.2,
+  "first_last_word_protection": false,
+  "measurement_window_seconds": 0.3,
+  "minimum_quiet_run_seconds": 0.2,
+  "gain_fade_seconds": 0.08,
+  "vad_gap_protection_seconds": 0.16,
+  "quiet_threshold_dbfs": -22,
+  "maximum_boost_db": 3,
+  "regions": [
+    {
+      "start": 2.8,
+      "end": 3.1,
+      "max_gain_db": 2.872,
+      "before_local_rms_dbfs": -22.872
+    },
+    {
+      "start": 11.3,
+      "end": 11.5,
+      "max_gain_db": 3.0,
+      "before_local_rms_dbfs": -23.469
+    },
+    {
+      "start": 16.2,
+      "end": 16.6,
+      "max_gain_db": 3.0,
+      "before_local_rms_dbfs": -24.076
+    },
+    {
+      "start": 21.4,
+      "end": 21.6,
+      "max_gain_db": 3.0,
+      "before_local_rms_dbfs": -23.191
+    },
+    {
+      "start": 26.0,
+      "end": 26.4,
+      "max_gain_db": 3.0,
+      "before_local_rms_dbfs": -27.892
+    },
+    {
+      "start": 29.1,
+      "end": 29.6,
+      "max_gain_db": 3.0,
+      "before_local_rms_dbfs": -23.547
+    },
+    {
+      "start": 31.3,
+      "end": 31.6,
+      "max_gain_db": 3.0,
+      "before_local_rms_dbfs": -25.885
+    },
+    {
+      "start": 36.8,
+      "end": 37.0,
+      "max_gain_db": 3.0,
+      "before_local_rms_dbfs": -25.718
+    },
+    {
+      "start": 45.0,
+      "end": 45.2,
+      "max_gain_db": 3.0,
+      "before_local_rms_dbfs": -26.392
+    },
+    {
+      "start": 50.8,
+      "end": 51.1,
+      "max_gain_db": 3.0,
+      "before_local_rms_dbfs": -24.592
+    },
+    {
+      "start": 53.1,
+      "end": 53.5,
+      "max_gain_db": 3.0,
+      "before_local_rms_dbfs": -23.149
+    },
+    {
+      "start": 53.8,
+      "end": 54.0,
+      "max_gain_db": 3.0,
+      "before_local_rms_dbfs": -23.505
+    },
+    {
+      "start": 54.9,
+      "end": 55.1,
+      "max_gain_db": 3.0,
+      "before_local_rms_dbfs": -24.533
+    },
+    {
+      "start": 61.7,
+      "end": 61.9,
+      "max_gain_db": 3.0,
+      "before_local_rms_dbfs": -23.969
+    },
+    {
+      "start": 66.8,
+      "end": 67.1,
+      "max_gain_db": 3.0,
+      "before_local_rms_dbfs": -24.351
+    },
+    {
+      "start": 69.6,
+      "end": 69.9,
+      "max_gain_db": 3.0,
+      "before_local_rms_dbfs": -28.764
+    },
+    {
+      "start": 71.8,
+      "end": 72.1,
+      "max_gain_db": 3.0,
+      "before_local_rms_dbfs": -24.873
+    },
+    {
+      "start": 72.5,
+      "end": 72.7,
+      "max_gain_db": 3.0,
+      "before_local_rms_dbfs": -28.2
+    },
+    {
+      "start": 80.2,
+      "end": 80.4,
+      "max_gain_db": 3.0,
+      "before_local_rms_dbfs": -23.554
+    },
+    {
+      "start": 83.5,
+      "end": 83.9,
+      "max_gain_db": 3.0,
+      "before_local_rms_dbfs": -23.398
+    },
+    {
+      "start": 87.3,
+      "end": 87.6,
+      "max_gain_db": 3.0,
+      "before_local_rms_dbfs": -23.343
+    },
+    {
+      "start": 92.7,
+      "end": 93.0,
+      "max_gain_db": 3.0,
+      "before_local_rms_dbfs": -23.166
+    }
+  ],
+  "changed_seconds": 6.299002267573696,
+  "all_other_pcm_identical_to_original": true,
+  "new_clipping_in_modified_regions": 0,
+  "global_normalization": false,
+  "compression": false,
+  "breath_attenuation": false,
+  "new_api_requests": 0,
+  "listening_review": "pending",
+  "sentence_edge_checks_passed": 23,
+  "detected_non_speech_and_padding_unchanged": true
+}

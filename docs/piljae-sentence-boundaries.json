@@ -1,0 +1,190 @@
+{
+  "source_sha256": "3f62ff17d0a0c11d9607638605f41cd6d6e7b39755982407d7df9ab0112b02de",
+  "status": "ASR estimated boundaries; 23 sentences matched to original text order; conservative edge padding; not listening verified",
+  "sentences": [
+    {
+      "id": "S01",
+      "text": "심방세동, 약보다 시술을 먼저 하면 더 좋을까요?",
+      "start": 0.0,
+      "end": 3.38,
+      "first_word_end": 0.92,
+      "last_word_start": 2.92
+    },
+    {
+      "id": "S02",
+      "text": "이번 연구는 일주일 넘게 이어지는 지속성 심방세동을 다뤘습니다.",
+      "start": 4.14,
+      "end": 7.64,
+      "first_word_end": 4.4,
+      "last_word_start": 7.2
+    },
+    {
+      "id": "S03",
+      "text": "피에프에이는 짧은 전기 펄스로 목표 조직을 치료하는 시술입니다.",
+      "start": 8.24,
+      "end": 11.74,
+      "first_word_end": 8.92,
+      "last_word_start": 11.2
+    },
+    {
+      "id": "S04",
+      "text": "이 연구에서는 폐정맥 주변과 좌심방 뒤쪽 벽을 치료했습니다.",
+      "start": 12.48,
+      "end": 16.88,
+      "first_word_end": 12.94,
+      "last_word_start": 16.32
+    },
+    {
+      "id": "S05",
+      "text": "항부정맥제를 본격적으로 쓰기 전인 환자 삼백십 명을 무작위로 비교했습니다.",
+      "start": 17.6,
+      "end": 21.82,
+      "first_word_end": 18.46,
+      "last_word_start": 21.16
+    },
+    {
+      "id": "S06",
+      "text": "이백칠 명은 피에프에이에, 백삼 명은 약물 치료에 배정했습니다.",
+      "start": 21.82,
+      "end": 26.62,
+      "first_word_end": 23.12,
+      "last_word_start": 26.02
+    },
+    {
+      "id": "S07",
+      "text": "삽입형 모니터로 심장 리듬을 추적하고, 일 년 뒤 결과를 비교했습니다.",
+      "start": 27.18,
+      "end": 31.8,
+      "first_word_end": 27.72,
+      "last_word_start": 31.26
+    },
+    {
+      "id": "S08",
+      "text": "치료 성공 추정치는 피에프에이 오십육 퍼센트, 약물 삼십 퍼센트였습니다.",
+      "start": 32.34,
+      "end": 37.2,
+      "first_word_end": 32.88,
+      "last_word_start": 36.5
+    },
+    {
+      "id": "S09",
+      "text": "약 이십육 퍼센트포인트 차이로, 피에프에이가 더 높았습니다!",
+      "start": 37.2,
+      "end": 41.06,
+      "first_word_end": 37.78,
+      "last_word_start": 40.54
+    },
+    {
+      "id": "S10",
+      "text": "그런데 여기서 말하는 성공은, 완치를 뜻하지 않습니다.",
+      "start": 41.82,
+      "end": 45.58,
+      "first_word_end": 42.36,
+      "last_word_start": 44.82
+    },
+    {
+      "id": "S11",
+      "text": "초기 치료가 성공했는지, 또 구십 일 이후 기준에 해당하는 부정맥이 재발했는지를 봤습니다.",
+      "start": 45.88,
+      "end": 51.3,
+      "first_word_end": 46.42,
+      "last_word_start": 50.62
+    },
+    {
+      "id": "S12",
+      "text": "추가 시술과 약물 사용 조건까지 함께 따진 복합 기준입니다!",
+      "start": 51.3,
+      "end": 55.32,
+      "first_word_end": 51.8,
+      "last_word_start": 54.78
+    },
+    {
+      "id": "S13",
+      "text": "그렇다면 모두 시술부터 하면 될까요?",
+      "start": 55.84,
+      "end": 57.88,
+      "first_word_end": 56.3,
+      "last_word_start": 57.5
+    },
+    {
+      "id": "S14",
+      "text": "안전성도 살펴봐야 합니다.",
+      "start": 58.42,
+      "end": 59.9,
+      "first_word_end": 59.04,
+      "last_word_start": 59.56
+    },
+    {
+      "id": "S15",
+      "text": "안전성 분석 대상 이백오십칠 명 중, 열세 명에게서 주요 기기나 시술 관련 중대한 이상사건이 발생했습니다!",
+      "start": 59.9,
+      "end": 67.36,
+      "first_word_end": 60.54,
+      "last_word_start": 66.74
+    },
+    {
+      "id": "S16",
+      "text": "그중 뇌졸중은 여섯 명이었습니다.",
+      "start": 67.98,
+      "end": 70.44,
+      "first_word_end": 68.44,
+      "last_word_start": 69.02
+    },
+    {
+      "id": "S17",
+      "text": "이 사건들로 연구가 잠시 중단됐습니다.",
+      "start": 70.44,
+      "end": 72.98,
+      "first_word_end": 70.76,
+      "last_word_start": 72.04
+    },
+    {
+      "id": "S18",
+      "text": "이후 연구진은 환자 선정 기준과 시술 전 검사를 강화했습니다.",
+      "start": 72.98,
+      "end": 77.24,
+      "first_word_end": 73.74,
+      "last_word_start": 76.54
+    },
+    {
+      "id": "S19",
+      "text": "항응고 관리도 강화한 뒤, 연구를 다시 시작했습니다.",
+      "start": 78.0,
+      "end": 80.9,
+      "first_word_end": 78.52,
+      "last_word_start": 80.32
+    },
+    {
+      "id": "S20",
+      "text": "다만 이런 변경만으로 위험이 해결됐다고 단정할 수는 없습니다!",
+      "start": 81.46,
+      "end": 84.54,
+      "first_word_end": 81.92,
+      "last_word_start": 84.34
+    },
+    {
+      "id": "S21",
+      "text": "일 년간의 효과에서는 피에프에이가 앞섰습니다.",
+      "start": 85.5,
+      "end": 87.84,
+      "first_word_end": 86.12,
+      "last_word_start": 87.3
+    },
+    {
+      "id": "S22",
+      "text": "첫 치료로 고려할 근거가 생긴 거죠.",
+      "start": 87.84,
+      "end": 90.06,
+      "first_word_end": 88.34,
+      "last_word_start": 89.84
+    },
+    {
+      "id": "S23",
+      "text": "하지만 누구에게 먼저 시행할지는, 효과와 위험을 함께 판단해야 합니다.",
+      "start": 90.66,
+      "end": 94.78,
+      "first_word_end": 91.14,
+      "last_word_start": 94.54
+    }
+  ]
+}

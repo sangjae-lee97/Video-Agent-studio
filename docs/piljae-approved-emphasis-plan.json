@@ -1,0 +1,171 @@
+[
+  {
+    "source_lines": [
+      1,
+      1
+    ],
+    "role": "질문과 호기심",
+    "intended_focus_not_spoken_instruction": "약보다 시술을 먼저",
+    "prompt": {
+      "emotion_type": "smart",
+      "previous_text": "",
+      "next_text": "이번 연구는 일주일 넘게 이어지는 지속성 심방세동을 다뤘습니다.\n피에프에이는 짧은 전기 펄스로 목표 조직을 치료하는 시술입니다."
+    }
+  },
+  {
+    "source_lines": [
+      2,
+      5
+    ],
+    "role": "연구 배경과 대상",
+    "intended_focus_not_spoken_instruction": "지속성 심방세동 / 삼백십 명",
+    "prompt": {
+      "emotion_type": "preset",
+      "emotion_preset": "normal",
+      "emotion_intensity": 0.8
+    }
+  },
+  {
+    "source_lines": [
+      6,
+      6
+    ],
+    "role": "비교 대상 양쪽을 동등하게 강조",
+    "intended_focus_not_spoken_instruction": "이백칠 명 / 백삼 명",
+    "prompt": {
+      "emotion_type": "preset",
+      "emotion_preset": "toneup",
+      "emotion_intensity": 0.55
+    }
+  },
+  {
+    "source_lines": [
+      7,
+      7
+    ],
+    "role": "평가 방법",
+    "intended_focus_not_spoken_instruction": "일 년 뒤",
+    "prompt": {
+      "emotion_type": "preset",
+      "emotion_preset": "normal",
+      "emotion_intensity": 0.8
+    }
+  },
+  {
+    "source_lines": [
+      8,
+      9
+    ],
+    "role": "효과 수치 비교를 가볍게 강조",
+    "intended_focus_not_spoken_instruction": "오십육 퍼센트 / 삼십 퍼센트 / 이십육 퍼센트포인트",
+    "prompt": {
+      "emotion_type": "preset",
+      "emotion_preset": "toneup",
+      "emotion_intensity": 0.6
+    }
+  },
+  {
+    "source_lines": [
+      10,
+      10
+    ],
+    "role": "핵심 오해 정정을 독립 문장으로 명료하게",
+    "intended_focus_not_spoken_instruction": "완치를 뜻하지 않습니다",
+    "prompt": {
+      "emotion_type": "preset",
+      "emotion_preset": "normal",
+      "emotion_intensity": 1.0
+    }
+  },
+  {
+    "source_lines": [
+      11,
+      12
+    ],
+    "role": "효과 기준 설명",
+    "intended_focus_not_spoken_instruction": "복합 기준",
+    "prompt": {
+      "emotion_type": "preset",
+      "emotion_preset": "normal",
+      "emotion_intensity": 0.8
+    }
+  },
+  {
+    "source_lines": [
+      13,
+      13
+    ],
+    "role": "효과에서 안전성으로 질문 전환",
+    "intended_focus_not_spoken_instruction": "안전성도 살펴봐야 합니다",
+    "prompt": {
+      "emotion_type": "smart",
+      "previous_text": "초기 치료가 성공했는지, 또 구십 일 이후 기준에 해당하는 부정맥이 재발했는지를 봤습니다.\n추가 시술과 약물 사용 조건까지 함께 따진 복합 기준입니다!",
+      "next_text": "안전성 분석 대상 이백오십칠 명 중, 열세 명에게서 주요 기기나 시술 관련 중대한 이상사건이 발생했습니다!\n그중 뇌졸중은 여섯 명이었습니다. 이 사건들로 연구가 잠시 중단됐습니다."
+    }
+  },
+  {
+    "source_lines": [
+      14,
+      15
+    ],
+    "role": "위험은 차분하게, 지나치게 가라앉는 연기 완화",
+    "intended_focus_not_spoken_instruction": "중대한 이상사건 / 뇌졸중 / 연구가 잠시 중단",
+    "prompt": {
+      "emotion_type": "preset",
+      "emotion_preset": "tonedown",
+      "emotion_intensity": 0.25
+    }
+  },
+  {
+    "source_lines": [
+      16,
+      17
+    ],
+    "role": "대응 조치 설명",
+    "intended_focus_not_spoken_instruction": "선정 기준 / 검사 / 항응고 관리",
+    "prompt": {
+      "emotion_type": "preset",
+      "emotion_preset": "normal",
+      "emotion_intensity": 0.8
+    }
+  },
+  {
+    "source_lines": [
+      18,
+      18
+    ],
+    "role": "불확실성 경고를 독립 문장으로 명료하게",
+    "intended_focus_not_spoken_instruction": "단정할 수는 없습니다",
+    "prompt": {
+      "emotion_type": "preset",
+      "emotion_preset": "normal",
+      "emotion_intensity": 1.0
+    }
+  },
+  {
+    "source_lines": [
+      19,
+      19
+    ],
+    "role": "효과의 의미를 절제해서 전달",
+    "intended_focus_not_spoken_instruction": "첫 치료로 고려할 근거",
+    "prompt": {
+      "emotion_type": "preset",
+      "emotion_preset": "toneup",
+      "emotion_intensity": 0.35
+    }
+  },
+  {
+    "source_lines": [
+      20,
+      20
+    ],
+    "role": "효과와 위험을 함께 보는 결론",
+    "intended_focus_not_spoken_instruction": "효과와 위험을 함께 판단",
+    "prompt": {
+      "emotion_type": "preset",
+      "emotion_preset": "normal",
+      "emotion_intensity": 1.0
+    }
+  }
+]

@@ -1,0 +1,166 @@
+{
+  "project": "pfa-pilot",
+  "scene_ids": "v3 F01–F09",
+  "prompt_file": "projects/pfa-pilot/FLOW_PROMPT_REVIEW.md",
+  "timeline_file": "projects/pfa-pilot/production-plan.json",
+  "current_scene": "F09",
+  "waiting_for": "사용자 본편 검토",
+  "next_action": "30:70 완성본에 대한 사용자 피드백을 반영한다.",
+  "scenes": [
+    {
+      "id": "F01",
+      "status": "reviewed_candidate",
+      "input_filename": "F05_1080p.mp4",
+      "source_asset": "projects/pfa-pilot/media/flow/F01-6cbe653d-1080p.mp4",
+      "sha256": "6cbe653d7fadbb8306d3c25d2d6fdddfa09cefcab9a71a03f39c00200fefd1da",
+      "review": "적갈색 심장과 동등한 두 갈래가 보인다. 컷은 19·33프레임(0.792·1.375초). 첫 샷의 절단 범위가 변한다. 도입 후보로 사용 가능."
+    },
+    {
+      "id": "F02",
+      "status": "accepted_1080p",
+      "revised_preview": {
+        "source_asset": "projects/pfa-pilot/media/flow/F02-27f8fe45-720p.mp4",
+        "sha256": "22f708ac112ac1be1f0b50690bffd4eeb6abbae2fe3568de3554da6bf4916b35",
+        "review": "1280×720, 24fps, 96프레임. 마지막 샷의 가는 선이 고정 눈금을 지난다. 검은 선과 어두운 받침대 사이 대비가 낮고 눈금의 기간은 원본에 쓰여 있지 않다. 사용자 채택 전."
+      },
+      "labeled_preview": {
+        "source_asset": "projects/pfa-pilot/media/flow/F02-70722258-720p.mp4",
+        "sha256": "d12f5b0826ba4e40f48c964fa600e34e134d3e5a8258b41ade4417c16429b0f3",
+        "review": "70722258과 직전 27f8fe45 모두 720p·24fps·96프레임, 표시 시각 간격 일정. 새 버전은 0.792초에 근접 하드컷, 금빛 파동이 1.04초 무렵 켜지고 1.38초 무렵 사라진 뒤 1.542초에 7일 눈금으로 컷. 직전은 접근하며 파동이 이어지고 1.583초에 눈금으로 컷. 약 1프레임 컷 시각 차이보다 전환 직전 동작의 차이가 크다.",
+        "user_feedback": "7일 눈금이 하나라 시간의 척도가 읽히지 않는다."
+      },
+      "latest_review": {
+        "source_asset": "projects/pfa-pilot/media/flow/F02-4ca482e9-720p.mp4",
+        "finding": "7일 눈금이 전체 눈금자 길이의 약 60%에 위치한다. 사용자 의도는 마지막 눈금이 7일이고 선 끝만 넘어가는 것.",
+        "edit_preview": "projects/pfa-pilot/renders/F02-week-threshold-review.mp4",
+        "edit_preview_1080p": "projects/pfa-pilot/renders/F02-week-threshold-review-1080p.mp4",
+        "edit_preview_1080p_source": "첫 38프레임은 27f8fe45 720p 소스를 확대했고 시간선 58프레임은 1920×1080에서 직접 그렸다."
+      },
+      "updated_edit": {
+        "source_asset": "projects/pfa-pilot/media/flow/F02-27f8fe45-flow-1080p.mp4",
+        "source_sha256": "85863e470947a21607673b5882d70ad4dd65ca50fcf323150a5afc72733f9e09",
+        "render": "projects/pfa-pilot/renders/F02-7days-flow-1080p.mp4",
+        "render_sha256": "c995d19cd304dda8364db2daa75837c9b73bb4ee077503b7cfa625957bdc229f",
+        "review": "1920×1080, 24fps, 4초 무음. 디코딩 픽셀 해시 대조로 사용자 제공 Flow 업스케일 첫 38프레임과 기존 1080p 편집본 시간선 58프레임 일치 확인."
+      },
+      "initial_candidate": {
+        "input_filename": "F02_1080p.mp4",
+        "source_asset": "projects/pfa-pilot/media/flow/F02-d10a3653-1080p.mp4",
+        "sha256": "d10a36537e9c25d1c672475c92b52f42f7a8b1b6895c0c11a73c5aaccbfacc4f",
+        "review": "이전 후보는 약 0.42초 심방 테두리와 별개로 약 0.67–0.79초에 심실 표면에 파동이 나타났다. 1.125초에 와이드로 전환하고 기간선 끝이 말렸다."
+      },
+      "source_asset": "projects/pfa-pilot/renders/F02-7days-flow-1080p.mp4",
+      "sha256": "c995d19cd304dda8364db2daa75837c9b73bb4ee077503b7cfa625957bdc229f",
+      "approval": "사용자가 Flow 업스케일 교체본을 F02로 확정",
+      "review": "1920×1080, 24fps, 4초 무음. 디코딩 픽셀 해시 대조로 사용자 제공 Flow 업스케일 첫 38프레임과 기존 1080p 편집본 시간선 58프레임 일치 확인."
+    },
+    {
+      "id": "F03",
+      "status": "accepted_1080p",
+      "usable": "파일럿 F01 앞 두 샷. 후벽은 시험본에서 도식 사용.",
+      "prompt_status": "revised_prompt_delivered",
+      "candidate_720p": {
+        "source_asset": "projects/pfa-pilot/media/flow/F03-44a227c2-720p.mp4",
+        "sha256": "ba15aaf761a53e97b4f0c94baf7a0db9d041a86e1bd9a64c5cc8f557442ca26f",
+        "review_frame": "projects/pfa-pilot/renders/F03-44a227c2-labels-frame191.png",
+        "cut_frames": [
+          31,
+          98
+        ],
+        "review": "192프레임/24fps, 8초. 두 글자 표기는 맞음. 폐정맥 주변 끝점은 오른쪽 위 입구 안쪽, 좌심방 후벽 끝점은 오른쪽 아래 입구 안쪽으로 잘못 표시. 후벽 채색은 중앙에 보인다. 라벨 시작 약 4.38/6.17초, 문구 완성 약 4.71/6.42초. 첫 컷은 카테터 방향은 유지되지만 입구와의 관계가 달라 보이고, 둘째 컷은 정면 설명으로 넘어가며 카테터가 사라짐.",
+        "status": "reviewed_needs_label_correction",
+        "issued_prompt": "Create an 8-second landscape 16:9 medical teaching animation at 1280×720. Use three shots with hard cuts.\n\nShow one adult left atrium on a charcoal plinth. Its front wall is already cut away, revealing four open pulmonary-vein entrances, one pair on each side of the posterior wall. The muscle is deep brick red, the cut edges warm pink, and the catheter silver. Keep the same cutaway, orientation and soft upper-left light throughout. Frame only the atrium. The charcoal background fills the frame.\n\n0.00–1.40 s — Look through the cutaway. One flower-shaped catheter tip rests beside a vein entrance. Track gently along the cut edge toward the tip. Cut during the approach.\n\n1.40–4.15 s — Match to a close view of the same tip with the same opening still visible. Show a brief amber pulse of light in the small patch of tissue beside the electrode. The light fades locally while the camera continues its slow move along the rim until the cut. Keep the vein open. No sparks or charring.\n\n4.15–8.00 s — Cut to a wider interior view with all four openings visible. Thin amber contours draw onto the tissue around the openings. A fine leader connects the rim of one opening to the Korean label “폐정맥 주변”. At 5.97 s, a soft rose-gold highlight spreads across the central wall between the two pairs. Anchor a second leader to this patch and label it “좌심방 후벽”. Set both labels in crisp ivory Korean type against charcoal, clear of the anatomy. Keep all four openings visible and both leaders attached as the camera drifts gently through the final frame.\n\nNo subtitles, caption bars, logos, speech or music."
+      },
+      "background_review": {
+        "source_asset": "projects/pfa-pilot/media/flow/F03-0240a1b3-flow-1080p.mp4",
+        "sha256": "bbf5e9264c977445fa816465afc3f843b7b3745a727f04375df98876398d376e",
+        "preview": "projects/pfa-pilot/renders/F03-0240a1b3-background-review-1080p.mp4",
+        "review": "세 샷의 밝은 회색 배경을 파일럿용 차콜로 맞추고 라벨 대비를 보정했다. 1920×1080, 24fps, 190프레임 디코딩. 마지막 넓은 샷에는 계획의 네 입구와 달리 여섯 개의 어두운 개구가 보인다. 배경 비교용, 채택 전."
+      },
+      "four_opening_review": {
+        "source_asset": "projects/pfa-pilot/media/flow/F03-e5fffb7a-720p.mp4",
+        "sha256": "5c7259dd1863b4f4676fda04d31830780c3922e11c42de9c8a1ad16103707922",
+        "frame": "projects/pfa-pilot/renders/F03-e5fffb7a-labels-frame191.png",
+        "review": "720p, 24fps, 192프레임. 좌우 두 입구씩 보이고 배경은 어둡다. 원형 외곽과 대칭 배치로 단면이 원판처럼 보인다. 폐정맥 주변 지시점은 오른쪽 위 내강, 좌심방 후벽 지시점은 오른쪽 아래 입구 가장자리다. 중앙 후벽 점은 라벨선과 분리돼 있다. 채택 전."
+      },
+      "edited_candidate": {
+        "source": "projects/pfa-pilot/renders/F03-0240a1b3-background-review-1080p.mp4",
+        "source_frames": "0–97",
+        "render": "projects/pfa-pilot/renders/F03-pfa-targets-1080p.mp4",
+        "render_sha256": "fd47edbb6e1be359a9199246cc34b589dc8fd397d9bbffb340e7219eef706be8",
+        "voice_preview": "projects/pfa-pilot/renders/F03-pfa-targets-narration-1080p.mp4",
+        "voice_preview_sha256": "3119c06b449054d44258841c86023581eae17ecf8f8a9be6cc2817662e155859",
+        "review": "1920×1080, 24fps, 192프레임. 프레임 98 도식 시작, 100 폐정맥 주변, 144 좌심방 후벽. 양 버전 192개 영상 프레임 해시 일치. 승인 WAV 원본 7.750–15.750초와 확인본 음성 상관 0.99996."
+      },
+      "relabeled_candidate": {
+        "source": "projects/pfa-pilot/media/flow/F03-44a227c2-720p.mp4",
+        "silent_edit": "projects/pfa-pilot/renders/F03-44a227c2-relabel-1080p.mp4",
+        "sha256": "648cbc7560b52ac79925401828264738a31e2768cf6c5bba5df8dddcb878db8f",
+        "voice_preview": "projects/pfa-pilot/renders/F03-44a227c2-relabel-narration-1080p.mp4",
+        "review": "44a227c2 원본의 컷·펄스·채색을 유지하고 마지막 샷의 글자와 지시선만 수정. 720p 원본을 1080p로 확대. 192프레임·24fps·8초, 두 버전 화면 전체 해시 일치, 끝점 표본 검토."
+      },
+      "native_relabeled_candidate": {
+        "source_asset": "projects/pfa-pilot/media/flow/F03-44a227c2-flow-1080p.mp4",
+        "source_sha256": "a9640530e247b17404b051ce3cd5f6dc05c2ff1be3e9b182c343f29d75b2258c",
+        "silent_edit": "projects/pfa-pilot/renders/F03-44a227c2-flow1080-relabel.mp4",
+        "sha256": "8cca5214e1821f6bf69d6e72c26c6b5486deb67ddf67cd1490e1804ed32c88f2",
+        "voice_preview": "projects/pfa-pilot/renders/F03-44a227c2-flow1080-relabel-narration.mp4",
+        "verification_frame": "projects/pfa-pilot/renders/F03-44a227c2-flow1080-relabel-frame191.png",
+        "review": "사용자 제공 Flow 1920×1080 테이크 190프레임. 컷 31·98 일치. 마지막 화면 2프레임 연장. 양 버전 24fps·192프레임, 전체 영상 해시 비교 일치. 상단 끝점 (1008,465) 입구 테두리, 하단 (710,584) 중앙 후벽. 등장부터 마지막 프레임까지 좌표·색 검사, 6개 시점 이미지 확인."
+      },
+      "pilot_partial_source": "projects/pfa-pilot/media/flow/F01-take01.mp4",
+      "approval": "사용자가 44a227c2 Flow 1080p 라벨 수정본을 F03으로 확정",
+      "source_asset": "projects/pfa-pilot/renders/F03-44a227c2-flow1080-relabel.mp4",
+      "sha256": "8cca5214e1821f6bf69d6e72c26c6b5486deb67ddf67cd1490e1804ed32c88f2"
+    },
+    {
+      "id": "F04",
+      "status": "rendered_pending_user_review",
+      "existing_material": "Flow 테이크는 참고 이력. cee63766은 640×360, 24fps, 144프레임. F03 연결과 구도 참고.",
+      "production_brief": "production-plan.json · M02",
+      "source_asset": "projects/pfa-pilot/renders/F04-assignment-1080p.mp4",
+      "sha256": "f28c3f17064bd98cf4808412f46b009cecef2a07d205d26cf4e83f5349f993b5",
+      "review": "영상·음성 각 8.875초. 1920×1080, 24fps, 213프레임 전부 디코딩. F03 마지막과 첫 프레임 RGB 평균 절대차 1.42/255. 승인 WAV 15.625–24.500초와 디코딩 음성 상관 0.99998. 8개 시점 표본에서 질문 1개, 공통 입구와 좌우 인원 표기, 오른쪽 약물 라벨 옆 알약 확인. 전체 310명은 클립 2.375초, 세 인원수 동시 표시는 3.167초부터다."
+    },
+    {
+      "id": "F05",
+      "status": "accepted_1080p",
+      "source_asset": "projects/pfa-pilot/media/flow/F05-faf62b0d-1080p.mp4",
+      "sha256": "4d1c5093a275c852e41f9be076eb66c87904c1e98046e278ec7bfeb74a9593aa",
+      "approval": "사용자 채택 faf62b0d",
+      "review": "1920×1080·24fps, 143프레임, 컷 27·64프레임. 전체 디코딩 및 비교본의 하단 흰 띠 검사 완료.",
+      "edit_status": "본편 합성 대기"
+    },
+    {
+      "id": "F06",
+      "status": "rendered_in_master",
+      "production_brief": "M06"
+    },
+    {
+      "id": "F07",
+      "status": "rendered_in_master",
+      "production_brief": "0f8e1484 원본 70–141프레임의 갈림점 → M07 안전성 그래픽",
+      "source_asset": "projects/pfa-pilot/media/flow/F07-0f8e1484-1080p.mp4",
+      "edited_asset": "projects/pfa-pilot/renders/F07-treatment-choice-1080p.mp4",
+      "review": "F07의 반복 카테터 컷을 미사용 Flow 테이크 0f8e1484의 치료 선택 갈림점으로 교체했다. 직전 본편과 전체 디코딩 해시를 대조해 1266~1337번(0부터 계산) 72프레임만 변경되고 나머지 2,151프레임과 AAC 음성 데이터가 일치함을 확인했다."
+    },
+    {
+      "id": "F08",
+      "status": "rendered_in_master",
+      "production_brief": "M10–M11"
+    },
+    {
+      "id": "F09",
+      "status": "rendered_in_master",
+      "production_brief": "본편 85.750–92.610초 전용 3샷 상담 엔딩",
+      "input_frame": "projects/pfa-pilot/renders/F09-start-85.708.png",
+      "source_asset": "projects/pfa-pilot/media/flow/F09-874d16d5-1080p.mp4",
+      "source_sha256": "8ae37d84a59a3cf94e0ccd264cb09d7b97f219a86138905f63e2d50d60d53874",
+      "corrected_asset": "projects/pfa-pilot/renders/F09-consultation-original-reprint-1080p.mp4",
+      "corrected_sha256": "7a57d76f081b614cd12b8495864d23af89912ef2303e1a7f7149a64e3e314cf2",
+      "review": "원본 874d16d5의 원래 제목과 실물 종이의 여백·색·질감을 사용했다. 본문 전체를 같은 종이 샘플에서 다시 조판해 두 문구, 손과 그림자를 합성했다. 세 모니터는 승인 그래프, 소스 0~6.860초 사용. 원본 F09의 제목·테두리를 살리고 원본 여백의 질감과 실제 조명을 이용해 본문 두 열을 다시 합성했다. 직전 판과 자막 영역 2,223프레임 및 모니터 영역을 대조했고 AAC 데이터가 일치한다. 마지막 컷의 시작·손짓·끝 표본을 확인했다."
+    }
+  ],
+  "master": "projects/pfa-pilot/renders/AVANT-GUARD-unique-cuts-1080p.mp4",
+  "thumbnail": "projects/pfa-pilot/renders/AVANT-GUARD-thumbnail.jpg"
+}

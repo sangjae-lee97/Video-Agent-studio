@@ -1,0 +1,629 @@
+{
+  "version": 1,
+  "project": {
+    "id": "pfa-pilot",
+    "title": "심방세동, 약보다 시술을 먼저? — AVANT GUARD 제작 시험",
+    "aspect_ratio": "16:9",
+    "duration_seconds": 95.18,
+    "timing_status": "draft",
+    "flow_attempt_budget": null,
+    "style": "새 시안: charcoal #111111, warm grey model, white labels, red emphasis; 기존 영상 색상 추출값 아님",
+    "audio_path": "outputs/typecast-piljae-pfa-full-1.0x/auto-level-v1/narration_leveled.wav",
+    "audio_sha256": "954fecd7ad7543c52749580169eb23a0996566c372b7d3ba8121ddaa029e344a",
+    "audio_choice": "사용자가 청취 승인한 1.0배속을 이번 시험에 재사용; 향후 기본 1.05배속 변경 아님",
+    "timing_note": "총 길이는 WAV 실측. 내부 장면 경계는 편집 배분 초안이며 발화·자막 정렬 전이다. 문자 수 기반 정확한 타임스탬프를 주장하지 않는다.",
+    "pilot_range_seconds": [
+      0,
+      29
+    ],
+    "generation_note": "Flow 8초 1클립 제안. 실제 UI 모델·길이·크레딧 확인 전 미생성, 재시도 예산 미정."
+  },
+  "sources": [
+    {
+      "id": "S1",
+      "title": "AVANT GUARD — NEJM 논문 초록(PubMed)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42041224/",
+      "checked_on": "2026-11-19",
+      "access_scope": "논문 초록 직접 확인. NEJM 본문은 403으로 미열람."
+    },
+    {
+      "id": "S2",
+      "title": "연구 수행기관의 AVANT GUARD 설계·안전성 설명",
+      "url": "https://consultqd.clevelandclinic.org/pulsed-field-ablation-for-initial-treatment-of-persistent-af",
+      "checked_on": "2026-11-19",
+      "access_scope": "연구 책임자 발언을 포함한 기관 설명 직접 확인. 독립적 평가 자료는 아님."
+    },
+    {
+      "id": "S3",
+      "title": "Pulsed Field Ablation — Cleveland Clinic 환자 설명",
+      "url": "https://my.clevelandclinic.org/health/treatments/pulsed-field-ablation",
+      "checked_on": "2026-11-19",
+      "access_scope": "공식 의료기관의 시술 원리 설명 확인."
+    }
+  ],
+  "claims": [
+    {
+      "id": "C1",
+      "summary": "지속성 심방세동: 7일 초과 지속. 첫 치료 전략 비교 연구.",
+      "source_ids": [
+        "S2"
+      ],
+      "verification": "checked",
+      "limits": "연구 대상 범위를 모든 심방세동으로 확대하지 않는다."
+    },
+    {
+      "id": "C2",
+      "summary": "PFA는 전기 펄스를 이용한다. 이번 연구는 폐정맥 격리와 좌심방 후벽 치료를 포함했다.",
+      "source_ids": [
+        "S2",
+        "S3"
+      ],
+      "verification": "checked",
+      "limits": "Flow는 개념 모형이며 실제 시술 기록·정확한 전기장 분포가 아니다."
+    },
+    {
+      "id": "C3",
+      "summary": "무작위 배정 310명: PFA 207명, 약물 103명. 삽입형 모니터로 추적.",
+      "source_ids": [
+        "S1"
+      ],
+      "verification": "checked",
+      "limits": "안전성 분석용 추가 PFA군과 구분한다."
+    },
+    {
+      "id": "C4",
+      "summary": "12개월 치료 성공 Kaplan–Meier 추정치 56% 대 약 30%; 차이는 약 26%포인트.",
+      "source_ids": [
+        "S1"
+      ],
+      "verification": "checked",
+      "limits": "완치율이나 단순 성공 인원/배정 인원 비율로 표시하지 않는다."
+    },
+    {
+      "id": "C5",
+      "summary": "초기·장기 성공, 90일 이후 재발 및 추가 치료 조건을 묶은 평가다.",
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "verification": "checked",
+      "limits": "약물 제한은 군별로 다름. 모든 환자가 약 없이 지냈다는 뜻이 아니다."
+    },
+    {
+      "id": "C6",
+      "summary": "합산 PFA 안전성 분석 257명 중 13명(5.1%)에서 주요 평가 사건 발생.",
+      "source_ids": [
+        "S1"
+      ],
+      "verification": "checked",
+      "limits": "효과 비교군 207명이나 전체 무작위 310명을 분모로 쓰지 않는다."
+    },
+    {
+      "id": "C7",
+      "summary": "뇌졸중 관련 사건 6건 후 일시 중단; 대상 선정·혈전 검사·항응고 관리를 강화했다.",
+      "source_ids": [
+        "S2"
+      ],
+      "verification": "checked",
+      "limits": "변경 후 관찰된 무사건을 위험 해소의 인과 증명으로 표현하지 않는다."
+    },
+    {
+      "id": "C8",
+      "summary": "이번 연구는 초기 PFA 효과의 근거이며 개인별 효과·위험을 함께 판단해야 한다.",
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "verification": "checked",
+      "limits": "연구 해석에 해당하며 모든 환자에게 시술 우선을 권고하는 주장이 아니다."
+    }
+  ],
+  "narration": [
+    {
+      "id": "N01",
+      "text": "심방세동, 약보다 시술을 먼저 하면 더 좋을까요?",
+      "role": "질문",
+      "claim_ids": [
+        "C1"
+      ]
+    },
+    {
+      "id": "N02",
+      "text": "이번 연구는 일주일 넘게 이어지는 지속성 심방세동을 다뤘습니다.",
+      "role": "대상",
+      "claim_ids": [
+        "C1"
+      ]
+    },
+    {
+      "id": "N03",
+      "text": "피에프에이는 짧은 전기 펄스로 목표 조직을 치료하는 시술입니다.",
+      "role": "원리",
+      "claim_ids": [
+        "C2"
+      ]
+    },
+    {
+      "id": "N04",
+      "text": "이 연구에서는 폐정맥 주변과 좌심방 뒤쪽 벽을 치료했습니다.",
+      "role": "치료 부위",
+      "claim_ids": [
+        "C2"
+      ]
+    },
+    {
+      "id": "N05",
+      "text": "항부정맥제를 본격적으로 쓰기 전인 환자 삼백십 명을 무작위로 비교했습니다.",
+      "role": "연구 설계",
+      "claim_ids": [
+        "C3"
+      ]
+    },
+    {
+      "id": "N06",
+      "text": "이백칠 명은 피에프에이에, 백삼 명은 약물 치료에 배정했습니다.",
+      "role": "배정",
+      "claim_ids": [
+        "C3"
+      ]
+    },
+    {
+      "id": "N07",
+      "text": "삽입형 모니터로 심장 리듬을 추적하고, 일 년 뒤 결과를 비교했습니다.",
+      "role": "추적",
+      "claim_ids": [
+        "C3"
+      ]
+    },
+    {
+      "id": "N08",
+      "text": "치료 성공 추정치는 피에프에이 오십육 퍼센트, 약물 삼십 퍼센트였습니다.",
+      "role": "핵심 결과",
+      "claim_ids": [
+        "C4"
+      ]
+    },
+    {
+      "id": "N09",
+      "text": "약 이십육 퍼센트포인트 차이로, 피에프에이가 더 높았습니다!",
+      "role": "차이",
+      "claim_ids": [
+        "C4"
+      ]
+    },
+    {
+      "id": "N10",
+      "text": "그런데 여기서 말하는 성공은, 완치를 뜻하지 않습니다.",
+      "role": "의미 정정",
+      "claim_ids": [
+        "C5"
+      ]
+    },
+    {
+      "id": "N11",
+      "text": "초기 치료가 성공했는지, 또 구십 일 이후 기준에 해당하는 부정맥이 재발했는지를 봤습니다.",
+      "role": "평가 기준",
+      "claim_ids": [
+        "C5"
+      ]
+    },
+    {
+      "id": "N12",
+      "text": "추가 시술과 약물 사용 조건까지 함께 따진 복합 기준입니다!",
+      "role": "평가 기준",
+      "claim_ids": [
+        "C5"
+      ]
+    },
+    {
+      "id": "N13",
+      "text": "그렇다면 모두 시술부터 하면 될까요? 안전성도 살펴봐야 합니다.",
+      "role": "위험 전환",
+      "claim_ids": [
+        "C6"
+      ]
+    },
+    {
+      "id": "N14",
+      "text": "안전성 분석 대상 이백오십칠 명 중, 열세 명에게서 주요 기기나 시술 관련 중대한 이상사건이 발생했습니다!",
+      "role": "안전성",
+      "claim_ids": [
+        "C6"
+      ]
+    },
+    {
+      "id": "N15",
+      "text": "그중 뇌졸중은 여섯 명이었습니다. 이 사건들로 연구가 잠시 중단됐습니다.",
+      "role": "사건과 중단",
+      "claim_ids": [
+        "C7"
+      ]
+    },
+    {
+      "id": "N16",
+      "text": "이후 연구진은 환자 선정 기준과 시술 전 검사를 강화했습니다.",
+      "role": "대응",
+      "claim_ids": [
+        "C7"
+      ]
+    },
+    {
+      "id": "N17",
+      "text": "항응고 관리도 강화한 뒤, 연구를 다시 시작했습니다.",
+      "role": "대응",
+      "claim_ids": [
+        "C7"
+      ]
+    },
+    {
+      "id": "N18",
+      "text": "다만 이런 변경만으로 위험이 해결됐다고 단정할 수는 없습니다!",
+      "role": "불확실성",
+      "claim_ids": [
+        "C7"
+      ]
+    },
+    {
+      "id": "N19",
+      "text": "일 년간의 효과에서는 피에프에이가 앞섰습니다. 첫 치료로 고려할 근거가 생긴 거죠.",
+      "role": "해석",
+      "claim_ids": [
+        "C8"
+      ]
+    },
+    {
+      "id": "N20",
+      "text": "하지만 누구에게 먼저 시행할지는, 효과와 위험을 함께 판단해야 합니다.",
+      "role": "결론",
+      "claim_ids": [
+        "C8"
+      ]
+    }
+  ],
+  "media": [
+    {
+      "id": "M01",
+      "kind": "motion",
+      "duration_seconds": 9,
+      "purpose": "약부터? 시술부터? 질문과 대상 한정",
+      "narration_ids": [
+        "N01",
+        "N02"
+      ],
+      "status": "planned",
+      "reason": "정확한 숫자·관계·조건을 수정 가능한 움직이는 도식으로 설명",
+      "start_state": "갈림길 두 선택지",
+      "end_state": "7일 기준선과 질문",
+      "review": "기간 도식은 설명용. 심장 박동 그래프를 실제 측정값처럼 쓰지 않는다.",
+      "action": "두 선택지가 교차 진입하고 질문부호가 사이를 가른다. 이어 7일 눈금이 왼쪽에서 오른쪽으로 펼쳐지며 7일 이후 영역에 강조선이 이어진다. 4.5초에 구도 전환.",
+      "labels": "약물 / PFA / 지속성 심방세동 · 7일 초과"
+    },
+    {
+      "id": "F01",
+      "kind": "flow",
+      "duration_seconds": 8,
+      "purpose": "PFA의 표적 부위를 단면으로 공개",
+      "narration_ids": [
+        "N03",
+        "N04"
+      ],
+      "status": "planned",
+      "reason": "단면 깊이와 표적 부위 공개에 입체 생성 장면 사용",
+      "start_state": "분리 전 좌심방 개념 모형",
+      "end_state": "후벽 표적 강조",
+      "review": "모형의 폐정맥 연결·후벽 방향, 실제 3샷, 불꽃/화상 오표현, 표적과 강조선 부착, 하단 자막 공간 검토",
+      "subject": "One simplified adult human left-atrial anatomical teaching model, a hollow matte warm-grey chamber with four short pulmonary-vein tubes entering the posterior wall, two on each side. A removable anterior wall panel exposes the cavity. One slim catheter with a five-spline flower-shaped tip rests near a pulmonary-vein opening inside the cavity. The posterior wall stays at the back of the cavity. Use this exact model throughout this clip; it is an educational schematic, not surgical footage.",
+      "look": "Clean technical cutaway, neutral charcoal background (#111111), matte warm-grey surfaces, soft overhead studio lighting, red surface-bound teaching highlights. This is a new draft palette, not a sampled reference-video color. Orthographic-like three-quarter anterior view into the exposed cavity, posterior wall visible behind it.",
+      "shots": [
+        {
+          "start": 0,
+          "end": 2.5,
+          "event": "The anterior teaching panel slides to the left, exposing the left-atrial cavity and posterior pulmonary-vein openings. This is a model section reveal, not a surgical incision.",
+          "camera": "A short rightward lateral track reveals depth as the panel separates; chamber fills the central upper two-thirds."
+        },
+        {
+          "start": 2.5,
+          "end": 5,
+          "event": "Hard cut to the catheter tip already positioned near one vein opening. A compact red pulse highlight briefly expands from the tip into the adjacent tissue and repeats softly. This is a symbolic electric-field highlight, with no lightning, fire, smoke or charring.",
+          "camera": "A single gentle push-in toward the tip and adjacent wall; keep the vein opening visible for orientation."
+        },
+        {
+          "start": 5,
+          "end": 8,
+          "event": "Hard cut to the original exposed-cavity view. A thin red outline draws around the posterior-wall target area between the pulmonary-vein openings, revealing the second region treated in this study. The outline completes by 7.7s and its tracing glow continues to 8.0s.",
+          "camera": "A single upward tilt follows the posterior-wall outline, with the anterior panel still displaced to the left."
+        }
+      ],
+      "graphics": "Shot 2 uses one red localized pulse overlay anchored to the tissue near the catheter tip. Shot 3 uses one red posterior-wall outline fixed to the curved tissue in correct perspective. They indicate treatment targets, not measured field strength or confirmed success. No invented dimensions or numerical values.",
+      "continuity": "Preserve the chamber shape, four tube attachments, five-spline catheter tip, posterior-wall location, material and light direction across all three shots. Only the explicitly removable teaching panel separates; internal openings do not multiply or change position. The camera may move as specified. No whole-heart transformation or instant cure demonstration.",
+      "audio": "Subtle soft clicks at cuts and low nonverbal pulse ticks, no realistic electrical arcing. No speech or music; production may mute this track."
+    },
+    {
+      "id": "M02",
+      "kind": "motion",
+      "duration_seconds": 12,
+      "purpose": "310명의 비교 구조",
+      "narration_ids": [
+        "N05",
+        "N06"
+      ],
+      "status": "planned",
+      "reason": "정확한 숫자·관계·조건을 수정 가능한 움직이는 도식으로 설명",
+      "start_state": "중심 모집단",
+      "end_state": "두 연구군",
+      "review": "무작위 배정 애니메이션은 실제 개인 정보가 아닌 개념도. 310개 사람 아이콘 나열 금지.",
+      "action": "310 카운터가 표시된 중심 노드에서 두 갈래 경로가 그려진다. 노드가 좌우로 분리되며 207과 103 카운터가 완료된다. 6초 지점에서 두 군의 이름과 비율을 가까이 보여주는 구도로 전환한다.",
+      "labels": "무작위 배정 310명 / PFA 207 / 약물 103"
+    },
+    {
+      "id": "M03",
+      "kind": "motion",
+      "duration_seconds": 5,
+      "purpose": "관찰 기간을 눈으로 연결",
+      "narration_ids": [
+        "N07"
+      ],
+      "status": "planned",
+      "reason": "정확한 숫자·관계·조건을 수정 가능한 움직이는 도식으로 설명",
+      "start_state": "모니터 아이콘",
+      "end_state": "12개월 도착",
+      "review": "점선은 데이터 전달 개념. 심전도처럼 임의 파형을 환자 실측으로 표시하지 않는다.",
+      "action": "작은 모니터 아이콘에서 점선이 타임라인으로 이어지고 추적 커서가 12개월에 도착한다. 타임라인 눈금이 순서대로 강조된다.",
+      "labels": "삽입형 심장 모니터 / 12개월 추적"
+    },
+    {
+      "id": "M04",
+      "kind": "motion",
+      "duration_seconds": 8,
+      "purpose": "효과 차이를 드러내기",
+      "narration_ids": [
+        "N08",
+        "N09"
+      ],
+      "status": "planned",
+      "reason": "정확한 숫자·관계·조건을 수정 가능한 움직이는 도식으로 설명",
+      "start_state": "같은 기준축",
+      "end_state": "두 막대와 차이 괄호",
+      "review": "세로축 잘라 차이를 과장하지 않는다. 56%를 128/207 단순 계산값이나 완치율로 쓰지 않는다.",
+      "action": "0~100% 공통 축 위 두 막대가 0에서 56과 30으로 자란다. 값 도착 후 두 끝점 사이 괄호가 그려지며 약 26%p로 전환한다. 끝 3초에는 추정치라는 설명이 펼쳐진다.",
+      "labels": "1년 치료 성공 추정치 / PFA 56% / 약물 약 30% / 약 26%p 차이 / Kaplan–Meier"
+    },
+    {
+      "id": "M05",
+      "kind": "motion",
+      "duration_seconds": 6,
+      "purpose": "높은 숫자의 의미를 바로잡기",
+      "narration_ids": [
+        "N10"
+      ],
+      "status": "planned",
+      "reason": "정확한 숫자·관계·조건을 수정 가능한 움직이는 도식으로 설명",
+      "start_state": "효과 수치 카드",
+      "end_state": "평가 기준으로 이어지는 카드",
+      "review": "완치라는 말에 승리 도장이나 환자 회복 연기를 붙이지 않는다.",
+      "action": "앞 장면의 56% 막대가 작은 카드로 이동한다. 치료 성공이라는 제목 아래 완치와 같지 않다는 부등호가 그려지고 조건 카드가 펼쳐진다.",
+      "labels": "치료 성공 ≠ 완치"
+    },
+    {
+      "id": "M06",
+      "kind": "motion",
+      "duration_seconds": 10,
+      "purpose": "복합 기준을 단계로 설명",
+      "narration_ids": [
+        "N11",
+        "N12"
+      ],
+      "status": "planned",
+      "reason": "정확한 숫자·관계·조건을 수정 가능한 움직이는 도식으로 설명",
+      "start_state": "빈 시간축",
+      "end_state": "조건을 갖춘 평가도",
+      "review": "약물군과 PFA군의 약물 조건이 동일하다는 그림 금지. 체크 표시는 모든 참여자가 통과했다는 의미로 쓰지 않는다.",
+      "action": "0~90일과 90일~12개월 구간을 순차로 펼친다. 커서가 이동하며 초기 성공, 기준에 해당하는 재발, 추가 치료 조건 세 항목을 차례로 강조한다. 5초에 시간축에서 조건 목록으로 전환한다.",
+      "labels": "초기 성공 / 90일 이후 재발 기준 / 추가 시술·약물 조건 / 군별 기준 차이"
+    },
+    {
+      "id": "M07",
+      "kind": "motion",
+      "duration_seconds": 5,
+      "purpose": "효과에서 위험으로 질문 전환",
+      "narration_ids": [
+        "N13"
+      ],
+      "status": "planned",
+      "reason": "정확한 숫자·관계·조건을 수정 가능한 움직이는 도식으로 설명",
+      "start_state": "효과 카드",
+      "end_state": "효과와 안전성 병렬",
+      "review": "효과%와 이상사건%를 빼거나 같은 지표로 합치지 않는다.",
+      "action": "효과 막대 카드가 왼쪽으로 축소되고 오른쪽에 안전성 카드가 진입한다. 두 카드 사이 이동선이 그려지며 질문 문구가 등장한다.",
+      "labels": "그렇다면 모두 시술부터? / 안전성도 함께"
+    },
+    {
+      "id": "M08",
+      "kind": "motion",
+      "duration_seconds": 7,
+      "purpose": "안전성 분모를 분명히",
+      "narration_ids": [
+        "N14"
+      ],
+      "status": "planned",
+      "reason": "정확한 숫자·관계·조건을 수정 가능한 움직이는 도식으로 설명",
+      "start_state": "안전성 모집단",
+      "end_state": "13/257 강조",
+      "review": "207명 배정군과 다름을 표시. 전체 중대한 이상사건 비율과 혼동하지 않기.",
+      "action": "별도 안전성 모집단 제목이 펼쳐지고 257의 분모가 먼저 나타난다. 그 안에서 13과 5.1%가 순서대로 강조되며 주요 기기·시술 관련이라는 범위가 밑줄로 연결된다.",
+      "labels": "PFA 안전성 분석 257명 / 13명 · 5.1% / 기기·시술 관련 중대한 이상사건"
+    },
+    {
+      "id": "M09",
+      "kind": "motion",
+      "duration_seconds": 5,
+      "purpose": "사건이 연구 중단으로 이어짐",
+      "narration_ids": [
+        "N15"
+      ],
+      "status": "planned",
+      "reason": "정확한 숫자·관계·조건을 수정 가능한 움직이는 도식으로 설명",
+      "start_state": "안전성 결과",
+      "end_state": "중단 지점",
+      "review": "극적인 뇌 손상 재연이나 확인 안 된 혈전 이동 원인 영상 금지. 멈춘 선만 오래 홀드하지 않는다.",
+      "action": "앞 카드에서 뇌졸중 6명 라벨이 분리된다. 연구 진행선이 일시 중단 지점에서 멈추고 이어 화면이 안전 점검 항목으로 전환되기 시작한다.",
+      "labels": "뇌졸중 6명 / 연구 일시 중단"
+    },
+    {
+      "id": "M10",
+      "kind": "motion",
+      "duration_seconds": 9,
+      "purpose": "보완 조치를 순서대로 공개",
+      "narration_ids": [
+        "N16",
+        "N17"
+      ],
+      "status": "planned",
+      "reason": "정확한 숫자·관계·조건을 수정 가능한 움직이는 도식으로 설명",
+      "start_state": "중단 지점",
+      "end_state": "보완 조치와 재개",
+      "review": "구체 약물 용량·시술 지시를 새로 만들지 않는다. 수정만으로 위험 0%가 된다는 초록 배지 금지.",
+      "action": "대상 선정, 시술 전 검사, 항응고 관리의 세 항목이 3초 간격으로 진입하고 연결선이 그려진다. 마지막 연결선이 연구 재개 노드로 이어진다.",
+      "labels": "선정 기준 강화 / 시술 전 검사 / 항응고 관리 / 연구 재개"
+    },
+    {
+      "id": "M11",
+      "kind": "motion",
+      "duration_seconds": 5,
+      "purpose": "보완과 안전성 확정은 구분",
+      "narration_ids": [
+        "N18"
+      ],
+      "status": "planned",
+      "reason": "정확한 숫자·관계·조건을 수정 가능한 움직이는 도식으로 설명",
+      "start_state": "연구 재개",
+      "end_state": "남아 있는 불확실성",
+      "review": "무사건 관찰만으로 인과를 확정하지 않는다.",
+      "action": "재개 노드가 오른쪽으로 이동하지만 불확실성 괄호는 남아 화면을 가로지른다. 위험 해소를 확정할 수 없다는 한 문장이 단계적으로 강조된다.",
+      "labels": "보완 ≠ 위험 해결의 증명"
+    },
+    {
+      "id": "M12",
+      "kind": "motion",
+      "duration_seconds": 6.18,
+      "purpose": "처음 질문에 조건 있는 답",
+      "narration_ids": [
+        "N19",
+        "N20"
+      ],
+      "status": "planned",
+      "reason": "정확한 숫자·관계·조건을 수정 가능한 움직이는 도식으로 설명",
+      "start_state": "약물과 PFA 두 선택지",
+      "end_state": "조건 있는 결론",
+      "review": "모든 환자에게 시술 우선을 권고하는 결말 금지.",
+      "action": "첫 장면의 두 선택지 구도로 돌아간다. 효과 근거 카드와 위험 고려 카드가 나란히 정렬되고 두 선이 개인별 판단으로 연결된다. 마지막 0.3초에는 새 정보를 시작하지 않는다.",
+      "labels": "효과의 근거 / 위험 고려 / 누구에게 먼저 할지는 함께 판단"
+    }
+  ],
+  "edits": [
+    {
+      "id": "E01",
+      "media_id": "M01",
+      "start": 0,
+      "end": 9,
+      "source_in": 0,
+      "source_out": 9
+    },
+    {
+      "id": "E02",
+      "media_id": "F01",
+      "start": 9,
+      "end": 17,
+      "source_in": 0,
+      "source_out": 8
+    },
+    {
+      "id": "E03",
+      "media_id": "M02",
+      "start": 17,
+      "end": 29,
+      "source_in": 0,
+      "source_out": 12
+    },
+    {
+      "id": "E04",
+      "media_id": "M03",
+      "start": 29,
+      "end": 34,
+      "source_in": 0,
+      "source_out": 5
+    },
+    {
+      "id": "E05",
+      "media_id": "M04",
+      "start": 34,
+      "end": 42,
+      "source_in": 0,
+      "source_out": 8
+    },
+    {
+      "id": "E06",
+      "media_id": "M05",
+      "start": 42,
+      "end": 48,
+      "source_in": 0,
+      "source_out": 6
+    },
+    {
+      "id": "E07",
+      "media_id": "M06",
+      "start": 48,
+      "end": 58,
+      "source_in": 0,
+      "source_out": 10
+    },
+    {
+      "id": "E08",
+      "media_id": "M07",
+      "start": 58,
+      "end": 63,
+      "source_in": 0,
+      "source_out": 5
+    },
+    {
+      "id": "E09",
+      "media_id": "M08",
+      "start": 63,
+      "end": 70,
+      "source_in": 0,
+      "source_out": 7
+    },
+    {
+      "id": "E10",
+      "media_id": "M09",
+      "start": 70,
+      "end": 75,
+      "source_in": 0,
+      "source_out": 5
+    },
+    {
+      "id": "E11",
+      "media_id": "M10",
+      "start": 75,
+      "end": 84,
+      "source_in": 0,
+      "source_out": 9
+    },
+    {
+      "id": "E12",
+      "media_id": "M11",
+      "start": 84,
+      "end": 89,
+      "source_in": 0,
+      "source_out": 5
+    },
+    {
+      "id": "E13",
+      "media_id": "M12",
+      "start": 89,
+      "end": 95.18,
+      "source_in": 0,
+      "source_out": 6.18
+    }
+  ]
+}

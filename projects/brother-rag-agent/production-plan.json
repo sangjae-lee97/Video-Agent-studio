@@ -1,0 +1,314 @@
+{
+  "version": 1,
+  "project": {
+    "id": "brother-rag-agent",
+    "title": "Brother 기술지원 RAG Agent — 맞는 모델의 근거로 답하기",
+    "aspect_ratio": "16:9",
+    "duration_seconds": 125.097,
+    "audio_path": "projects/brother-rag-agent/narration/local-short-window-v1/narration_balanced.wav",
+    "audio_source_sha256": "a4a41cfa25f1ac0fca179d29af39cb29c4a5fe4ee89bab8872ff03d5a4f3c424",
+    "audio_balanced_sha256": "44a68d24edae792a11d513e5f3bce451ac87eaa17153f89d2671681d4a32059e",
+    "timing_source": "narration/local-short-window-v1/sentence-boundaries.json",
+    "style": "밝은 기술지원 데스크(Flow) + 짙은 남색 모션그래픽, 강조색: 앰버=적용 범위·경고, 청록=검색, 초록=정답, 빨강=오답"
+  },
+  "sources": [
+    {
+      "id": "G",
+      "url": "https://app.notion.com/p/teamsparta/3-Brother-RAG-Agent-41d2dc3ef51480288d60e850c0d02beb"
+    }
+  ],
+  "narration": [
+    {
+      "id": "N01",
+      "text": "이름이 숫자 하나만 다른 프린터 두 대. AI는 내 모델의 답을, 정확히 골라낼 수 있을까요?",
+      "speech_start": 0.0,
+      "speech_end": 5.22
+    },
+    {
+      "id": "N02",
+      "text": "이번 프로젝트는 브라더 프린터와 복합기 열 개 모델의 기술지원 질문에, 공식 문서로 답하는 래그 에이전트를 만드는 겁니다.",
+      "speech_start": 5.94,
+      "speech_end": 12.62
+    },
+    {
+      "id": "N03",
+      "text": "서너 명이 한 팀으로, 닷새, 사십 시간 안에요.",
+      "speech_start": 13.16,
+      "speech_end": 15.36
+    },
+    {
+      "id": "N04",
+      "text": "자료는 한국어 공식 피디에프 두 권. 잉크젯 다섯 모델의 사백육십육 쪽, 흑백 레이저 다섯 모델의 육백삼십삼 쪽입니다.",
+      "speech_start": 16.1,
+      "speech_end": 23.5
+    },
+    {
+      "id": "N05",
+      "text": "그런데, 함정이 있습니다.",
+      "speech_start": 24.4,
+      "speech_end": 25.56
+    },
+    {
+      "id": "N06",
+      "text": "한 권에 다섯 모델이 함께 들어 있어서, 표의 한 행이나 각주 하나가 일부 모델에만 해당할 수 있습니다. 다른 모델의 절차를 그대로 가져오면, 그럴듯한 오답이 됩니다.",
+      "speech_start": 26.38,
+      "speech_end": 35.68
+    },
+    {
+      "id": "N07",
+      "text": "그래서 조각마다 문서 아이디와 페이지, 그리고 적용 모델을 붙입니다. 어떤 주장이든 원문과 모델까지 거슬러 올라갈 수 있게요.",
+      "speech_start": 36.36,
+      "speech_end": 44.72
+    },
+    {
+      "id": "N08",
+      "text": "검색기는 세 가지를 같은 조건에서 비교합니다. 의미로 찾는 벡터 검색, 여기에 키워드 검색 비엠이십오를 더한 하이브리드, 그리고 후보를 다시 채점하는 리랭킹입니다.",
+      "speech_start": 45.38,
+      "speech_end": 54.42
+    },
+    {
+      "id": "N09",
+      "text": "답변에는 실제로 찾아낸 문서의 제목과 페이지를 함께 인용합니다.",
+      "speech_start": 54.42,
+      "speech_end": 58.58
+    },
+    {
+      "id": "N10",
+      "text": "그럼, 자료에 없는 걸 물어보면요?",
+      "speech_start": 59.12,
+      "speech_end": 61.4
+    },
+    {
+      "id": "N11",
+      "text": "답을 지어내지 않고, 확인할 수 없다고 말하는 게 정답입니다!",
+      "speech_start": 62.08,
+      "speech_end": 65.66
+    },
+    {
+      "id": "N12",
+      "text": "반대로 답이 있는 질문을 거부하면, 오답으로 처리됩니다. 근거 부족과 검색 오류, 생성 오류도 따로 구분해서 보여 줘야 하죠.",
+      "speech_start": 66.34,
+      "speech_end": 73.48
+    },
+    {
+      "id": "N13",
+      "text": "속도와 비용도 챙깁니다. 캐싱이나 쿼리 리라이트를 하나 이상 적용하고, 같은 근거와 프롬프트로 생성 모델 두 개 이상을 비교합니다.",
+      "speech_start": 74.08,
+      "speech_end": 81.84
+    },
+    {
+      "id": "N14",
+      "text": "개발에는 공개 질문 열 개를 쓰고, 최종 평가는 교수자의 비공개 백 문항으로 합니다.",
+      "speech_start": 81.84,
+      "speech_end": 87.54
+    },
+    {
+      "id": "N15",
+      "text": "기능과 사양, 설정과 오류 해결이 각각 스물다섯, 유사 제품 구분과 복합 조건이 각각 스물, 그리고 근거 없는 질문이 열 개입니다.",
+      "speech_start": 88.12,
+      "speech_end": 96.12
+    },
+    {
+      "id": "N16",
+      "text": "백 점 가운데, 답변 정확도와 근거 신뢰성이 사십오 점입니다!",
+      "speech_start": 96.8,
+      "speech_end": 100.62
+    },
+    {
+      "id": "N17",
+      "text": "답변 정확도가 영 점 사 미만이면, 속도와 비용 효율 십오 점은 통째로 영 점이 됩니다.",
+      "speech_start": 101.32,
+      "speech_end": 106.38
+    },
+    {
+      "id": "N18",
+      "text": "문항당 제한 시간은 육십 초. 실패와 타임아웃도 지우지 않고 그대로 기록합니다.",
+      "speech_start": 107.2,
+      "speech_end": 112.34
+    },
+    {
+      "id": "N19",
+      "text": "마지막 날에는 다른 팀원이 같은 버전으로 다시 실행해서, 결과가 재현되는지 확인합니다.",
+      "speech_start": 112.92,
+      "speech_end": 118.24
+    },
+    {
+      "id": "N20",
+      "text": "숫자 하나 다른 두 프린터. 좋은 에이전트는 맞는 모델의 근거로 답하고, 근거가 없으면 모른다고 말합니다.",
+      "speech_start": 118.96,
+      "speech_end": 124.72
+    }
+  ],
+  "edits": [
+    {
+      "id": "F01",
+      "kind": "flow",
+      "start": 0.0,
+      "end": 5.94,
+      "narration": "N01",
+      "direction": "숫자 하나 다른 두 프린터와 라벨, 다른 숫자 강조",
+      "flow_request": "flow-request.md#F01",
+      "generate_seconds": 8
+    },
+    {
+      "id": "F02",
+      "kind": "flow",
+      "start": 5.94,
+      "end": 13.0,
+      "narration": "N02",
+      "direction": "F01 5.94초 화면에서 이어지는 상승 카메라 → 팀 테이블·두 권 매뉴얼·10장의 모델 카드 (프레임 · 편집점 프레임 업로드)",
+      "flow_request": "flow-request.md#F02",
+      "generate_seconds": 8
+    },
+    {
+      "id": "M01",
+      "kind": "motion",
+      "start": 13.0,
+      "end": 16.0,
+      "narration": "N03",
+      "direction": "3~4명 · 5일(40시간) · 10개 모델 칩"
+    },
+    {
+      "id": "M02",
+      "kind": "motion",
+      "start": 16.0,
+      "end": 24.2,
+      "narration": "N04",
+      "direction": "두 권의 PDF: 잉크젯 5모델 466쪽 / 흑백 레이저 5모델 633쪽"
+    },
+    {
+      "id": "F03",
+      "kind": "flow",
+      "start": 24.2,
+      "end": 32.2,
+      "narration": "N05–N06",
+      "direction": "매뉴얼 사양표 A~E열, 한 행이 일부 열에만 적용, 각주 * 연결",
+      "flow_request": "flow-request.md#F03",
+      "generate_seconds": 8
+    },
+    {
+      "id": "M03",
+      "kind": "motion",
+      "start": 32.2,
+      "end": 36.2,
+      "narration": "N06",
+      "direction": "다른 모델 절차를 가져온 답 → 그럴듯한 오답 표시"
+    },
+    {
+      "id": "M04",
+      "kind": "motion",
+      "start": 36.2,
+      "end": 45.2,
+      "narration": "N07",
+      "direction": "청크 카드 + 메타데이터 태그 → 원문 페이지·적용 모델로 역추적 선"
+    },
+    {
+      "id": "M05",
+      "kind": "motion",
+      "start": 45.2,
+      "end": 54.42,
+      "narration": "N08",
+      "direction": "A Vector / B Hybrid(BM25+Vector) / C Re-ranking 같은 질문 비교"
+    },
+    {
+      "id": "M06",
+      "kind": "motion",
+      "start": 54.42,
+      "end": 59.0,
+      "narration": "N09",
+      "direction": "답변 카드에 문서 제목·페이지 인용 칩"
+    },
+    {
+      "id": "F04",
+      "kind": "flow",
+      "start": 59.0,
+      "end": 66.2,
+      "narration": "N10–N11",
+      "direction": "카드 목록함 서랍이 비어 있음 → NO EVIDENCE 도장",
+      "flow_request": "flow-request.md#F04",
+      "generate_seconds": 8
+    },
+    {
+      "id": "M07",
+      "kind": "motion",
+      "start": 66.2,
+      "end": 74.0,
+      "narration": "N12",
+      "direction": "근거 없음 질문 거부=정답 / 답 있는 질문 거부=오답, 상태 3종"
+    },
+    {
+      "id": "M08",
+      "kind": "motion",
+      "start": 74.0,
+      "end": 81.9,
+      "narration": "N13",
+      "direction": "캐싱 또는 쿼리 리라이트(≥1) + 같은 근거·프롬프트로 생성 모델 A/B 비교"
+    },
+    {
+      "id": "M09",
+      "kind": "motion",
+      "start": 81.9,
+      "end": 88.1,
+      "narration": "N14",
+      "direction": "공개 10문항 → 비공개 100문항"
+    },
+    {
+      "id": "M10",
+      "kind": "motion",
+      "start": 88.1,
+      "end": 96.6,
+      "narration": "N15",
+      "direction": "유형별 막대 25·25·20·20·10"
+    },
+    {
+      "id": "M11",
+      "kind": "motion",
+      "start": 96.6,
+      "end": 101.2,
+      "narration": "N16",
+      "direction": "100점 배점 막대, 45점 강조"
+    },
+    {
+      "id": "M12",
+      "kind": "motion",
+      "start": 101.2,
+      "end": 106.6,
+      "narration": "N17",
+      "direction": "Answer Accuracy 0.40 기준선 → 효율 15점이 0점"
+    },
+    {
+      "id": "F05",
+      "kind": "flow",
+      "start": 106.6,
+      "end": 112.9,
+      "narration": "N18",
+      "direction": "스톱워치 60초, 로그지에 TIMEOUT 행 기록",
+      "flow_request": "flow-request.md#F05",
+      "generate_seconds": 8
+    },
+    {
+      "id": "F06",
+      "kind": "flow",
+      "start": 112.9,
+      "end": 119.0,
+      "narration": "N19",
+      "direction": "두 노트북, 같은 버전 재실행 → 같은 결과",
+      "flow_request": "flow-request.md#F06",
+      "generate_seconds": 8
+    },
+    {
+      "id": "M13",
+      "kind": "motion",
+      "start": 119.0,
+      "end": 125.097,
+      "narration": "N20",
+      "direction": "결말: 두 프린터 아이콘, 맞는 모델 근거 ✓ / 근거 없음 → 모른다"
+    }
+  ],
+  "validation": {
+    "segments_contiguous": true,
+    "sum_equals_wav": true,
+    "flow_seconds": 40.6,
+    "flow_ratio": 0.325
+  }
+}

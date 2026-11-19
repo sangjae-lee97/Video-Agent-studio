@@ -1,0 +1,11 @@
+# 새 사용자용 최소 환경: 음성 정렬·로컬 보정·자막 합성
+# 설치: scripts/setup.ps1 (Python 3.12)
+faster-whisper==1.2.1
+ctranslate2==4.9.0
+onnxruntime==1.32.0
+soundfile==0.14.0
+numpy==2.5.5
+imageio-ffmpeg==0.6.0
+av==19.0.2
+huggingface_hub==2.4.0
+pillow

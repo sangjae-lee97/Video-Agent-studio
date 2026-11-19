@@ -1,0 +1,127 @@
+{
+  "approved_on": "2026-11-19",
+  "voice_name": "Piljae",
+  "voice_id": "tc_68257f68bc6e3c161ab5078d",
+  "model": "ssfm-v31",
+  "language": "kor",
+  "output": {
+    "audio_format": "wav",
+    "audio_tempo": 1.0,
+    "audio_pitch": 0,
+    "target_lufs": -18
+  },
+  "segment_pause_seconds": 0.18,
+  "emotion_by_role": {
+    "opening_question": {
+      "emotion_type": "smart"
+    },
+    "explanation": {
+      "emotion_type": "preset",
+      "emotion_preset": "normal",
+      "emotion_intensity": 0.8
+    },
+    "balanced_comparison": {
+      "emotion_type": "preset",
+      "emotion_preset": "toneup",
+      "emotion_intensity": 0.55
+    },
+    "key_result": {
+      "emotion_type": "preset",
+      "emotion_preset": "toneup",
+      "emotion_intensity": 0.6
+    },
+    "clarification": {
+      "emotion_type": "preset",
+      "emotion_preset": "normal",
+      "emotion_intensity": 1.0
+    },
+    "definition_details": {
+      "emotion_type": "preset",
+      "emotion_preset": "normal",
+      "emotion_intensity": 0.8
+    },
+    "safety_transition": {
+      "emotion_type": "smart"
+    },
+    "risk_or_serious_event": {
+      "emotion_type": "preset",
+      "emotion_preset": "tonedown",
+      "emotion_intensity": 0.25
+    },
+    "response_measures": {
+      "emotion_type": "preset",
+      "emotion_preset": "normal",
+      "emotion_intensity": 0.8
+    },
+    "uncertainty_limit": {
+      "emotion_type": "preset",
+      "emotion_preset": "normal",
+      "emotion_intensity": 1.0
+    },
+    "effect_interpretation": {
+      "emotion_type": "preset",
+      "emotion_preset": "toneup",
+      "emotion_intensity": 0.35
+    },
+    "balanced_conclusion": {
+      "emotion_type": "preset",
+      "emotion_preset": "normal",
+      "emotion_intensity": 1.0
+    }
+  },
+  "smart_context": "actual adjacent script text; regenerate previous_text/next_text for each new script",
+  "reference_request": "docs/piljae-approved-emphasis-request.json",
+  "notes": "2026-11-19: content-based emphasis plus local short-window gain approved. 2026-11-19 later: user changed the default synthesis tempo from 1.05x to 1.0x (1.05x sounded fast); approved pilot reference is also 1.0x. Never force 13 segments or reuse reference text/context for a new script.",
+  "postprocessing": {
+    "required": "inspect whole narration; log short-window gains, protected regions, peaks, source hashes and listening status",
+    "policy_updated_on": "2026-11-19",
+    "policy": "source-relative short speech windows; no transcript-specific or time-specific gain exceptions",
+    "script": "scripts/balance_narration_phrases.py",
+    "input": "original PCM16 narration plus source-hash-matched sentence boundaries and ASR words",
+    "global_normalization": false,
+    "compression": false,
+    "breath_attenuation": false,
+    "first_last_word_protection": false,
+    "vad_gap_padding_seconds": 0,
+    "settings": {
+      "sentence_edge_seconds": 0.2,
+      "neighbor_radius_seconds": 8.0,
+      "reference_percentile": 65,
+      "difference_allowance_db": 1.0,
+      "correction_fraction": 0.8,
+      "maximum_gain_db": 3.0,
+      "speech_probability": 0.6,
+      "ambiguous_probability": 0.2,
+      "noise_floor_below_speech_p90_db": 30.0,
+      "speech_island_fade_seconds": 0.04,
+      "changed_sample_ceiling_dbfs": -1.0
+    },
+    "status": "user_approved_method_and_pilot_reference; new scripts require per-output quality review",
+    "candidate_reference": "outputs/typecast-piljae-pfa-emphasis-1.0x-v1/local-short-window-v1/narration_balanced.wav",
+    "reference_report": "docs/piljae-emphasis-local-level-results.json",
+    "execution": "local_only",
+    "additional_postprocessing_apis": false,
+    "excluded_services": [
+      "Auphonic"
+    ],
+    "mode": "short-window",
+    "policy_document": "docs/LOCAL_AUDIO_POLICY.md",
+    "local_settings": {
+      "measurement_seconds": 0.2,
+      "gain_smoothing_seconds": 0.2,
+      "reference_exclusion_seconds": 0.3
+    },
+    "quality_gate": {
+      "automatic_acceptance": false,
+      "listening_review": "required for new outputs; current reference approved",
+      "unverified_breath_classification": "review",
+      "cross_topic_validation": "pending"
+    },
+    "reference_review": {
+      "status": "approved_by_user",
+      "date": "2026-11-19",
+      "quote": "좋아. 일단 이 방식으로 정하자."
+    }
+  },
+  "reference_emotion_plan": "docs/piljae-approved-emphasis-plan.json"
+}

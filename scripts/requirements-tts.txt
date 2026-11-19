@@ -1,0 +1,5 @@
+# Install the CUDA wheels first from the official PyTorch index:
+# python -m pip install torch==2.9.1 torchaudio==2.9.1 --index-url https://download.pytorch.org/whl/cu128
+torch==2.9.1+cu128
+torchaudio==2.9.1+cu128
+qwen-tts==0.1.1

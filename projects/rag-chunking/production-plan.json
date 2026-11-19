@@ -1,0 +1,356 @@
+{
+  "version": 1,
+  "project": {
+    "id": "rag-chunking",
+    "title": "RAG 청킹과 검색 품질 — 근거를 끊지 않는 칼질",
+    "aspect_ratio": "16:9",
+    "duration_seconds": 160.78,
+    "audio_path": "projects/rag-chunking/narration/local-short-window-v2/narration_balanced.wav",
+    "audio_source_sha256": "825b7643b6c89c92dfc706f304b44a39c32c75de30e093c24f52fedd082dee6a",
+    "timing_source": "narration/local-short-window-v2/sentence-boundaries.json",
+    "style": "어두운 호두나무 책상·크림 종이·황동 재단기, 남청 도서관 배경. 청록=AI 검색, 빨강=절단·오류, 호박=겹침, 초록=장점. 모션그래픽도 같은 색 의미 유지.",
+    "flow_seconds": 48.0,
+    "flow_share": 0.2985
+  },
+  "sources": [
+    {
+      "id": "S1",
+      "url": "https://blog.naver.com/dev-dog/224482975222"
+    },
+    {
+      "id": "S2",
+      "url": "https://blog.naver.com/dev-dog/224482981220"
+    },
+    {
+      "id": "S3",
+      "url": "https://blog.naver.com/dev-dog/224482995446"
+    }
+  ],
+  "narration": [
+    {
+      "id": "N01",
+      "text": "문서에는 분명히 정답이 있는데, AI는 왜 그걸 못 찾을까요?",
+      "speech_start": 0.0,
+      "speech_end": 4.02
+    },
+    {
+      "id": "N02",
+      "text": "래그는 AI가 문서를 검색해서, 찾은 근거로 답하게 만드는 방식입니다.",
+      "speech_start": 4.78,
+      "speech_end": 8.78
+    },
+    {
+      "id": "N03",
+      "text": "그런데 긴 문서를 통째로 다루면, 주제가 섞여 필요한 부분을 가려내기 어렵습니다.",
+      "speech_start": 9.52,
+      "speech_end": 14.16
+    },
+    {
+      "id": "N04",
+      "text": "그래서 문서를 검색할 수 있는 조각, 청크로 나눕니다. 이걸 청킹이라고 부릅니다.",
+      "speech_start": 15.1,
+      "speech_end": 19.52
+    },
+    {
+      "id": "N05",
+      "text": "자른 조각은 다시 임베딩해서 벡터로 바꿉니다. 자르는 일과 숫자로 바꾸는 일은, 서로 다른 작업이죠.",
+      "speech_start": 20.36,
+      "speech_end": 25.78
+    },
+    {
+      "id": "N06",
+      "text": "진짜 문제는, 어디서 자르느냐입니다.",
+      "speech_start": 26.38,
+      "speech_end": 28.98
+    },
+    {
+      "id": "N07",
+      "text": "가장 단순한 건 글자 수마다 자르는 고정 크기 방식, 다른 하나는 빈 줄마다 자르는 문단 방식입니다.",
+      "speech_start": 29.51,
+      "speech_end": 35.48
+    },
+    {
+      "id": "N08",
+      "text": "고정 크기는 예측이 쉽지만 문장 중간이 잘릴 수 있고, 문단 방식은 경계를 지키지만 조각 길이가 들쭉날쭉합니다.",
+      "speech_start": 35.78,
+      "speech_end": 43.14
+    },
+    {
+      "id": "N09",
+      "text": "강의 예시에서 육십 자씩 자르자, 정답 문구인 금요일 오후 여섯 시가 두 조각으로 갈라졌습니다. 검색 결과를 열 개까지 늘려도, 찾지 못했습니다.",
+      "speech_start": 44.0,
+      "speech_end": 52.58
+    },
+    {
+      "id": "N10",
+      "text": "그래서 쓰는 장치가 오버랩입니다. 앞 조각의 끝부분을, 다음 조각 첫머리에 조금 겹쳐 넣는 거죠.",
+      "speech_start": 53.26,
+      "speech_end": 58.8
+    },
+    {
+      "id": "N11",
+      "text": "백육십 자씩 자르고 삼십 자를 겹치면, 다음 조각은 백삼십 자 뒤에서 시작합니다.",
+      "speech_start": 59.42,
+      "speech_end": 64.5
+    },
+    {
+      "id": "N12",
+      "text": "랭체인의 재귀 분할기는 빈 줄, 줄바꿈, 공백 순서로 자를 자리를 찾습니다.",
+      "speech_start": 65.1,
+      "speech_end": 69.42
+    },
+    {
+      "id": "N13",
+      "text": "그럼, 많이 겹칠수록 좋을까요?",
+      "speech_start": 70.26,
+      "speech_end": 72.06
+    },
+    {
+      "id": "N14",
+      "text": "강의의 교육용 실험에서는 오히려 반대였습니다! 겹침을 육십 자로 늘리자 같은 문의 안내가 두 조각에 반복돼 위를 차지했고, 정답 조각은 이 위에서 삼 위로 밀렸습니다.",
+      "speech_start": 72.92,
+      "speech_end": 84.0
+    },
+    {
+      "id": "N15",
+      "text": "단어 개수로 만든 교육용 벡터라 일반 법칙은 아닙니다. 그래서 자른 방식은, 반드시 검색 결과로 확인해야 합니다.",
+      "speech_start": 84.52,
+      "speech_end": 93.32
+    },
+    {
+      "id": "N16",
+      "text": "첫 번째 잣대는 히트 앳 쓰리. 상위 세 개 안에 정답 근거가 있으면 일, 없으면 영입니다.",
+      "speech_start": 93.82,
+      "speech_end": 99.04
+    },
+    {
+      "id": "N17",
+      "text": "두 번째는 엠알알입니다. 정답이 일 위면 일, 이 위면 이분의 일, 삼 위면 삼분의 일을 주고, 질문들의 평균을 냅니다.",
+      "speech_start": 99.78,
+      "speech_end": 108.1
+    },
+    {
+      "id": "N18",
+      "text": "세 질문 모두 히트 앳 쓰리가 일이어도, 순위가 일, 이, 삼 위라면 엠알알은 약 영 점 육일일입니다.",
+      "speech_start": 108.56,
+      "speech_end": 115.72
+    },
+    {
+      "id": "N19",
+      "text": "이건 정답률 육십일 퍼센트가 아니라, 정답을 얼마나 앞에서 찾았는지 보는 점수입니다.",
+      "speech_start": 116.28,
+      "speech_end": 121.18
+    },
+    {
+      "id": "N20",
+      "text": "그런데, 근거를 찾았다고 답이 맞는 걸까요?",
+      "speech_start": 121.94,
+      "speech_end": 124.36
+    },
+    {
+      "id": "N21",
+      "text": "아닙니다. 모델이 찾은 문단을 잘못 읽거나, 없는 내용을 덧붙일 수도 있습니다.",
+      "speech_start": 125.18,
+      "speech_end": 129.86
+    },
+    {
+      "id": "N22",
+      "text": "그래서 근거는 원문 그대로, 출처와 함께 보여 줍니다. 랭체인의 다큐먼트가 본문과 출처를 함께 담는 이유죠.",
+      "speech_start": 130.6,
+      "speech_end": 136.74
+    },
+    {
+      "id": "N23",
+      "text": "근거를 확인하지 못하면, 답을 지어내지 않고 보류합니다. 이걸 홀드라고 합니다.",
+      "speech_start": 137.48,
+      "speech_end": 141.5
+    },
+    {
+      "id": "N24",
+      "text": "다만 홀드는 답이 없다는 증명이 아닙니다. 자른 방식 때문에 놓쳤을 수도 있으니까요.",
+      "speech_start": 142.26,
+      "speech_end": 146.8
+    },
+    {
+      "id": "N25",
+      "text": "템퍼러처를 낮추면 답은 일관돼지지만, 틀린 근거를 정답으로 바꿔 주진 않습니다.",
+      "speech_start": 147.18,
+      "speech_end": 151.32
+    },
+    {
+      "id": "N26",
+      "text": "문서에 정답이 있어도 못 찾는 이유는, 자른 자리에 있을 수 있습니다. 좋은 청킹은 잘게 써는 칼질이 아니라, 근거를 끊지 않는 칼질입니다.",
+      "speech_start": 152.08,
+      "speech_end": 160.32
+    }
+  ],
+  "edits": [
+    {
+      "id": "F01",
+      "kind": "flow",
+      "start": 0.0,
+      "end": 8.0,
+      "narration": "N01–N02",
+      "direction": "도입 질문, 검색 빛이 정답 줄을 지나침 → 문단 하나를 끌어올림(RAG)",
+      "flow_request": "flow-request.md#F01"
+    },
+    {
+      "id": "M01",
+      "kind": "motion",
+      "start": 8.0,
+      "end": 20.0,
+      "narration": "N02–N04",
+      "direction": "고정: F01의 끌어올린 청록 문단 카드. 변화: 질문→검색→근거→답 4단 흐름이 왼쪽부터 그려짐(8.0) → 9.52 긴 문서 한 덩어리 안에 색이 다른 주제 블록이 섞여 흐려짐 → 15.10 문서가 가로선으로 갈라져 카드 여러 장으로 분리, 카드 위 라벨 \"청크\", 상단 제목 \"청킹\". 끝에서 읽을 것: 문서 = 청크들의 묶음, 청크가 검색 단위.",
+      "flow_request": null
+    },
+    {
+      "id": "M02",
+      "kind": "motion",
+      "start": 20.0,
+      "end": 26.38,
+      "narration": "N05",
+      "direction": "고정: M01 청크 카드 줄. 변화: 20.36 각 카드가 \"임베딩\" 화살표를 지나 숫자 벡터 막대([0.12, −0.40, …] 예시 표기, 실제 값 아님 표시)로 변환 → 23.0 두 작업 상자 \"자르기\"/\"임베딩\"이 나란히, 사이에 ≠. 끝: 두 작업은 다르다.",
+      "flow_request": null
+    },
+    {
+      "id": "F02",
+      "kind": "flow",
+      "start": 26.38,
+      "end": 34.38,
+      "narration": "N06–N07",
+      "direction": "재단기 후보 절단선 → 같은 간격 절단(고정 크기) → 빈 줄 사이 절단(문단)",
+      "flow_request": "flow-request.md#F02"
+    },
+    {
+      "id": "M03",
+      "kind": "motion",
+      "start": 34.38,
+      "end": 44.0,
+      "narration": "N07–N08",
+      "direction": "고정: 좌 \"고정 크기\" / 우 \"문단\" 두 열, 같은 예시 문서. 변화: 35.78 좌 열 같은 높이 블록, 한 문장 위에 빨간 절단 표시 \"문장 중간 절단\" / 38.9 우 열 높이 다른 블록, 경계는 빈 줄에 맞음, \"길이 들쭉날쭉\". 장점(예측 쉬움 / 경계 보존)은 초록, 주의는 빨강. 끝: 두 방식의 장단점이 한 화면에 동시에 읽힘.",
+      "flow_request": null
+    },
+    {
+      "id": "F03",
+      "kind": "flow",
+      "start": 44.0,
+      "end": 52.0,
+      "narration": "N09",
+      "direction": "60 눈금 절단 → 정답 줄이 \"금요일 오\"|\"후 6시\"로 갈라짐 → 10조각 검색 실패",
+      "flow_request": "flow-request.md#F03"
+    },
+    {
+      "id": "M04",
+      "kind": "motion",
+      "start": 52.0,
+      "end": 64.5,
+      "narration": "N09–N11",
+      "direction": "고정: 하단 문자 위치 눈금(0, 130, 160, 260, 290, 420). 변화: 52.0 결과 목록 1~10, 각 행 \"✕\", 합계 \"top-10 Hit = 0\"(S2: hit=0, rank=None) → 53.26 오버랩 정의: 앞 조각 끝이 다음 조각 머리에 겹치는 띠(호박색) → 59.42 Chunk1 [0:160], Chunk2 [130:290], Chunk3 [260:420] 막대가 차례로 놓이고 겹침 130–159·260–289에 \"30자\", 시작점 사이 \"stride 130\"(62.5, \"백삼십 자 뒤\" 발화). 끝: 160−30=130.",
+      "flow_request": null
+    },
+    {
+      "id": "M05",
+      "kind": "motion",
+      "start": 64.5,
+      "end": 72.92,
+      "narration": "N12–N13",
+      "direction": "고정: 같은 예시 문서. 변화: 65.10 구분자 사다리 \"빈 줄 → 줄바꿈 → 공백 → (필요시) 문자\", 큰 조각이 위 단계부터 차례로 잘림(LangChain RecursiveCharacterTextSplitter) → 70.26 오버랩 슬라이더가 30에서 60으로 늘어나고 \"많이 겹칠수록?\" 물음. 끝: 질문이 다음 컷(F04 반전)으로 넘어감.",
+      "flow_request": null
+    },
+    {
+      "id": "F04",
+      "kind": "flow",
+      "start": 72.92,
+      "end": 80.92,
+      "narration": "N14",
+      "direction": "겹침 60 → 같은 문의 안내 두 장이 1·2번 칸 → 정답 조각 3번 칸",
+      "flow_request": "flow-request.md#F04"
+    },
+    {
+      "id": "M06",
+      "kind": "motion",
+      "start": 80.92,
+      "end": 93.82,
+      "narration": "N14–N15",
+      "direction": "고정: 순위표 2행(겹침 30 / 겹침 60), 열 1·2·3위. 변화: 80.92 겹침 30: 1위 문의, 2위 정답 / 겹침 60: 1·2위 문의(같은 내용 중복 강조), 3위 정답, \"2위 → 3위\" 화살표 (S1 STEP 11 표) → 84.52 하단 배지 \"교육용 Fixture 벡터 = 과제·마감·제출 단어 개수\" 와 \"일반 법칙 아님\" → 89.5 \"→ 검색 결과로 확인\". 끝: 반전 결과와 한계가 함께 읽힘.",
+      "flow_request": null
+    },
+    {
+      "id": "M07",
+      "kind": "motion",
+      "start": 93.82,
+      "end": 99.78,
+      "narration": "N16",
+      "direction": "고정: 1·2·3위 세 칸. 변화: 정답 카드가 3칸 안 → Hit@3 = 1 / 빈 3칸 → Hit@3 = 0. 끝: 있음 1, 없음 0.",
+      "flow_request": null
+    },
+    {
+      "id": "M08",
+      "kind": "motion",
+      "start": 99.78,
+      "end": 108.56,
+      "narration": "N17",
+      "direction": "고정: M07 세 칸. 변화: 칸 옆에 RR 값 1, 1/2, 1/3이 발화에 맞춰 나타남 → 106.5 \"질문들의 평균 = MRR\". 끝: 앞일수록 큰 점수.",
+      "flow_request": null
+    },
+    {
+      "id": "M09",
+      "kind": "motion",
+      "start": 108.56,
+      "end": 121.94,
+      "narration": "N18–N19",
+      "direction": "고정: 질문 A·B·C 3행(S2 §2.3 가상 예시 표기 필수). 변화: 각 행 Hit@3=1 체크 → 순위 1·2·3위 → RR 1.000·0.500·0.333 → (1+1/2+1/3)/3 ≈ 0.611 → 116.28 \"61% 정답률\" 위에 빨간 취소선, 대체 문구 \"정답을 얼마나 앞에서 찾았나\". 끝: MRR ≠ 정답률.",
+      "flow_request": null
+    },
+    {
+      "id": "F05",
+      "kind": "flow",
+      "start": 121.94,
+      "end": 129.94,
+      "narration": "N20–N21",
+      "direction": "체크→물음표, 답 카드의 연결선 끊김(잘못 읽음), 근거 없는 줄 추가(덧붙임)",
+      "flow_request": "flow-request.md#F05"
+    },
+    {
+      "id": "M10",
+      "kind": "motion",
+      "start": 129.94,
+      "end": 142.26,
+      "narration": "N22–N23",
+      "direction": "고정: 좌측 검색 근거 카드. 변화: 130.6 Document 상자 page_content(본문 \"과제 제출 기한은 금요일 오후 6시입니다.\") + metadata(source: 수업 공지문, page: 1) (S3 개념 5 예시) → 출력 [EVIDENCE]·[CITATION] 행 → 137.48 분기: 근거 확인 실패 경로에 [NO_EVIDENCE] → [HOLD] 도장, 생성 화살표가 끊김. 끝: 근거 있음=원문+출처 / 없음=보류.",
+      "flow_request": null
+    },
+    {
+      "id": "M11",
+      "kind": "motion",
+      "start": 142.26,
+      "end": 152.08,
+      "narration": "N24–N25",
+      "direction": "고정: M10 HOLD 도장. 변화: 142.26 HOLD 옆 \"≠ 답이 없다는 증명\", 갈라진 \"금요일 오\"|\"후 6시\" 두 조각을 새로 그린 도식으로 회상(F03 영상 재사용 아님) → 147.18 temperature 슬라이더가 낮아지며 같은 답 카드 3장이 똑같이 겹침(일관), 카드 속 틀린 근거 줄은 빨간색 그대로. 끝: 일관 ≠ 정확.",
+      "flow_request": null
+    },
+    {
+      "id": "F06",
+      "kind": "flow",
+      "start": 152.08,
+      "end": 160.08,
+      "narration": "N26",
+      "direction": "빈 줄 틈을 정확히 자름 → 정답 문단이 온전한 채 청록으로 빛남",
+      "flow_request": "flow-request.md#F06"
+    },
+    {
+      "id": "M12",
+      "kind": "motion",
+      "start": 160.08,
+      "end": 160.78,
+      "narration": "N26 여운",
+      "direction": "F06 마지막 빛나는 카드 위에 제목 \"근거를 끊지 않는 칼질\" 페이드인(새 그래픽 레이어, F06 재생 반복 아님).",
+      "flow_request": null
+    }
+  ],
+  "validation": {
+    "segments_contiguous": true,
+    "sum_equals_wav": true,
+    "export_plan_schema": "not checked (pfa 스키마와 다른 간이 형식)"
+  }
+}

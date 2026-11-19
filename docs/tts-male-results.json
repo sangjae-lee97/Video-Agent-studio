@@ -1,0 +1,58 @@
+{
+  "model": "Qwen3-TTS-12Hz-0.6B-CustomVoice",
+  "revision": "85e237c12c027371202489a0ec509ded67b5e4b5",
+  "speakers": [
+    "Ryan",
+    "Aiden",
+    "Uncle_Fu"
+  ],
+  "language": "Korean",
+  "attention": "sdpa",
+  "seed": 42,
+  "torch": "2.9.1+cu128",
+  "cuda": "12.8",
+  "gpu": "NVIDIA GeForce RTX 5060 Laptop GPU",
+  "load_seconds": 1.966,
+  "listening_review": "pending_user_review",
+  "samples": [
+    {
+      "file": "Ryan_custom.wav",
+      "speaker": "Ryan",
+      "text": "평범해 보이는 풍경에도 뜻밖의 이야기가 숨어 있습니다. 그런데 우리가 알고 있던 설명이 전부가 아니라면 어떨까요? 오늘은 익숙한 장면을 다른 시선으로 살펴봅니다. 지금부터 그 이야기를 시작하겠습니다.",
+      "sample_rate": 24000,
+      "duration_seconds": 16.64,
+      "generation_seconds": 21.369,
+      "rtf": 1.284,
+      "peak_allocated_mib": 2555.7,
+      "peak_reserved_mib": 2922.0,
+      "peak_amplitude": 0.62109375,
+      "clipped_fraction": 0.0
+    },
+    {
+      "file": "Aiden_custom.wav",
+      "speaker": "Aiden",
+      "text": "평범해 보이는 풍경에도 뜻밖의 이야기가 숨어 있습니다. 그런데 우리가 알고 있던 설명이 전부가 아니라면 어떨까요? 오늘은 익숙한 장면을 다른 시선으로 살펴봅니다. 지금부터 그 이야기를 시작하겠습니다.",
+      "sample_rate": 24000,
+      "duration_seconds": 15.6,
+      "generation_seconds": 19.089,
+      "rtf": 1.224,
+      "peak_allocated_mib": 2525.3,
+      "peak_reserved_mib": 2922.0,
+      "peak_amplitude": 0.65234375,
+      "clipped_fraction": 0.0
+    },
+    {
+      "file": "Uncle_Fu_custom.wav",
+      "speaker": "Uncle_Fu",
+      "text": "평범해 보이는 풍경에도 뜻밖의 이야기가 숨어 있습니다. 그런데 우리가 알고 있던 설명이 전부가 아니라면 어떨까요? 오늘은 익숙한 장면을 다른 시선으로 살펴봅니다. 지금부터 그 이야기를 시작하겠습니다.",
+      "sample_rate": 24000,
+      "duration_seconds": 16.8,
+      "generation_seconds": 20.705,
+      "rtf": 1.232,
+      "peak_allocated_mib": 2561.3,
+      "peak_reserved_mib": 2922.0,
+      "peak_amplitude": 0.78515625,
+      "clipped_fraction": 0.0
+    }
+  ]
+}

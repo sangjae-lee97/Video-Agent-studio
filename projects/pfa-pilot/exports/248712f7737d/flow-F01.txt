@@ -1,0 +1,23 @@
+FORMAT: 8-second video, landscape 16:9. Hard cuts between shots.
+Keep the bottom 18% of frame visually clear for subtitles added later.
+
+SUBJECT: One simplified adult human left-atrial anatomical teaching model, a hollow matte warm-grey chamber with four short pulmonary-vein tubes entering the posterior wall, two on each side. A removable anterior wall panel exposes the cavity. One slim catheter with a five-spline flower-shaped tip rests near a pulmonary-vein opening inside the cavity. The posterior wall stays at the back of the cavity. Use this exact model throughout this clip; it is an educational schematic, not surgical footage.
+
+LOOK: Clean technical cutaway, neutral charcoal background (#111111), matte warm-grey surfaces, soft overhead studio lighting, red surface-bound teaching highlights. This is a new draft palette, not a sampled reference-video color. Orthographic-like three-quarter anterior view into the exposed cavity, posterior wall visible behind it.
+
+SHOT 1 [0-2.5s]: The anterior teaching panel slides to the left, exposing the left-atrial cavity and posterior pulmonary-vein openings. This is a model section reveal, not a surgical incision.
+CAMERA: A short rightward lateral track reveals depth as the panel separates; chamber fills the central upper two-thirds.
+
+SHOT 2 [2.5-5s]: Hard cut to the catheter tip already positioned near one vein opening. A compact red pulse highlight briefly expands from the tip into the adjacent tissue and repeats softly. This is a symbolic electric-field highlight, with no lightning, fire, smoke or charring.
+CAMERA: A single gentle push-in toward the tip and adjacent wall; keep the vein opening visible for orientation.
+
+SHOT 3 [5-8s]: Hard cut to the original exposed-cavity view. A thin red outline draws around the posterior-wall target area between the pulmonary-vein openings, revealing the second region treated in this study. The outline completes by 7.7s and its tracing glow continues to 8.0s.
+CAMERA: A single upward tilt follows the posterior-wall outline, with the anterior panel still displaced to the left.
+
+RED GRAPHICS: Shot 2 uses one red localized pulse overlay anchored to the tissue near the catheter tip. Shot 3 uses one red posterior-wall outline fixed to the curved tissue in correct perspective. They indicate treatment targets, not measured field strength or confirmed success. No invented dimensions or numerical values.
+
+CONTINUITY: Preserve the chamber shape, four tube attachments, five-spline catheter tip, posterior-wall location, material and light direction across all three shots. Only the explicitly removable teaching panel separates; internal openings do not multiply or change position. The camera may move as specified. No whole-heart transformation or instant cure demonstration.
+
+EXCLUSIONS: no subtitles, no caption bar, no bottom text overlay, no burned-in captions, no karaoke-style word-by-word timing, no logos, no dissolve, no morph, no static hold, no empty ending, no background music, no speech or generated narration.
+
+AUDIO: Subtle soft clicks at cuts and low nonverbal pulse ticks, no realistic electrical arcing. No speech or music; production may mute this track.

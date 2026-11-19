@@ -1,0 +1,30 @@
+{
+  "source": "C:\\dev\\Video-Agent-studio\\outputs\\typecast-piljae-pfa-full-1.0x\\narration.wav",
+  "source_sha256": "3f62ff17d0a0c11d9607638605f41cd6d6e7b39755982407d7df9ab0112b02de",
+  "output": "C:\\dev\\Video-Agent-studio\\outputs\\typecast-piljae-pfa-full-1.0x\\middle-only-v1\\narration.wav",
+  "output_sha256": "d0af4e379dc0e6cbd8e76791015c1fc24854b56c4252801f0d9055c17056bbc8",
+  "boundaries": "C:\\dev\\Video-Agent-studio\\outputs\\typecast-piljae-pfa-full-1.0x\\middle-only-v1\\sentence-boundaries.json",
+  "boundary_status": "ASR estimated boundaries; 23 sentences matched to original text order; conservative edge padding; not listening verified",
+  "duration_seconds": 95.18,
+  "sentence_edge_protection_seconds": 0.7,
+  "vad_gap_protection_seconds": 0.16,
+  "quiet_threshold_dbfs": -22,
+  "maximum_boost_db": 3,
+  "regions": [
+    {
+      "start": 53.2,
+      "end": 53.9,
+      "max_gain_db": 2.737,
+      "before_local_rms_dbfs": -22.737
+    }
+  ],
+  "changed_seconds": 0.6999546485260771,
+  "all_other_pcm_identical_to_original": true,
+  "new_clipping_in_modified_regions": 0,
+  "global_normalization": false,
+  "compression": false,
+  "breath_attenuation": false,
+  "new_api_requests": 0,
+  "listening_review": "pending",
+  "sentence_edge_checks_passed": 23
+}

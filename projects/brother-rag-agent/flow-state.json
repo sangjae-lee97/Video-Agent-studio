@@ -1,0 +1,54 @@
+{
+  "project": "brother-rag-agent",
+  "updated": "2026-11-19",
+  "current_step": "완성본 전달, 사용자 검토 대기",
+  "scenes": {
+    "F01": {
+      "status": "adopted",
+      "received": "Two_printers_on_office_desk_1a81fafd_1.mp4 (r2)",
+      "adopted_take": "r2",
+      "upscaled_1080p": true,
+      "issue": "3.85–5.0s 앰버 밑줄이 DW 아래(숫자 0/5가 아님)",
+      "edit": "src 0–71 + 119–189 (143f); shot2 3.3s+ 글자 변형 사용 금지; 오른쪽 5 강조 없음 → M13 보완"
+    },
+    "F02": {
+      "status": "adopted",
+      "received": "Camera_filming_printers_and_table_7af4d023_1080p.mp4 (F01-r2 확장)",
+      "adopted_take": "r3",
+      "upscaled_1080p": true,
+      "issue": "시작 프레임이 F01 첫 장면, 0.29s 정지 후 하드컷 — 연결 안 됨",
+      "method": "프레임 · 이어 붙이기(F01-r2 확장), 대안 시작 프레임 media/flow/F01-frame-end.png",
+      "edit": "src 1–169 (0번은 F01 마지막과 동일 프레임)"
+    },
+    "F03": {
+      "status": "adopted",
+      "received": "Product_manual_table_with_highli_3_b489834a_1080p.mp4 (r2)",
+      "adopted_take": "r2",
+      "upscaled_1080p": true,
+      "issue": "머리글 A B / B C D E 중복 B, 의미 없는 영문 글자",
+      "edit": "src 0–155 + 마지막 프레임 2프레임 유지(158f). 약 6.65초부터 강조가 A~E 전체 행으로 변형·화면 모핑 → 사용 안 함. 0–2.46초 배경 프린터 로고 영역 흐림 처리"
+    },
+    "F04": {
+      "status": "adopted",
+      "received": "Cabinet_drawer_opens_and_stamps_4_9f04b1f0_1080p.mp4",
+      "adopted_take": "Cabinet_drawer_opens_and_stamps_4_9f04b1f0_1080p.mp4",
+      "upscaled_1080p": true
+    },
+    "F05": {
+      "status": "adopted",
+      "received": "Stopwatch_timing_paper_log_sheet_5_dfb5c7bc_1080p.mp4",
+      "adopted_take": "Stopwatch_timing_paper_log_sheet_5_dfb5c7bc_1080p.mp4",
+      "upscaled_1080p": true,
+      "note": "배경 프린터 외형이 F01과 다름(흐린 배경, 채택 유지)",
+      "edit": "src 0–151, 4.5초 이후 배경 프린터 hp 로고 delogo. 한계: 로그 번호 칸 사선(취소선처럼 보임)·깨진 영문 — 크레딧 부족으로 재생성 안 함(사용자 결정)"
+    },
+    "F06": {
+      "status": "adopted",
+      "received": "Hands_pressing_laptop_enter_keys_6_082d4214_1080p.mp4",
+      "adopted_take": "Hands_pressing_laptop_enter_keys_6_082d4214_1080p.mp4",
+      "upscaled_1080p": true
+    }
+  },
+  "waiting_for": "사용자 시청 검토",
+  "next_action": "수정 요청 반영"
+}

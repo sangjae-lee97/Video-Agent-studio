@@ -1,0 +1,26 @@
+{
+  "plan_hash": "7fb53ab4f52c",
+  "structural_validation": "passed",
+  "warnings": [
+    "Flow 생성 시도 예산 미정: 무제한 자동 재시도 금지",
+    "실제 미디어 생성/품질 검토 대기"
+  ],
+  "flow_clip_count": 1,
+  "planned_generation_seconds": 8,
+  "flow_attempt_budget": null,
+  "generation_attempts": null,
+  "video_quality_review": "pending",
+  "files": [
+    "captions.ko.srt",
+    "edit-sheet.md",
+    "flow-F01.txt",
+    "plan.json",
+    "script.md",
+    "sources.md"
+  ],
+  "imported_flow_assets": [
+    "projects/pfa-pilot/media/flow/F01-take01.mp4",
+    "projects/pfa-pilot/media/flow/F05-faf62b0d-1080p.mp4"
+  ],
+  "additional_generation_attempts": 0
+}

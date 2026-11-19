@@ -1,0 +1,23 @@
+{
+  "voice": "Piljae",
+  "model": "ssfm-v31",
+  "tempo": 1.05,
+  "tts_segments": 19,
+  "emotion_plan": "emotion-plan.json",
+  "duration_seconds": 125.097,
+  "request_seconds": 13.04,
+  "sample_rate": 44100,
+  "channels": 1,
+  "sample_width_bytes": 2,
+  "peak_pcm16": 32768,
+  "clipped_samples": 31,
+  "sha256": "a4a41cfa25f1ac0fca179d29af39cb29c4a5fe4ee89bab8872ff03d5a4f3c424",
+  "synthesis_requests": 1,
+  "source_lines": 20,
+  "postprocessing_applied": false,
+  "emphasis_plan": "approved content-based roles (narration-defaults.json)",
+  "listening_review": "pending",
+  "subtitles_generated": false,
+  "content_fact_check": "script checked against analysis.md",
+  "requires_clipping_review": true
+}

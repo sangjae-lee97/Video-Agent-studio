@@ -1,0 +1,811 @@
+{
+  "version": 1,
+  "project": {
+    "id": "pfa-pilot",
+    "title": "심방세동, 약보다 시술을 먼저? — AVANT GUARD 제작 시험",
+    "aspect_ratio": "16:9",
+    "duration_seconds": 92.61,
+    "timing_status": "aligned",
+    "flow_attempt_budget": 1,
+    "style": "적갈색 조직·분홍 절단면, 차콜 배경, 아이보리 문자. 원리와 표적은 주황 강조. 이번 편집의 교육용 색 구분.",
+    "audio_path": "outputs/typecast-piljae-pfa-emphasis-1.0x-v1/local-short-window-v1/narration_balanced.wav",
+    "audio_sha256": "85d5ecfa7f9da4b86abf81de378e5c4c119c1755b527ea7b08c444da6f0ecbdc",
+    "audio_choice": "승인된 1.0배속 short-window 파일. 원본 그대로 편집.",
+    "timing_note": "승인 WAV의 10ms RMS 휴지·단어 시각과 원문을 대조한 편집 타이밍. 음소 단위 정렬 아님.",
+    "pilot_range_seconds": [
+      0,
+      24.5
+    ],
+    "generation_note": "F07 앞 3초는 기존 F03 컷을 재사용한다. 새 생성 요청은 F09 엔딩 8초 한 개이며, 0–6.860초를 본편에 사용한다.",
+    "audio_review": "user_approved",
+    "subtitles": "projects/pfa-pilot/captions.ko.srt",
+    "flow_workflow": "Flow는 가로 16:9·720p(1280×720)로 생성하고, 채택한 테이크만 무료 1080p(1920×1080) 업스케일해 편집한다.",
+    "production_mix": {
+      "basis": "주 화면의 편집 재생시간. 오버레이와 배경을 이중 집계하지 않는다.",
+      "target_flow_percent": 30,
+      "target_motion_percent": 70,
+      "flow_seconds": 27.776667,
+      "motion_seconds": 64.833333
+    },
+    "previous_master": {
+      "file": "projects/pfa-pilot/renders/AVANT-GUARD-final-1080p.mp4",
+      "sha256": "e083ca2fd73ba3d09128a7e2fc1771c687896dc929418a862947befffc5ccd51",
+      "thumbnail": "projects/pfa-pilot/renders/AVANT-GUARD-thumbnail.jpg",
+      "caption_renderer": "scripts/apply_captions.py",
+      "render_script": "projects/pfa-pilot/render_film.py",
+      "duration_seconds": 92.61,
+      "frames": 2223,
+      "voice_master_gain_db": -2,
+      "captions_verified": 42,
+      "review": "전체 디코딩·음성 대조·자막별 표시 경계·화면 표본 검수 완료. 사용자 확인 대기."
+    },
+    "render_target": "projects/pfa-pilot/renders/AVANT-GUARD-flow30-1080p.mp4",
+    "master": {
+      "file": "projects/pfa-pilot/renders/AVANT-GUARD-flow30-1080p.mp4",
+      "sha256": "f20e7d6322619fb36512559823e80b063bd1a98f095eaa03152d987856b88fe2",
+      "duration_seconds": 92.61,
+      "frames": 2223,
+      "voice_master_gain_db": -2,
+      "captions_verified": 42,
+      "review": "92.610초 · 1920×1080 H.264 · AAC 48kHz · 2,223프레임 전체 디코딩. 승인 WAV와 AAC 상관 0.999975. 42개 자막 각각의 중간 프레임에서 글자·외곽선을 확인했다. 엔딩 165프레임의 자막 위 영역을 보정 소스와 순서대로 대조했다."
+    }
+  },
+  "sources": [
+    {
+      "id": "S1",
+      "title": "AVANT GUARD — NEJM 논문 초록(PubMed)",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/42041224/",
+      "checked_on": "2026-11-19",
+      "access_scope": "논문 초록 직접 확인. NEJM 본문은 403으로 미열람."
+    },
+    {
+      "id": "S2",
+      "title": "연구 수행기관의 AVANT GUARD 설계·안전성 설명",
+      "url": "https://consultqd.clevelandclinic.org/pulsed-field-ablation-for-initial-treatment-of-persistent-af",
+      "checked_on": "2026-11-19",
+      "access_scope": "연구 책임자 발언을 포함한 기관 설명 직접 확인. 독립적 평가 자료는 아님."
+    },
+    {
+      "id": "S3",
+      "title": "Pulsed Field Ablation — Cleveland Clinic 환자 설명",
+      "url": "https://my.clevelandclinic.org/health/treatments/pulsed-field-ablation",
+      "checked_on": "2026-11-19",
+      "access_scope": "공식 의료기관의 시술 원리 설명 확인."
+    }
+  ],
+  "claims": [
+    {
+      "id": "C1",
+      "summary": "지속성 심방세동: 7일 초과 지속. 첫 치료 전략 비교 연구.",
+      "source_ids": [
+        "S2"
+      ],
+      "verification": "checked",
+      "limits": "연구 대상 범위를 모든 심방세동으로 확대하지 않는다."
+    },
+    {
+      "id": "C2",
+      "summary": "PFA는 전기 펄스를 이용한다. 이번 연구는 폐정맥 격리와 좌심방 후벽 치료를 포함했다.",
+      "source_ids": [
+        "S2",
+        "S3"
+      ],
+      "verification": "checked",
+      "limits": "Flow는 개념 모형이며 실제 시술 기록·정확한 전기장 분포가 아니다."
+    },
+    {
+      "id": "C3",
+      "summary": "무작위 배정 310명: PFA 207명, 약물 103명. 삽입형 모니터로 추적.",
+      "source_ids": [
+        "S1"
+      ],
+      "verification": "checked",
+      "limits": "안전성 분석용 추가 PFA군과 구분한다."
+    },
+    {
+      "id": "C4",
+      "summary": "12개월 치료 성공 Kaplan–Meier 추정치 56% 대 약 30%; 차이는 약 26%포인트.",
+      "source_ids": [
+        "S1"
+      ],
+      "verification": "checked",
+      "limits": "완치율이나 단순 성공 인원/배정 인원 비율로 표시하지 않는다."
+    },
+    {
+      "id": "C5",
+      "summary": "초기·장기 성공, 90일 이후 재발 및 추가 치료 조건을 묶은 평가다.",
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "verification": "checked",
+      "limits": "약물 제한은 군별로 다름. 모든 환자가 약 없이 지냈다는 뜻이 아니다."
+    },
+    {
+      "id": "C6",
+      "summary": "합산 PFA 안전성 분석 257명 중 13명(5.1%)에서 주요 평가 사건 발생.",
+      "source_ids": [
+        "S1"
+      ],
+      "verification": "checked",
+      "limits": "효과 비교군 207명이나 전체 무작위 310명을 분모로 쓰지 않는다."
+    },
+    {
+      "id": "C7",
+      "summary": "뇌졸중 관련 사건 6건 후 일시 중단; 대상 선정·혈전 검사·항응고 관리를 강화했다.",
+      "source_ids": [
+        "S2"
+      ],
+      "verification": "checked",
+      "limits": "변경 후 관찰된 무사건을 위험 해소의 인과 증명으로 표현하지 않는다."
+    },
+    {
+      "id": "C8",
+      "summary": "이번 연구는 초기 PFA 효과의 근거이며 개인별 효과·위험을 함께 판단해야 한다.",
+      "source_ids": [
+        "S1",
+        "S2"
+      ],
+      "verification": "checked",
+      "limits": "연구 해석에 해당하며 모든 환자에게 시술 우선을 권고하는 주장이 아니다."
+    }
+  ],
+  "narration": [
+    {
+      "id": "N01",
+      "text": "심방세동, 약보다 시술을 먼저 하면 더 좋을까요?",
+      "role": "질문",
+      "claim_ids": [
+        "C1"
+      ],
+      "speech_cue_start": 0.31,
+      "speech_cue_end": 3.6
+    },
+    {
+      "id": "N02",
+      "text": "이번 연구는 일주일 넘게 이어지는 지속성 심방세동을 다뤘습니다.",
+      "role": "대상",
+      "claim_ids": [
+        "C1"
+      ],
+      "speech_cue_start": 4.06,
+      "speech_cue_end": 7.72
+    },
+    {
+      "id": "N03",
+      "text": "피에프에이는 짧은 전기 펄스로 목표 조직을 치료하는 시술입니다.",
+      "role": "원리",
+      "claim_ids": [
+        "C2"
+      ],
+      "speech_cue_start": 7.89,
+      "speech_cue_end": 11.54
+    },
+    {
+      "id": "N04",
+      "text": "이 연구에서는 폐정맥 주변과 좌심방 뒤쪽 벽을 치료했습니다.",
+      "role": "치료 부위",
+      "claim_ids": [
+        "C2"
+      ],
+      "speech_cue_start": 11.9,
+      "speech_cue_end": 15.5
+    },
+    {
+      "id": "N05",
+      "text": "항부정맥제를 본격적으로 쓰기 전인 환자 삼백십 명을 무작위로 비교했습니다.",
+      "role": "연구 설계",
+      "claim_ids": [
+        "C3"
+      ],
+      "speech_cue_start": 15.8,
+      "speech_cue_end": 20.07
+    },
+    {
+      "id": "N06",
+      "text": "이백칠 명은 피에프에이에, 백삼 명은 약물 치료에 배정했습니다.",
+      "role": "배정",
+      "claim_ids": [
+        "C3"
+      ],
+      "speech_cue_start": 20.46,
+      "speech_cue_end": 24.34
+    },
+    {
+      "id": "N07",
+      "text": "삽입형 모니터로 심장 리듬을 추적하고, 일 년 뒤 결과를 비교했습니다.",
+      "role": "추적",
+      "claim_ids": [
+        "C3"
+      ],
+      "speech_cue_start": 24.78,
+      "speech_cue_end": 28.92
+    },
+    {
+      "id": "N08",
+      "text": "치료 성공 추정치는 피에프에이 오십육 퍼센트, 약물 삼십 퍼센트였습니다.",
+      "role": "핵심 결과",
+      "claim_ids": [
+        "C4"
+      ],
+      "speech_cue_start": 29.39,
+      "speech_cue_end": 34.0
+    },
+    {
+      "id": "N09",
+      "text": "약 이십육 퍼센트포인트 차이로, 피에프에이가 더 높았습니다!",
+      "role": "차이",
+      "claim_ids": [
+        "C4"
+      ],
+      "speech_cue_start": 34.6,
+      "speech_cue_end": 38.17
+    },
+    {
+      "id": "N10",
+      "text": "그런데 여기서 말하는 성공은, 완치를 뜻하지 않습니다.",
+      "role": "의미 정정",
+      "claim_ids": [
+        "C5"
+      ],
+      "speech_cue_start": 38.65,
+      "speech_cue_end": 42.11
+    },
+    {
+      "id": "N11",
+      "text": "초기 치료가 성공했는지, 또 구십 일 이후 기준에 해당하는 부정맥이 재발했는지를 봤습니다.",
+      "role": "평가 기준",
+      "claim_ids": [
+        "C5"
+      ],
+      "speech_cue_start": 42.59,
+      "speech_cue_end": 48.15
+    },
+    {
+      "id": "N12",
+      "text": "추가 시술과 약물 사용 조건까지 함께 따진 복합 기준입니다!",
+      "role": "평가 기준",
+      "claim_ids": [
+        "C5"
+      ],
+      "speech_cue_start": 48.9,
+      "speech_cue_end": 52.44
+    },
+    {
+      "id": "N13",
+      "text": "그렇다면 모두 시술부터 하면 될까요? 안전성도 살펴봐야 합니다.",
+      "role": "위험 전환",
+      "claim_ids": [
+        "C6"
+      ],
+      "speech_cue_start": 53.14,
+      "speech_cue_end": 57.55
+    },
+    {
+      "id": "N14",
+      "text": "안전성 분석 대상 이백오십칠 명 중, 열세 명에게서 주요 기기나 시술 관련 중대한 이상사건이 발생했습니다!",
+      "role": "안전성",
+      "claim_ids": [
+        "C6"
+      ],
+      "speech_cue_start": 58.18,
+      "speech_cue_end": 65.65
+    },
+    {
+      "id": "N15",
+      "text": "그중 뇌졸중은 여섯 명이었습니다. 이 사건들로 연구가 잠시 중단됐습니다.",
+      "role": "사건과 중단",
+      "claim_ids": [
+        "C7"
+      ],
+      "speech_cue_start": 66.0,
+      "speech_cue_end": 70.16
+    },
+    {
+      "id": "N16",
+      "text": "이후 연구진은 환자 선정 기준과 시술 전 검사를 강화했습니다.",
+      "role": "대응",
+      "claim_ids": [
+        "C7"
+      ],
+      "speech_cue_start": 70.75,
+      "speech_cue_end": 74.58
+    },
+    {
+      "id": "N17",
+      "text": "항응고 관리도 강화한 뒤, 연구를 다시 시작했습니다.",
+      "role": "대응",
+      "claim_ids": [
+        "C7"
+      ],
+      "speech_cue_start": 74.9,
+      "speech_cue_end": 78.05
+    },
+    {
+      "id": "N18",
+      "text": "다만 이런 변경만으로 위험이 해결됐다고 단정할 수는 없습니다!",
+      "role": "불확실성",
+      "claim_ids": [
+        "C7"
+      ],
+      "speech_cue_start": 78.67,
+      "speech_cue_end": 82.38
+    },
+    {
+      "id": "N19",
+      "text": "일 년간의 효과에서는 피에프에이가 앞섰습니다. 첫 치료로 고려할 근거가 생긴 거죠.",
+      "role": "해석",
+      "claim_ids": [
+        "C8"
+      ],
+      "speech_cue_start": 82.79,
+      "speech_cue_end": 87.81
+    },
+    {
+      "id": "N20",
+      "text": "하지만 누구에게 먼저 시행할지는, 효과와 위험을 함께 판단해야 합니다.",
+      "role": "결론",
+      "claim_ids": [
+        "C8"
+      ],
+      "speech_cue_start": 88.15,
+      "speech_cue_end": 92.5
+    }
+  ],
+  "media": [
+    {
+      "id": "SRC-F01",
+      "kind": "motion",
+      "source_kind": "flow",
+      "source_asset": "projects/pfa-pilot/media/flow/F01-6cbe653d-1080p.mp4",
+      "source_sha256": "6cbe653d7fadbb8306d3c25d2d6fdddfa09cefcab9a71a03f39c00200fefd1da",
+      "duration_seconds": 3.9166666666666665,
+      "purpose": "약과 시술 중 무엇을 먼저 할까",
+      "narration_ids": [
+        "N01",
+        "N20"
+      ],
+      "status": "reviewed_candidate",
+      "reason": "기존 파일에서 해당 프레임을 정상 속도로 편집",
+      "start_state": "심장 전경",
+      "end_state": "두 선택지",
+      "action": "도입에 기존 후보 첫 92프레임을 사용한다.",
+      "labels": "약과 시술 중 무엇을 먼저 할까",
+      "review": "출처와 인·아웃, 승인 내레이션을 대조한다."
+    },
+    {
+      "id": "SRC-F02",
+      "kind": "motion",
+      "source_kind": "flow",
+      "source_asset": "projects/pfa-pilot/renders/F02-7days-flow-1080p.mp4",
+      "source_sha256": "c995d19cd304dda8364db2daa75837c9b73bb4ee077503b7cfa625957bdc229f",
+      "duration_seconds": 4,
+      "purpose": "지속성 심방세동",
+      "narration_ids": [
+        "N02"
+      ],
+      "status": "accepted_1080p",
+      "reason": "기존 파일에서 해당 프레임을 정상 속도로 편집",
+      "start_state": "심장",
+      "end_state": "기간 도식 직전",
+      "action": "확정 F02의 첫 38프레임 심장 장면을 그대로 쓴다.",
+      "labels": "지속성 심방세동",
+      "review": "출처와 인·아웃, 승인 내레이션을 대조한다."
+    },
+    {
+      "id": "MG-F02",
+      "kind": "motion",
+      "source_kind": "motion",
+      "source_asset": "projects/pfa-pilot/renders/F02-7days-flow-1080p.mp4",
+      "source_sha256": "c995d19cd304dda8364db2daa75837c9b73bb4ee077503b7cfa625957bdc229f",
+      "duration_seconds": 4,
+      "purpose": "7일 초과 시간선",
+      "narration_ids": [
+        "N02"
+      ],
+      "status": "accepted_1080p",
+      "reason": "기존 파일에서 해당 프레임을 정상 속도로 편집",
+      "start_state": "0일",
+      "end_state": "7일 통과",
+      "action": "같은 확정 파일의 38프레임부터 로컬 시간선이 이어진다.",
+      "labels": "7일 초과 시간선",
+      "review": "출처와 인·아웃, 승인 내레이션을 대조한다."
+    },
+    {
+      "id": "SRC-F03",
+      "kind": "motion",
+      "source_kind": "flow",
+      "source_asset": "projects/pfa-pilot/renders/F03-44a227c2-flow1080-relabel.mp4",
+      "source_sha256": "8cca5214e1821f6bf69d6e72c26c6b5486deb67ddf67cd1490e1804ed32c88f2",
+      "duration_seconds": 8,
+      "purpose": "PFA 원리와 치료 부위",
+      "narration_ids": [
+        "N03",
+        "N04"
+      ],
+      "status": "accepted_1080p",
+      "reason": "기존 파일에서 해당 프레임을 정상 속도로 편집",
+      "start_state": "카테터와 펄스",
+      "end_state": "폐정맥 주변·좌심방 후벽",
+      "action": "확정 F03의 첫 189프레임을 쓰고 52.750초에 소스 0.875–3.875초를 안전성 질문의 도입으로 다시 사용한다.",
+      "labels": "PFA 원리와 치료 부위",
+      "review": "출처와 인·아웃, 승인 내레이션을 대조한다."
+    },
+    {
+      "id": "M02",
+      "kind": "motion",
+      "duration_seconds": 8.875,
+      "purpose": "310명의 비교 구조",
+      "narration_ids": [
+        "N05",
+        "N06"
+      ],
+      "status": "rendered_pending_user_review",
+      "reason": "정확한 숫자·관계·조건을 수정 가능한 움직이는 도식으로 설명",
+      "start_state": "F03 마지막 좌심방 그림",
+      "end_state": "두 치료군의 공통 리듬 추적으로 연결",
+      "review": "영상·음성 각 8.875초. 1920×1080, 24fps, 213프레임 전부 디코딩. F03 마지막과 첫 프레임 RGB 평균 절대차 1.42/255. 승인 WAV 15.625–24.500초와 디코딩 음성 상관 0.99998. 8개 시점 표본에서 질문 1개, 공통 입구와 좌우 인원 표기, 오른쪽 약물 라벨 옆 알약 확인. 전체 310명은 클립 2.375초, 세 인원수 동시 표시는 3.167초부터다.",
+      "action": "15.625초 F03 좌심방 그림을 왼쪽 PFA 항목으로 축소하며 상단에 질문을 한 번만 조판한다. 17.980초 공통 입구에 310명. 18.775초부터 왼쪽 PFA 시술 207명과 오른쪽 약물 치료 103명을 함께 표시한다. 알약 아이콘은 오른쪽 라벨 끝에만 고정한다. 작은 환자 표식이 열린 두 경로로 이동한다. 20.460초 왼쪽, 22.230초 오른쪽을 발화에 맞춰 강조하고 24.500초까지 같은 배치를 유지한다.",
+      "labels": "약보다 시술을 먼저 하면? / 310명 / PFA 시술 207명 / 약물 치료 103명",
+      "source_asset": "projects/pfa-pilot/renders/F04-assignment-1080p.mp4",
+      "source_sha256": "f28c3f17064bd98cf4808412f46b009cecef2a07d205d26cf4e83f5349f993b5"
+    },
+    {
+      "id": "M03",
+      "kind": "motion",
+      "duration_seconds": 4.625,
+      "purpose": "관찰 기간을 눈으로 연결",
+      "narration_ids": [
+        "N07"
+      ],
+      "status": "source_selected",
+      "reason": "사용자가 채택한 v3 F05와 한국어 자막을 합성한다.",
+      "start_state": "가슴 모형에 드러난 기록기",
+      "end_state": "기록 시간축과 승인 자막",
+      "review": "소스 전체 디코딩 및 컷 전후 확인. 마지막 샷은 첫 샷보다 흉곽 노출 범위가 넓다. 사용자가 해당 테이크를 채택했다. 본편 합성 대기.",
+      "action": "선택한 1080p 영상의 피하 단면에서 시간축으로 전환한다. 소스 0–4.625초를 정상 속도로 사용하고 전체 27.240초에 기간 자막을 표시한다.",
+      "labels": "승인 자막 N07 · 일 년 뒤 결과를 비교했습니다.",
+      "source_asset": "projects/pfa-pilot/media/flow/F05-faf62b0d-1080p.mp4",
+      "source_sha256": "4d1c5093a275c852e41f9be076eb66c87904c1e98046e278ec7bfeb74a9593aa",
+      "source_video_seconds": 5.958333333333333,
+      "source_shot_cut_frames": [
+        27,
+        64
+      ],
+      "source_kind": "flow"
+    },
+    {
+      "id": "M04",
+      "kind": "motion",
+      "duration_seconds": 9.25,
+      "purpose": "효과 차이를 드러내기",
+      "narration_ids": [
+        "N08",
+        "N09"
+      ],
+      "status": "rendered_in_master",
+      "reason": "정확한 숫자·관계·조건을 수정 가능한 움직이는 도식으로 설명",
+      "start_state": "같은 기준축",
+      "end_state": "두 막대와 차이 괄호",
+      "review": "세로축 잘라 차이를 과장하지 않는다. 56%를 128/207 단순 계산값이나 완치율로 쓰지 않는다.",
+      "action": "0~100% 공통 축 위 두 막대가 0에서 56과 30으로 자란다. 값 도착 후 두 끝점 사이 괄호가 그려지며 약 26%p로 전환한다. 끝 3초에는 추정치라는 설명이 펼쳐진다.",
+      "labels": "1년 치료 성공 추정치 / PFA 56% / 약물 약 30% / 약 26%p 차이 / Kaplan–Meier"
+    },
+    {
+      "id": "M05",
+      "kind": "motion",
+      "duration_seconds": 4.0,
+      "purpose": "높은 숫자의 의미를 바로잡기",
+      "narration_ids": [
+        "N10"
+      ],
+      "status": "rendered_in_master",
+      "reason": "정확한 숫자·관계·조건을 수정 가능한 움직이는 도식으로 설명",
+      "start_state": "효과 수치 카드",
+      "end_state": "평가 기준으로 이어지는 카드",
+      "review": "완치라는 말에 승리 도장이나 환자 회복 연기를 붙이지 않는다.",
+      "action": "이전 컷의 0~100% 축과 PFA·약물 두 막대 및 끝값 위치를 유지한다. 오른쪽 차이 설명을 치료 성공과 완치의 구분으로 바꾼다.",
+      "labels": "치료 성공 ≠ 완치"
+    },
+    {
+      "id": "M06",
+      "kind": "motion",
+      "duration_seconds": 10.375,
+      "purpose": "복합 기준을 단계로 설명",
+      "narration_ids": [
+        "N11",
+        "N12"
+      ],
+      "status": "rendered_in_master",
+      "reason": "정확한 숫자·관계·조건을 수정 가능한 움직이는 도식으로 설명",
+      "start_state": "빈 시간축",
+      "end_state": "조건을 갖춘 평가도",
+      "review": "약물군과 PFA군의 약물 조건이 동일하다는 그림 금지. 체크 표시는 모든 참여자가 통과했다는 의미로 쓰지 않는다.",
+      "action": "0~90일과 90일~12개월 구간을 순차로 펼친다. 커서가 이동하며 초기 성공, 기준에 해당하는 재발, 추가 치료 조건 세 항목을 차례로 강조한다. 5초에 시간축에서 조건 목록으로 전환한다.",
+      "labels": "초기 성공 / 90일 이후 재발 기준 / 추가 시술·약물 조건 / 군별 기준 차이"
+    },
+    {
+      "id": "M07",
+      "kind": "motion",
+      "duration_seconds": 5.0625,
+      "purpose": "효과에서 위험으로 질문 전환",
+      "narration_ids": [
+        "N13"
+      ],
+      "status": "rendered_in_master",
+      "reason": "정확한 숫자·관계·조건을 수정 가능한 움직이는 도식으로 설명",
+      "start_state": "효과 카드",
+      "end_state": "효과와 안전성 병렬",
+      "review": "효과%와 이상사건%를 빼거나 같은 지표로 합치지 않는다.",
+      "action": "시술 컷에 이어 55.750초부터 효과와 안전성을 병렬로 표시하고 안전성 분모로 넘어간다.",
+      "labels": "그렇다면 모두 시술부터? / 안전성도 함께"
+    },
+    {
+      "id": "M08",
+      "kind": "motion",
+      "duration_seconds": 8.0,
+      "purpose": "안전성 분모를 분명히",
+      "narration_ids": [
+        "N14"
+      ],
+      "status": "rendered_in_master",
+      "reason": "정확한 숫자·관계·조건을 수정 가능한 움직이는 도식으로 설명",
+      "start_state": "안전성 모집단",
+      "end_state": "13/257 강조",
+      "review": "207명 배정군과 다름을 표시. 전체 중대한 이상사건 비율과 혼동하지 않기.",
+      "action": "한 점이 한 명인 고정 격자에서 257명 중 13명을 강조하고 다음 컷의 6명도 같은 13명 안에서 강조한다.",
+      "labels": "PFA 안전성 분석 257명 / 13명 · 5.1% / 기기·시술 관련 중대한 이상사건"
+    },
+    {
+      "id": "M09",
+      "kind": "motion",
+      "duration_seconds": 4.625,
+      "purpose": "사건이 연구 중단으로 이어짐",
+      "narration_ids": [
+        "N15"
+      ],
+      "status": "rendered_in_master",
+      "reason": "정확한 숫자·관계·조건을 수정 가능한 움직이는 도식으로 설명",
+      "start_state": "안전성 결과",
+      "end_state": "중단 지점",
+      "review": "극적인 뇌 손상 재연이나 확인 안 된 혈전 이동 원인 영상 금지. 멈춘 선만 오래 홀드하지 않는다.",
+      "action": "뇌졸중 6명을 같은 격자 안에서 금색으로 강조한다. 상단 시간선에 중단 표식을 남긴다.",
+      "labels": "뇌졸중 6명 / 연구 일시 중단"
+    },
+    {
+      "id": "M10",
+      "kind": "motion",
+      "duration_seconds": 7.875,
+      "purpose": "보완 조치를 순서대로 공개",
+      "narration_ids": [
+        "N16",
+        "N17"
+      ],
+      "status": "rendered_in_master",
+      "reason": "정확한 숫자·관계·조건을 수정 가능한 움직이는 도식으로 설명",
+      "start_state": "중단 지점",
+      "end_state": "보완 조치와 재개",
+      "review": "구체 약물 용량·시술 지시를 새로 만들지 않는다. 수정만으로 위험 0%가 된다는 초록 배지 금지.",
+      "action": "같은 시간선에 중단 표식을 유지한 채 아래 보완 목록의 현재 행을 강조한다. 76.480초부터 같은 선 위에 연구 재개를 더한다.",
+      "labels": "선정 기준 강화 / 시술 전 검사 / 항응고 관리 / 연구 재개"
+    },
+    {
+      "id": "M11",
+      "kind": "motion",
+      "duration_seconds": 4.25,
+      "purpose": "보완과 안전성 확정은 구분",
+      "narration_ids": [
+        "N18"
+      ],
+      "status": "rendered_in_master",
+      "reason": "정확한 숫자·관계·조건을 수정 가능한 움직이는 도식으로 설명",
+      "start_state": "연구 재개",
+      "end_state": "남아 있는 불확실성",
+      "review": "무사건 관찰만으로 인과를 확정하지 않는다.",
+      "action": "상단 시간선에 중단과 재개를 함께 유지하고 아래에 보완 뒤에도 남은 불확실성을 표시한다.",
+      "labels": "보완 ≠ 위험 해결의 증명"
+    },
+    {
+      "id": "M12",
+      "kind": "motion",
+      "duration_seconds": 10.0475,
+      "purpose": "처음 질문에 조건 있는 답",
+      "narration_ids": [
+        "N19",
+        "N20"
+      ],
+      "status": "rendered_in_master",
+      "reason": "정확한 숫자·관계·조건을 수정 가능한 움직이는 도식으로 설명",
+      "start_state": "약물과 PFA 두 선택지",
+      "end_state": "조건 있는 결론",
+      "review": "모든 환자에게 시술 우선을 권고하는 결말 금지.",
+      "action": "82.5625–85.750초에 1년 효과 추정치를 보여주고, 같은 결과 그래프에서 진료실 장면 F09로 연결한다.",
+      "labels": "효과의 근거 / 위험 고려 / 누구에게 먼저 할지는 함께 판단"
+    },
+    {
+      "id": "F09",
+      "kind": "flow",
+      "duration_seconds": 8,
+      "purpose": "치료 효과 자료를 환자별 효과·위험 판단으로 연결",
+      "reason": "앞 그래프가 진료실 모니터로 이어지고 의사와 환자가 함께 판단하는 장면을 보여준다.",
+      "narration_ids": [
+        "N19",
+        "N20"
+      ],
+      "status": "reviewed",
+      "start_state": "1년 효과에서 앞선 PFA 결과 그래프",
+      "end_state": "효과와 위험 두 항목을 함께 검토하는 상담",
+      "input_mode": "start_frame",
+      "input_frame": "projects/pfa-pilot/renders/F09-start-85.708.png",
+      "graphics_heading": "ON-SCREEN TEXT",
+      "review": "사용자 채택 원본 874d16d5의 세 모니터를 승인 그래프로 합성하고 종이 본문을 지웠다. 0~6.860초 사용.",
+      "subject": "Use the supplied chart as the exact first frame. The chart is displayed on a real monitor at a quiet cardiology consultation. An adult patient and a clinician sit beside the same desk and consider whether PFA is suitable as an initial treatment.",
+      "look": "Landscape 16:9, 720p. Start on the charcoal chart. As the room is revealed, use soft daylight, muted warm-grey walls and a natural, documentary look.",
+      "shots": [
+        {
+          "start": 0,
+          "end": 2.3,
+          "event": "The chart fills the first frame. Pull back to reveal the monitor bezel and the same graph on its screen. Keep the supplied chart intact.",
+          "camera": "Straight, gentle pullback from the screen."
+        },
+        {
+          "start": 2.3,
+          "end": 4.6,
+          "event": "The patient and clinician look at the monitor together. The patient turns toward the clinician, who listens.",
+          "camera": "Cut to a medium two-shot from the patient’s side of the desk, keeping the monitor in view."
+        },
+        {
+          "start": 4.6,
+          "end": 8,
+          "event": "On one sheet between them, two headings read “효과” and “위험” side by side. The clinician makes one open-hand gesture beneath both. By 6.4 seconds both headings and the gesture are clear. Let the hand settle.",
+          "camera": "Cut over the patient’s shoulder to the sheet; the monitor stays softly visible behind it."
+        }
+      ],
+      "graphics": "Print each heading once, at equal size and contrast. Leave the treatment decision open.",
+      "continuity": "Keep the same people, monitor, chart and desk orientation across all three shots. Preserve the original chart numbers and colors.",
+      "audio": "Quiet room tone only.",
+      "source_asset": "projects/pfa-pilot/renders/F09-consultation-corrected-1080p.mp4",
+      "source_sha256": "bebfb9acc3525b8ea9cd314f894eee9a8e4ccce94270dc40927f1dd2c57c0d29",
+      "input_asset": "projects/pfa-pilot/media/flow/F09-874d16d5-1080p.mp4",
+      "input_sha256": "8ae37d84a59a3cf94e0ccd264cb09d7b97f219a86138905f63e2d50d60d53874"
+    }
+  ],
+  "edits": [
+    {
+      "id": "E01a",
+      "media_id": "SRC-F01",
+      "start": 0,
+      "end": 3.8333333333333335,
+      "source_in": 0,
+      "source_out": 3.8333333333333335
+    },
+    {
+      "id": "E01b",
+      "media_id": "SRC-F02",
+      "start": 3.8333333333333335,
+      "end": 5.416666666666667,
+      "source_in": 0,
+      "source_out": 1.5833333333333335
+    },
+    {
+      "id": "E01c",
+      "media_id": "MG-F02",
+      "start": 5.416666666666667,
+      "end": 7.75,
+      "source_in": 1.5833333333333333,
+      "source_out": 3.916666666666667
+    },
+    {
+      "id": "E02",
+      "media_id": "SRC-F03",
+      "start": 7.75,
+      "end": 15.625,
+      "source_in": 0,
+      "source_out": 7.875
+    },
+    {
+      "id": "E04",
+      "media_id": "M02",
+      "start": 15.625,
+      "end": 24.5,
+      "source_in": 0,
+      "source_out": 8.875
+    },
+    {
+      "id": "E05",
+      "media_id": "M03",
+      "start": 24.5,
+      "end": 29.125,
+      "source_in": 0,
+      "source_out": 4.625
+    },
+    {
+      "id": "E06",
+      "media_id": "M04",
+      "start": 29.125,
+      "end": 38.375,
+      "source_in": 0,
+      "source_out": 9.25
+    },
+    {
+      "id": "E07",
+      "media_id": "M05",
+      "start": 38.375,
+      "end": 42.375,
+      "source_in": 0,
+      "source_out": 4.0
+    },
+    {
+      "id": "E08",
+      "media_id": "M06",
+      "start": 42.375,
+      "end": 52.75,
+      "source_in": 0,
+      "source_out": 10.375
+    },
+    {
+      "id": "E09a",
+      "media_id": "SRC-F03",
+      "start": 52.75,
+      "end": 55.75,
+      "source_in": 0.875,
+      "source_out": 3.875
+    },
+    {
+      "id": "E09b",
+      "media_id": "M07",
+      "start": 55.75,
+      "end": 57.8125,
+      "source_in": 3,
+      "source_out": 5.0625
+    },
+    {
+      "id": "E10",
+      "media_id": "M08",
+      "start": 57.8125,
+      "end": 65.8125,
+      "source_in": 0,
+      "source_out": 8.0
+    },
+    {
+      "id": "E11",
+      "media_id": "M09",
+      "start": 65.8125,
+      "end": 70.4375,
+      "source_in": 0,
+      "source_out": 4.625
+    },
+    {
+      "id": "E12",
+      "media_id": "M10",
+      "start": 70.4375,
+      "end": 78.3125,
+      "source_in": 0,
+      "source_out": 7.875
+    },
+    {
+      "id": "E13",
+      "media_id": "M11",
+      "start": 78.3125,
+      "end": 82.5625,
+      "source_in": 0,
+      "source_out": 4.25
+    },
+    {
+      "id": "E14a",
+      "media_id": "M12",
+      "start": 82.5625,
+      "end": 85.75,
+      "source_in": 0,
+      "source_out": 3.1875
+    },
+    {
+      "id": "E14ending",
+      "media_id": "F09",
+      "start": 85.75,
+      "end": 92.61,
+      "source_in": 0,
+      "source_out": 6.86
+    }
+  ]
+}

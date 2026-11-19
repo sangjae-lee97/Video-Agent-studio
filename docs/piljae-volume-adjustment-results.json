@@ -1,0 +1,32 @@
+{
+  "source": "C:\\dev\\Video-Agent-studio\\outputs\\typecast-piljae-pfa-full-1.0x\\narration.wav",
+  "source_sha256": "3f62ff17d0a0c11d9607638605f41cd6d6e7b39755982407d7df9ab0112b02de",
+  "output": "C:\\dev\\Video-Agent-studio\\outputs\\typecast-piljae-pfa-full-1.0x\\volume-adjustment\\narration_volume_adjusted.wav",
+  "duration_seconds": 95.18,
+  "regions": [
+    {
+      "start_seconds": 20.5,
+      "end_seconds": 26.8,
+      "max_gain_db": 1.5,
+      "before_active_rms_dbfs": -19.18,
+      "after_active_rms_dbfs": -17.831
+    },
+    {
+      "start_seconds": 50.0,
+      "end_seconds": 55.4,
+      "max_gain_db": 3.0,
+      "before_active_rms_dbfs": -19.767,
+      "after_active_rms_dbfs": -16.941
+    }
+  ],
+  "boundary_fade_seconds": 0.35,
+  "sample_rate": 44100,
+  "outside_regions_bit_identical": true,
+  "length_preserved": true,
+  "tempo_pitch_emotion_unchanged": true,
+  "new_api_requests": 0,
+  "clipped_samples": 0,
+  "analysis": "20 ms RMS, gate -40 dBFS; numerical assessment, not listening verification",
+  "listening_review": "pending",
+  "output_sha256": "d463b5af0f967507de484f58540bf1577b0de0f6112019034ffafc745886e1f6"
+}

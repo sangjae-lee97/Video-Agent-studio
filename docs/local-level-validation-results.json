@@ -1,0 +1,112 @@
+{
+  "algorithm": "local_short_window_v1",
+  "configuration_identical_across_inputs": true,
+  "api_calls": 0,
+  "downloads": 0,
+  "validation_limit": "Same medical script family; different topics and verified breath labels not tested. Listening pending.",
+  "files": [
+    {
+      "source": "C:\\dev\\Video-Agent-studio\\outputs\\typecast-piljae-pfa-full-1.0x\\narration.wav",
+      "output": "C:\\dev\\Video-Agent-studio\\outputs\\typecast-piljae-pfa-full-1.0x\\local-short-window-v1\\narration.wav",
+      "source_hash_verified": true,
+      "duration_seconds": 95.18,
+      "length_rate_match": true,
+      "changed_seconds": 34.5556462585034,
+      "new_clipped_samples": 0,
+      "no_sample_attenuation": true,
+      "protected_regions_identical": true,
+      "speech_window_p90_p10_db_before_after": [
+        11.29495172944854,
+        9.827529999944963
+      ],
+      "speech_window_count": 749,
+      "before_loudness": {
+        "integrated_lufs": -18.04,
+        "true_peak_dbtp": 0.05,
+        "lra_lu": 3.9
+      },
+      "after_loudness": {
+        "integrated_lufs": -17.74,
+        "true_peak_dbtp": 0.05,
+        "lra_lu": 3.3
+      },
+      "listening_review": "pending"
+    },
+    {
+      "source": "C:\\dev\\Video-Agent-studio\\outputs\\typecast-piljae-pfa-full-1.05x\\narration.wav",
+      "output": "C:\\dev\\Video-Agent-studio\\outputs\\local-level-validation\\piljae-105\\narration.wav",
+      "source_hash_verified": true,
+      "duration_seconds": 88.03244897959183,
+      "length_rate_match": true,
+      "changed_seconds": 29.481609977324265,
+      "new_clipped_samples": 0,
+      "no_sample_attenuation": true,
+      "protected_regions_identical": true,
+      "speech_window_p90_p10_db_before_after": [
+        12.057618967117824,
+        11.19132517309682
+      ],
+      "speech_window_count": 688,
+      "before_loudness": {
+        "integrated_lufs": -17.99,
+        "true_peak_dbtp": 0.1,
+        "lra_lu": 3.8
+      },
+      "after_loudness": {
+        "integrated_lufs": -17.71,
+        "true_peak_dbtp": 0.1,
+        "lra_lu": 3.3
+      },
+      "listening_review": "pending"
+    },
+    {
+      "source": "C:\\dev\\Video-Agent-studio\\outputs\\supertonic3-male-comparison\\M3_1.0x.wav",
+      "output": "C:\\dev\\Video-Agent-studio\\outputs\\local-level-validation\\supertonic-m3\\narration.wav",
+      "source_hash_verified": true,
+      "duration_seconds": 17.29700680272109,
+      "length_rate_match": true,
+      "changed_seconds": 4.4178231292517,
+      "new_clipped_samples": 0,
+      "no_sample_attenuation": true,
+      "protected_regions_identical": true,
+      "speech_window_p90_p10_db_before_after": [
+        5.7790847389435385,
+        4.438270966638182
+      ],
+      "speech_window_count": 127,
+      "before_loudness": {
+        "integrated_lufs": -24.69,
+        "true_peak_dbtp": -8.38,
+        "lra_lu": 3.0
+      },
+      "after_loudness": {
+        "integrated_lufs": -24.37,
+        "true_peak_dbtp": -8.38,
+        "lra_lu": 2.8
+      },
+      "listening_review": "pending"
+    }
+  ],
+  "diagnostic_intervals_not_used_by_algorithm": [
+    {
+      "start": 24.6,
+      "end": 24.8,
+      "gain_rms_db": 2.714585582168371
+    },
+    {
+      "start": 24.8,
+      "end": 25.3,
+      "gain_rms_db": 0.15194530641348233
+    },
+    {
+      "start": 81.7,
+      "end": 82.1,
+      "gain_rms_db": 0.026405049654526332
+    },
+    {
+      "start": 83.2,
+      "end": 84.3,
+      "gain_rms_db": 2.348695906795635
+    }
+  ]
+}
