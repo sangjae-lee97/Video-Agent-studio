@@ -14,6 +14,29 @@ from PIL import Image, ImageDraw, ImageFilter, ImageFont
 
 ROOT = Path(__file__).resolve().parents[1]
 FONT = Path(os.environ.get('WINDIR', 'C:/Windows')) / 'Fonts/NotoSansKR-VF.ttf'
+# 같은 스타일(Noto Sans KR 굵기 900)을 환경에 맞는 파일로 찾는다: 환경변수 CAPTION_FONT → Windows 가변 폰트
+# → 사용자 설치 가변 폰트 → Linux/클라우드의 Noto Sans CJK Black(정적 900).
+FONT_CANDIDATES = [p for p in [os.environ.get('CAPTION_FONT')] if p] + [
+    str(FONT),
+    str(Path(os.environ.get('LOCALAPPDATA', '')) / 'Microsoft/Windows/Fonts/NotoSansKR-VF.ttf'),
+    '/usr/share/fonts/opentype/noto/NotoSansCJK-Black.ttc',
+    '/usr/share/fonts/noto-cjk/NotoSansCJK-Black.ttc',
+]
+
+
+def caption_face(size):
+    for path in FONT_CANDIDATES:
+        if not path or not Path(path).exists():
+            continue
+        if path.lower().endswith('.ttc'):  # CJK Black 묶음: index 1 = KR
+            return ImageFont.truetype(path, size, index=1)
+        face = ImageFont.truetype(path, size)
+        try:
+            face.set_variation_by_axes([900])
+        except Exception:
+            pass
+        return face
+    raise SystemExit('자막 폰트(Noto Sans KR)를 찾지 못했습니다. docs/SETUP_GUIDE.md의 폰트 항목을 보거나 CAPTION_FONT를 지정하세요.')
 
 
 def ffmpeg_path():
@@ -66,8 +89,7 @@ def cues_from_srt(file):
 def caption_sprites(cues, width, height, work):
     # Physical sizes at 1080p; a single scale preserves the style at other resolutions.
     scale = height / 1080
-    face = ImageFont.truetype(str(FONT), max(12, round(60*scale)))
-    face.set_variation_by_axes([900])
+    face = caption_face(max(12, round(60*scale)))
     stroke = max(1, round(4.5*scale))
     margin = max(1, round(42*scale))
     spacing = max(1, round(8*scale))
