@@ -97,6 +97,7 @@ powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | ie
 
 | 항목 | 값 |
 |---|---|
+| 생성 모델 | **Omni 1.1 Flash 사용 (2026.11.19 기준)** |
 | 화면 비율 | **가로 16:9** |
 | 생성 해상도 | **720p (1280×720)** |
 | 길이 | **8초** |
