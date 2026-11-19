@@ -23,6 +23,9 @@ if ($h -ne '1a153a22f4509e292a94e67d6f9b85e8deb25b4988682b7e174c65279d8788e3') {
 if (-not (Test-Path .env)) { Copy-Item .env.example .env; Write-Host '.env를 만들었습니다. TYPECAST_API_KEY 값을 넣으세요.' }
 New-Item -ItemType Directory -Force outputs | Out-Null
 
+# (선택) 로컬에서 모션그래픽을 렌더할 경우만: Playwright
+# & $py -m pip install playwright; & $py -m playwright install chromium
+
 # 5) 확인
 & $py -m unittest discover -s tests -p "test_*.py"
 Write-Host '설치 완료. 자막 폰트(Noto Sans KR)가 없으면 docs/SETUP_GUIDE.md의 폰트 항목을 보세요.'

@@ -8,6 +8,8 @@
 
 - 영상 제작을 시작하거나 재개할 때는 장면 설계 전에 [공통 제작 지침](docs/VIDEO_PRODUCTION_GUIDE.md)을 전문으로 읽는다. 모션그래픽 장면을 새로 만들거나 수정할 때마다 [모션그래픽 제작과 검수](docs/VIDEO_PRODUCTION_GUIDE.md#모션그래픽-제작과-검수)를 다시 읽고 해당 발화와 앞뒤 컷에 적용한다. 렌더 후에는 그 절의 기준으로 실제 프레임을 대조한다.
 
+- 공통 도구를 쓴다: 내레이션 합성은 `scripts/typecast_compose.py`(build → 편 폴더 `narration/run_narration.ps1` 생성, synth 1회), 모션그래픽은 `scripts/motion/render.py`(편 폴더 `motion/scenes.py`). 편마다 합성·렌더 코드를 새로 복사해 만들지 않는다.
+
 - 장면 설계와 모션그래픽 제작 시 `.agents/skills/flow-motion-template/SKILL.md`를 읽고, Flow 요청 전에 영상별 메타포와 template-spec.md를 먼저 정한다.
 
 - 새 주제나 문서로 시작하면 `docs/VIDEO_PRODUCTION_GUIDE.md`의 ‘새 채팅에서 한 편을 만드는 순서’를 실행한다. 먼저 근거가 있는 분석 문서를 저장하고 대본을 쓴다. Typecast 합성과 로컬 보정 뒤 실제 발화에 맞춰 전편을 계획하고, 필요한 Flow 클립 전부를 ① 대본 ② Flow 입력 방식(프레임·이어 붙이기 여부 포함 / 소재)·이미지 ③ 프롬프트·적용 방법 형식으로 한 번에 전달한다. 일괄 수령 뒤 모션그래픽을 제작한다. 낭독 대본의 강조 문장부호·발음 표기는 보존하고, 화면용 SRT 전 큐를 따로 검증한 뒤 공통 프로그램으로 합성한다.

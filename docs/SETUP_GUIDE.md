@@ -56,7 +56,7 @@ Codex 등 다른 에이전트도 루트의 `AGENTS.md`를 따른다.
 Claude Cowork는 클라우드 작업 공간과 PC의 리눅스 VM 모두 **허용 도메인 목록에 없는 주소에 접속할 수 없다.** `api.typecast.ai`가 허용돼 있지 않으면 에이전트가 직접 합성하지 못한다([자세한 원인](TYPECAST_INTEGRATION.md)). 이때는 셋 중 하나를 쓴다.
 
 **A. PowerShell로 직접 실행 (가장 확실, 추가 설정 없음)**
-에이전트가 편 폴더에 합성 요청(`narration/request.json`)과 실행 스크립트(`narration/run_narration.ps1`)를 만들어 준다. 저장소 루트에서 실행한다.
+에이전트가 편 폴더에 대본 구간 파일(`narration/segments.json`)을 쓰고 공통 도구로 합성 요청(`request.json`)과 실행 스크립트(`run_narration.ps1`)를 만든다: `python scripts/typecast_compose.py build projects/<편명>/narration/segments.json`. 저장소 루트에서 실행한다.
 
 ```powershell
 cd C:\dev\Video-Agent-studio
@@ -127,7 +127,8 @@ powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | ie
 
 ## 6. 모션그래픽·자막·완성본
 
-- 모션그래픽은 에이전트가 HTML 장면을 프레임마다 그려(Playwright) 실제 발화 시각에 맞춘다. 색과 밝기는 같은 편 Flow 장면 톤에 맞춘다.
+- 모션그래픽은 공통 렌더러 `scripts/motion/render.py`로 만든다. 에이전트가 편 폴더에 `motion/scenes.py`(장면 HTML + 실제 발화 시각)를 쓰고 렌더한다. 예시: `python scripts/motion/render.py scripts/motion/example_scenes.py outputs/motion-example`. 색과 밝기는 같은 편 Flow 장면 톤에 맞춘다.
+  - Claude Cowork는 클라우드 작업 공간에 Playwright가 있어 바로 렌더한다. 로컬(Codex 등)에서 렌더하려면 한 번만: `.\.venv-supertonic\Scripts\python.exe -m pip install playwright` → `.\.venv-supertonic\Scripts\python.exe -m playwright install chromium`
 - 자막: 에이전트가 화면용 표기(예: ‘래그’→RAG, ‘육십 초’→60초)로 `captions.ko.srt`를 검증한 뒤 공통 프로그램으로 합성한다.
 
   ```powershell
@@ -144,8 +145,9 @@ powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | ie
 | `docs/VIDEO_PRODUCTION_GUIDE.md` | 공통 제작 지침 (새 편마다 에이전트가 전문을 읽는다) |
 | `docs/NARRATION_STYLE.md`, `docs/narration-defaults.json` | 내레이션 감정·속도·보정 기준 |
 | `docs/TYPECAST_INTEGRATION.md` | Typecast API·MCP·접속 제한 기록 |
-| `scripts/` | 정렬(`transcribe_narration.py`), 보정(`balance_narration_phrases.py`), 자막(`apply_captions.py`), 설치(`setup.ps1`) |
-| `projects/<편명>/` | 편별 분석·대본·편집표·Flow 요청·자막·모션 장면 코드·진행 기록 (영상·음성 제외) |
+| `scripts/` | 합성(`typecast_compose.py`), 정렬(`transcribe_narration.py`), 보정(`balance_narration_phrases.py`), 모션(`motion/`), 자막(`apply_captions.py`), 프레임 추출은 스킬 폴더, 설치(`setup.ps1`) |
+| `.agents/skills/flow-motion-template/` | 장면 설계·모션그래픽 스킬(메타포·template-spec·프레임 추출) |
+| `projects/<편명>/` | 상재님이 만든 편의 작업 기록(예시). 새 영상에 필요하지 않다. 영상·음성 제외 |
 | `legacy/` | 초기 실험 코드(현재 사양 근거 아님) |
 
 ## 자주 막히는 곳
