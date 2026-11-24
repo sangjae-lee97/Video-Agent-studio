@@ -1,0 +1,106 @@
+[
+  {
+    "source_lines": [
+      1,
+      1
+    ],
+    "role": "key_result",
+    "intended_focus_not_spoken_instruction": "1차 오답 원인별 수정 → 2차 30문항 전부 정답, 리더보드 답변 88.3→100%",
+    "prompt": {
+      "emotion_type": "preset",
+      "emotion_preset": "toneup",
+      "emotion_intensity": 0.6
+    }
+  },
+  {
+    "source_lines": [
+      2,
+      3
+    ],
+    "role": "explanation",
+    "intended_focus_not_spoken_instruction": "재호출 실험",
+    "prompt": {
+      "emotion_type": "preset",
+      "emotion_preset": "normal",
+      "emotion_intensity": 0.8
+    }
+  },
+  {
+    "source_lines": [
+      4,
+      4
+    ],
+    "role": "clarification",
+    "intended_focus_not_spoken_instruction": "3문항 출처 변화",
+    "prompt": {
+      "emotion_type": "preset",
+      "emotion_preset": "normal",
+      "emotion_intensity": 1.0
+    }
+  },
+  {
+    "source_lines": [
+      5,
+      5
+    ],
+    "role": "safety_transition",
+    "intended_focus_not_spoken_instruction": "원인 질문",
+    "prompt": {
+      "emotion_type": "smart",
+      "previous_text": "상위 다섯 근거는 서른 번 모두 같았고, 핵심 답도 그대로였습니다.\n그런데 세 문항에서, 답을 뒷받침하는 출처 페이지가 바뀌었습니다.",
+      "next_text": "검색이 같았으니, 달라진 건 생성 단계였습니다. 모델이 답을 쓸 때마다 덧붙이는 설명이 조금씩 달라서, 설명이 빠지면 그 출처도 빠지고, 같은 수치가 적힌 다른 페이지가 새로 붙기도 했습니다.\n같은 페이지를 인용하고도, 경계 조건 하나를 빠뜨린 답도 있었죠."
+    }
+  },
+  {
+    "source_lines": [
+      6,
+      6
+    ],
+    "role": "definition_details",
+    "intended_focus_not_spoken_instruction": "원인: 생성 단계의 덧붙임 설명",
+    "prompt": {
+      "emotion_type": "preset",
+      "emotion_preset": "normal",
+      "emotion_intensity": 0.8
+    }
+  },
+  {
+    "source_lines": [
+      7,
+      7
+    ],
+    "role": "clarification",
+    "intended_focus_not_spoken_instruction": "같은 페이지, 경계 누락",
+    "prompt": {
+      "emotion_type": "preset",
+      "emotion_preset": "normal",
+      "emotion_intensity": 1.0
+    }
+  },
+  {
+    "source_lines": [
+      8,
+      8
+    ],
+    "role": "response_measures",
+    "intended_focus_not_spoken_instruction": "검증 추가와 비용",
+    "prompt": {
+      "emotion_type": "preset",
+      "emotion_preset": "normal",
+      "emotion_intensity": 0.8
+    }
+  },
+  {
+    "source_lines": [
+      9,
+      9
+    ],
+    "role": "balanced_conclusion",
+    "intended_focus_not_spoken_instruction": "고민 중 결말",
+    "prompt": {
+      "emotion_type": "preset",
+      "emotion_preset": "normal",
+      "emotion_intensity": 1.0
+    }
+  }
+]

@@ -1,0 +1,249 @@
+[
+  {
+    "source_lines": [
+      1,
+      2
+    ],
+    "role": "opening_question",
+    "intended_focus_not_spoken_instruction": "P09 훅: 정답 페이지를 펼치고 틀린 값",
+    "prompt": {
+      "emotion_type": "smart",
+      "previous_text": "",
+      "next_text": "그런데 그건, 프린터가 쉬고 있을 때의 소리였습니다. 인쇄 소음은 사십구 데시벨이었죠.\n우리 팀은 브라더 프린터 설명서 두 권, 천구십구 쪽으로 기술지원 래그 에이전트를 만들고 있었습니다."
+    }
+  },
+  {
+    "source_lines": [
+      3,
+      3
+    ],
+    "role": "clarification",
+    "intended_focus_not_spoken_instruction": "반전: 대기 소음 vs 인쇄 소음 49",
+    "prompt": {
+      "emotion_type": "preset",
+      "emotion_preset": "normal",
+      "emotion_intensity": 1.0
+    }
+  },
+  {
+    "source_lines": [
+      4,
+      5
+    ],
+    "role": "explanation",
+    "intended_focus_not_spoken_instruction": "배경: 1,099쪽, 청크 1,512개",
+    "prompt": {
+      "emotion_type": "preset",
+      "emotion_preset": "normal",
+      "emotion_intensity": 0.8
+    }
+  },
+  {
+    "source_lines": [
+      6,
+      6
+    ],
+    "role": "balanced_comparison",
+    "intended_focus_not_spoken_instruction": "A/B/C 세 검색 비교",
+    "prompt": {
+      "emotion_type": "preset",
+      "emotion_preset": "toneup",
+      "emotion_intensity": 0.55
+    }
+  },
+  {
+    "source_lines": [
+      7,
+      7
+    ],
+    "role": "key_result",
+    "intended_focus_not_spoken_instruction": "B H Hit@5 12/12",
+    "prompt": {
+      "emotion_type": "preset",
+      "emotion_preset": "toneup",
+      "emotion_intensity": 0.6
+    }
+  },
+  {
+    "source_lines": [
+      8,
+      8
+    ],
+    "role": "explanation",
+    "intended_focus_not_spoken_instruction": "P09처럼 페이지는 맞고 답이 틀림",
+    "prompt": {
+      "emotion_type": "preset",
+      "emotion_preset": "normal",
+      "emotion_intensity": 0.8
+    }
+  },
+  {
+    "source_lines": [
+      9,
+      9
+    ],
+    "role": "safety_transition",
+    "intended_focus_not_spoken_instruction": "질문 전환",
+    "prompt": {
+      "emotion_type": "smart",
+      "previous_text": "키워드를 더한 하이브리드는, 확인용 질문 열두 개의 정답 페이지를 모두 상위 다섯 개 안에 찾아냈습니다!\n그런데 맨 처음 그 소음 질문처럼, 페이지는 맞는데 답이 틀리는 경우가 남아 있었습니다.",
+      "next_text": "원인은 페이지가 아니라, 표의 한 줄에 있었습니다.\n소음 표에서 인쇄와 대기를 가르는 가운데 칸이 조각에서 사라져 있었던 겁니다. 버전 사 점 사에서 이 칸을 되살리자, 사십구, 사십사, 삼십 데시벨이 각자 다른 조각에 담겼습니다."
+    }
+  },
+  {
+    "source_lines": [
+      10,
+      10
+    ],
+    "role": "clarification",
+    "intended_focus_not_spoken_instruction": "원인: 페이지가 아니라 표의 한 줄",
+    "prompt": {
+      "emotion_type": "preset",
+      "emotion_preset": "normal",
+      "emotion_intensity": 1.0
+    }
+  },
+  {
+    "source_lines": [
+      11,
+      11
+    ],
+    "role": "response_measures",
+    "intended_focus_not_spoken_instruction": "v4.4 칸 복원",
+    "prompt": {
+      "emotion_type": "preset",
+      "emotion_preset": "normal",
+      "emotion_intensity": 0.8
+    }
+  },
+  {
+    "source_lines": [
+      12,
+      12
+    ],
+    "role": "key_result",
+    "intended_focus_not_spoken_instruction": "1차 제출 91.26",
+    "prompt": {
+      "emotion_type": "preset",
+      "emotion_preset": "toneup",
+      "emotion_intensity": 0.6
+    }
+  },
+  {
+    "source_lines": [
+      13,
+      13
+    ],
+    "role": "explanation",
+    "intended_focus_not_spoken_instruction": "남은 오류",
+    "prompt": {
+      "emotion_type": "preset",
+      "emotion_preset": "normal",
+      "emotion_intensity": 0.8
+    }
+  },
+  {
+    "source_lines": [
+      14,
+      15
+    ],
+    "role": "response_measures",
+    "intended_focus_not_spoken_instruction": "v4.7 + B 보완",
+    "prompt": {
+      "emotion_type": "preset",
+      "emotion_preset": "normal",
+      "emotion_intensity": 0.8
+    }
+  },
+  {
+    "source_lines": [
+      16,
+      16
+    ],
+    "role": "balanced_comparison",
+    "intended_focus_not_spoken_instruction": "취약 유형 10: B 10 vs C 6",
+    "prompt": {
+      "emotion_type": "preset",
+      "emotion_preset": "toneup",
+      "emotion_intensity": 0.55
+    }
+  },
+  {
+    "source_lines": [
+      17,
+      17
+    ],
+    "role": "key_result",
+    "intended_focus_not_spoken_instruction": "2차 제출 100.00",
+    "prompt": {
+      "emotion_type": "preset",
+      "emotion_preset": "toneup",
+      "emotion_intensity": 0.6
+    }
+  },
+  {
+    "source_lines": [
+      18,
+      18
+    ],
+    "role": "explanation",
+    "intended_focus_not_spoken_instruction": "재호출 결과",
+    "prompt": {
+      "emotion_type": "preset",
+      "emotion_preset": "normal",
+      "emotion_intensity": 0.8
+    }
+  },
+  {
+    "source_lines": [
+      19,
+      19
+    ],
+    "role": "response_measures",
+    "intended_focus_not_spoken_instruction": "수치 검증 + P95 비용",
+    "prompt": {
+      "emotion_type": "preset",
+      "emotion_preset": "normal",
+      "emotion_intensity": 0.8
+    }
+  },
+  {
+    "source_lines": [
+      20,
+      20
+    ],
+    "role": "uncertainty_limit",
+    "intended_focus_not_spoken_instruction": "기여도 분리 불가",
+    "prompt": {
+      "emotion_type": "preset",
+      "emotion_preset": "normal",
+      "emotion_intensity": 1.0
+    }
+  },
+  {
+    "source_lines": [
+      21,
+      21
+    ],
+    "role": "balanced_conclusion",
+    "intended_focus_not_spoken_instruction": "결말: 조건",
+    "prompt": {
+      "emotion_type": "preset",
+      "emotion_preset": "normal",
+      "emotion_intensity": 1.0
+    }
+  },
+  {
+    "source_lines": [
+      22,
+      22
+    ],
+    "role": "opening_question",
+    "intended_focus_not_spoken_instruction": "다음 질문으로 끝맺음",
+    "prompt": {
+      "emotion_type": "smart",
+      "previous_text": "돌아보면 두 제출 사이엔 청크와 검색, 생성이 함께 바뀌었고, 문제도 같은 서른 문항이었습니다. 그래서 무엇이 몇 점을 올렸는지는 나눌 수 없습니다.\n두 제출의 청크 수는 똑같이 천오백이십팔 개였습니다. 바뀐 건 숫자 옆에 붙은 조건이었습니다.",
+      "next_text": ""
+    }
+  }
+]

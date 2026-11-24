@@ -1,0 +1,176 @@
+{
+  "segments": [
+    {
+      "type": "tts",
+      "voice_id": "tc_68257f68bc6e3c161ab5078d",
+      "model": "ssfm-v31",
+      "language": "kor",
+      "text": "1차에서 틀린 문항은 하나하나 원인을 찾아, 청크와 검색, 생성 중 틀린 곳을 고친 것이었습니다. 그래서 2차에선 서른 문항을 모두 맞혔고, 답변 정확도는 팔십팔 점 삼 퍼센트에서 백 퍼센트가 됐습니다.",
+      "prompt": {
+        "emotion_type": "preset",
+        "emotion_preset": "toneup",
+        "emotion_intensity": 0.6
+      },
+      "output": {
+        "audio_format": "wav",
+        "audio_tempo": 1.05,
+        "audio_pitch": 0,
+        "target_lufs": -18
+      }
+    },
+    {
+      "type": "pause",
+      "duration_seconds": 0.18
+    },
+    {
+      "type": "tts",
+      "voice_id": "tc_68257f68bc6e3c161ab5078d",
+      "model": "ssfm-v31",
+      "language": "kor",
+      "text": "백 점을 받은 뒤, 같은 서른 문항을 같은 서버에 한 번 더 보내 봤습니다.\n상위 다섯 근거는 서른 번 모두 같았고, 핵심 답도 그대로였습니다.",
+      "prompt": {
+        "emotion_type": "preset",
+        "emotion_preset": "normal",
+        "emotion_intensity": 0.8
+      },
+      "output": {
+        "audio_format": "wav",
+        "audio_tempo": 1.05,
+        "audio_pitch": 0,
+        "target_lufs": -18
+      }
+    },
+    {
+      "type": "pause",
+      "duration_seconds": 0.18
+    },
+    {
+      "type": "tts",
+      "voice_id": "tc_68257f68bc6e3c161ab5078d",
+      "model": "ssfm-v31",
+      "language": "kor",
+      "text": "그런데 세 문항에서, 답을 뒷받침하는 출처 페이지가 바뀌었습니다.",
+      "prompt": {
+        "emotion_type": "preset",
+        "emotion_preset": "normal",
+        "emotion_intensity": 1.0
+      },
+      "output": {
+        "audio_format": "wav",
+        "audio_tempo": 1.05,
+        "audio_pitch": 0,
+        "target_lufs": -18
+      }
+    },
+    {
+      "type": "pause",
+      "duration_seconds": 0.18
+    },
+    {
+      "type": "tts",
+      "voice_id": "tc_68257f68bc6e3c161ab5078d",
+      "model": "ssfm-v31",
+      "language": "kor",
+      "text": "왜 그랬을까요?",
+      "prompt": {
+        "emotion_type": "smart",
+        "previous_text": "상위 다섯 근거는 서른 번 모두 같았고, 핵심 답도 그대로였습니다.\n그런데 세 문항에서, 답을 뒷받침하는 출처 페이지가 바뀌었습니다.",
+        "next_text": "검색이 같았으니, 달라진 건 생성 단계였습니다. 모델이 답을 쓸 때마다 덧붙이는 설명이 조금씩 달라서, 설명이 빠지면 그 출처도 빠지고, 같은 수치가 적힌 다른 페이지가 새로 붙기도 했습니다.\n같은 페이지를 인용하고도, 경계 조건 하나를 빠뜨린 답도 있었죠."
+      },
+      "output": {
+        "audio_format": "wav",
+        "audio_tempo": 1.05,
+        "audio_pitch": 0,
+        "target_lufs": -18
+      }
+    },
+    {
+      "type": "pause",
+      "duration_seconds": 0.18
+    },
+    {
+      "type": "tts",
+      "voice_id": "tc_68257f68bc6e3c161ab5078d",
+      "model": "ssfm-v31",
+      "language": "kor",
+      "text": "검색이 같았으니, 달라진 건 생성 단계였습니다. 모델이 답을 쓸 때마다 덧붙이는 설명이 조금씩 달라서, 설명이 빠지면 그 출처도 빠지고, 같은 수치가 적힌 다른 페이지가 새로 붙기도 했습니다.",
+      "prompt": {
+        "emotion_type": "preset",
+        "emotion_preset": "normal",
+        "emotion_intensity": 0.8
+      },
+      "output": {
+        "audio_format": "wav",
+        "audio_tempo": 1.05,
+        "audio_pitch": 0,
+        "target_lufs": -18
+      }
+    },
+    {
+      "type": "pause",
+      "duration_seconds": 0.18
+    },
+    {
+      "type": "tts",
+      "voice_id": "tc_68257f68bc6e3c161ab5078d",
+      "model": "ssfm-v31",
+      "language": "kor",
+      "text": "같은 페이지를 인용하고도, 경계 조건 하나를 빠뜨린 답도 있었죠.",
+      "prompt": {
+        "emotion_type": "preset",
+        "emotion_preset": "normal",
+        "emotion_intensity": 1.0
+      },
+      "output": {
+        "audio_format": "wav",
+        "audio_tempo": 1.05,
+        "audio_pitch": 0,
+        "target_lufs": -18
+      }
+    },
+    {
+      "type": "pause",
+      "duration_seconds": 0.18
+    },
+    {
+      "type": "tts",
+      "voice_id": "tc_68257f68bc6e3c161ab5078d",
+      "model": "ssfm-v31",
+      "language": "kor",
+      "text": "그래서 답의 숫자와 단위를 원문 줄과 다시 맞춰 보는 검증을 붙였습니다. 그랬더니 응답 시간 피 구십오가, 사 점 칠오 초에서 구 점 육육 초로 두 배가 됐습니다.",
+      "prompt": {
+        "emotion_type": "preset",
+        "emotion_preset": "normal",
+        "emotion_intensity": 0.8
+      },
+      "output": {
+        "audio_format": "wav",
+        "audio_tempo": 1.05,
+        "audio_pitch": 0,
+        "target_lufs": -18
+      }
+    },
+    {
+      "type": "pause",
+      "duration_seconds": 0.18
+    },
+    {
+      "type": "tts",
+      "voice_id": "tc_68257f68bc6e3c161ab5078d",
+      "model": "ssfm-v31",
+      "language": "kor",
+      "text": "매번 검증해서 정확하게 갈지, 꼭 필요할 때만 검증해서 빠르게 갈지. 지금 우리는 그 사이에서 고민하고 있습니다.",
+      "prompt": {
+        "emotion_type": "preset",
+        "emotion_preset": "normal",
+        "emotion_intensity": 1.0
+      },
+      "output": {
+        "audio_format": "wav",
+        "audio_tempo": 1.05,
+        "audio_pitch": 0,
+        "target_lufs": -18
+      }
+    }
+  ]
+}

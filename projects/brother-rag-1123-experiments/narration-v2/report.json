@@ -1,0 +1,27 @@
+{
+  "duration_seconds": 175.401,
+  "sample_rate": 44100,
+  "parts": [
+    {
+      "part": "part1",
+      "start_seconds": 0.0,
+      "duration_seconds": 104.4,
+      "first_line": 1,
+      "last_line": 17,
+      "sha256": "d6b7e406077e71548fdcd48475d7e7e3ed4d3c218d2f2327c51a42ecfcf4dbd7"
+    },
+    {
+      "part": "part2",
+      "start_seconds": 104.58,
+      "duration_seconds": 70.821,
+      "first_line": 18,
+      "last_line": 28,
+      "sha256": "f194c0b497c6393b68b30a8242e0a4716c4f39e84c7a691418f7b2ff5cae575f"
+    }
+  ],
+  "join_pause_seconds": 0.18,
+  "chars": 1525,
+  "synthesis_requests": 2,
+  "sha256": "e2712deb4b8ab60b7e768401e2f0cdfc74eb118280edbc5119f6ec161b15a6ad",
+  "listening_review": "pending"
+}

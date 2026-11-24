@@ -1,0 +1,84 @@
+{
+ "project": "brother-rag-1123-experiments",
+ "updated": "2026-11-24",
+ "current_step": "v2 완성본 전달, 사용자 시청 검토 대기",
+ "scenes": {
+  "F01": {
+   "status": "used_in_final",
+   "received": "2026-11-24",
+   "adopted_take": null,
+   "upscaled_1080p": true,
+   "edit_range": "0.00–7.90",
+   "raw": "media/flow/F01_raw_1080p.mp4",
+   "edit_fix": "마지막 샷(127-189) 판독창 2배 확대 — 다이얼 바늘이 \"인쇄로\"를 가리킴"
+  },
+  "F02": {
+   "status": "used_in_final",
+   "received": "2026-11-24",
+   "adopted_take": null,
+   "upscaled_1080p": true,
+   "edit_range": "15.20–21.50",
+   "raw": "media/flow/F02_raw_1080p.mp4",
+   "edit_fix": "59-115 \"1,099 ğańk\" → \"1,099쪽\" 덮어쓰기"
+  },
+  "F03": {
+   "status": "used_in_final",
+   "received": "2026-11-24",
+   "adopted_take": null,
+   "upscaled_1080p": true,
+   "edit_range": "44.30–52.20",
+   "raw": "media/flow/F03_raw_1080p.mp4",
+   "edit_fix": "63-189 판독창 의미 없는 \"1.0 0\" 흐림"
+  },
+  "F04": {
+   "status": "used_in_final",
+   "received": "2026-11-24",
+   "adopted_take": null,
+   "upscaled_1080p": true,
+   "edit_range": "79.10–86.10",
+   "raw": "media/flow/F04_raw_1080p.mp4",
+   "edit_fix": "67-114 \"홈몸\" → \"홈\"(글자 픽셀 인페인트 후 다시 씀)"
+  },
+  "F05": {
+   "status": "used_in_final",
+   "received": "2026-11-24",
+   "adopted_take": null,
+   "upscaled_1080p": true,
+   "edit_range": "124.60–132.50",
+   "raw": "media/flow/F05_raw_1080p.mp4",
+   "edit_fix": "\"검섬색\" → \"검색\" 라벨 덮어쓰기, 배경 프린터 HP 로고·계기판 \"HOIEM\" 흐림",
+   "v2_edit_range": "110.20–114.25 (소스 1.00–5.04)"
+  },
+  "F06": {
+   "status": "used_in_final",
+   "received": "2026-11-24",
+   "adopted_take": null,
+   "upscaled_1080p": true,
+   "edit_range": "134.40–141.10",
+   "raw": "media/flow/F06_raw_1080p.mp4",
+   "edit_fix": "0-58 프린터 HP 로고 흐림",
+   "v2_edit_range": "155.20–159.30 (소스 2.46–6.54, F06v2_1080p.mp4)",
+   "v2_edit_fix": "다이얼 둘레 뜻 없는 라벨(패병·찹용·nmN / 쇄테·인상블) 인페인트 제거"
+  },
+  "F07": {
+   "status": "used_in_final",
+   "requested": "2026-11-24",
+   "received": "2026-11-24",
+   "adopted_take": null,
+   "upscaled_1080p": true,
+   "edit_range": "125.40–132.90",
+   "raw": "media/flow/F07_raw_1080p.mp4",
+   "edit_fix": "1샷(0-58) 판독창 의미 없는 숫자 → 7세그먼트 \"100.00\"(꺼진 8 모양에서 세그먼트 위치를 재서 다시 그림), \"인쇠보\"→\"인쇄\", \"애회/애괴\" 지움(장갑 가림 영역은 원본 유지). 3샷 결과지 머리글 \"인식뭔 됨\"·줄 번호 자리 뜻 없는 글자 지움"
+  },
+  "F08": {
+   "status": "used_in_final",
+   "requested": "2026-11-24",
+   "received": "2026-11-24",
+   "adopted_take": null,
+   "upscaled_1080p": true,
+   "edit_range": "170.30–176.90",
+   "raw": "media/flow/F08_raw_1080p.mp4",
+   "edit_fix": "2샷(49-101) \"인쇄보\"→\"인쇄\"(\"보\"만 지움). 노브는 인쇄→저소음으로 돌아감(프롬프트와 반대지만 의미상 문제없음)"
+  }
+ }
+}
