@@ -1,0 +1,314 @@
+[
+  {
+    "source_lines": [
+      1,
+      2
+    ],
+    "role": "explanation",
+    "intended_focus_not_spoken_instruction": "임베딩",
+    "prompt": {
+      "emotion_type": "preset",
+      "emotion_preset": "normal",
+      "emotion_intensity": 0.8
+    }
+  },
+  {
+    "source_lines": [
+      3,
+      3
+    ],
+    "role": "clarification",
+    "intended_focus_not_spoken_instruction": "숫자 하나에 뜻 없음",
+    "prompt": {
+      "emotion_type": "preset",
+      "emotion_preset": "normal",
+      "emotion_intensity": 1.0
+    }
+  },
+  {
+    "source_lines": [
+      4,
+      5
+    ],
+    "role": "explanation",
+    "intended_focus_not_spoken_instruction": "벡터 검색·장점",
+    "prompt": {
+      "emotion_type": "preset",
+      "emotion_preset": "normal",
+      "emotion_intensity": 0.8
+    }
+  },
+  {
+    "source_lines": [
+      6,
+      6
+    ],
+    "role": "uncertainty_limit",
+    "intended_focus_not_spoken_instruction": "유사 코드 혼동→모델 필터",
+    "prompt": {
+      "emotion_type": "preset",
+      "emotion_preset": "normal",
+      "emotion_intensity": 1.0
+    }
+  },
+  {
+    "source_lines": [
+      7,
+      7
+    ],
+    "role": "clarification",
+    "intended_focus_not_spoken_instruction": "코사인 0.9≠90%",
+    "prompt": {
+      "emotion_type": "preset",
+      "emotion_preset": "normal",
+      "emotion_intensity": 1.0
+    }
+  },
+  {
+    "source_lines": [
+      8,
+      9
+    ],
+    "role": "definition_details",
+    "intended_focus_not_spoken_instruction": "BM25 정의·세 요소",
+    "prompt": {
+      "emotion_type": "preset",
+      "emotion_preset": "normal",
+      "emotion_intensity": 0.8
+    }
+  },
+  {
+    "source_lines": [
+      10,
+      10
+    ],
+    "role": "balanced_comparison",
+    "intended_focus_not_spoken_instruction": "강점/약점",
+    "prompt": {
+      "emotion_type": "preset",
+      "emotion_preset": "toneup",
+      "emotion_intensity": 0.55
+    }
+  },
+  {
+    "source_lines": [
+      11,
+      12
+    ],
+    "role": "explanation",
+    "intended_focus_not_spoken_instruction": "Kiwi와 BM25 역할",
+    "prompt": {
+      "emotion_type": "preset",
+      "emotion_preset": "normal",
+      "emotion_intensity": 0.8
+    }
+  },
+  {
+    "source_lines": [
+      13,
+      13
+    ],
+    "role": "clarification",
+    "intended_focus_not_spoken_instruction": "하이브리드 정의",
+    "prompt": {
+      "emotion_type": "preset",
+      "emotion_preset": "normal",
+      "emotion_intensity": 1.0
+    }
+  },
+  {
+    "source_lines": [
+      14,
+      14
+    ],
+    "role": "uncertainty_limit",
+    "intended_focus_not_spoken_instruction": "점수 단순 합산 불가",
+    "prompt": {
+      "emotion_type": "preset",
+      "emotion_preset": "normal",
+      "emotion_intensity": 1.0
+    }
+  },
+  {
+    "source_lines": [
+      15,
+      16
+    ],
+    "role": "definition_details",
+    "intended_focus_not_spoken_instruction": "RRF 정의·식",
+    "prompt": {
+      "emotion_type": "preset",
+      "emotion_preset": "normal",
+      "emotion_intensity": 0.8
+    }
+  },
+  {
+    "source_lines": [
+      17,
+      17
+    ],
+    "role": "balanced_comparison",
+    "intended_focus_not_spoken_instruction": "k=60 두 조각 비교",
+    "prompt": {
+      "emotion_type": "preset",
+      "emotion_preset": "toneup",
+      "emotion_intensity": 0.55
+    }
+  },
+  {
+    "source_lines": [
+      18,
+      18
+    ],
+    "role": "clarification",
+    "intended_focus_not_spoken_instruction": "RRF는 검증이 아님",
+    "prompt": {
+      "emotion_type": "preset",
+      "emotion_preset": "normal",
+      "emotion_intensity": 1.0
+    }
+  },
+  {
+    "source_lines": [
+      19,
+      20
+    ],
+    "role": "explanation",
+    "intended_focus_not_spoken_instruction": "리랭킹",
+    "prompt": {
+      "emotion_type": "preset",
+      "emotion_preset": "normal",
+      "emotion_intensity": 0.8
+    }
+  },
+  {
+    "source_lines": [
+      21,
+      21
+    ],
+    "role": "uncertainty_limit",
+    "intended_focus_not_spoken_instruction": "리랭킹 한계",
+    "prompt": {
+      "emotion_type": "preset",
+      "emotion_preset": "normal",
+      "emotion_intensity": 1.0
+    }
+  },
+  {
+    "source_lines": [
+      22,
+      22
+    ],
+    "role": "balanced_comparison",
+    "intended_focus_not_spoken_instruction": "A/B/C 세 구성",
+    "prompt": {
+      "emotion_type": "preset",
+      "emotion_preset": "toneup",
+      "emotion_intensity": 0.55
+    }
+  },
+  {
+    "source_lines": [
+      23,
+      23
+    ],
+    "role": "uncertainty_limit",
+    "intended_focus_not_spoken_instruction": "재 보기 전엔 모름",
+    "prompt": {
+      "emotion_type": "preset",
+      "emotion_preset": "normal",
+      "emotion_intensity": 1.0
+    }
+  },
+  {
+    "source_lines": [
+      24,
+      24
+    ],
+    "role": "safety_transition",
+    "intended_focus_not_spoken_instruction": "어디에 담나: Supabase",
+    "prompt": {
+      "emotion_type": "smart",
+      "previous_text": "그래서 세 가지 구성을 같은 조건에서 비교합니다. 벡터 검색만 쓴 기준선, 비엠이십오와 알알에프를 더한 하이브리드, 그리고 하이브리드에 리랭킹까지 얹은 구성입니다.\n무엇이 이길지는, 직접 재 보기 전에는 알 수 없습니다.",
+      "next_text": "조각 원문과 메타데이터는 테이블에 저장합니다. 앞에서 말한 모델 필터도, 결국 적용 모델 칸으로 거르는 조건이 되죠.\n벡터는 피지벡터라는 확장 기능을 켜서 저장하고, 유사도 검색까지 데이터베이스 안에서 할 수 있습니다."
+    }
+  },
+  {
+    "source_lines": [
+      25,
+      26
+    ],
+    "role": "explanation",
+    "intended_focus_not_spoken_instruction": "테이블·pgvector",
+    "prompt": {
+      "emotion_type": "preset",
+      "emotion_preset": "normal",
+      "emotion_intensity": 0.8
+    }
+  },
+  {
+    "source_lines": [
+      27,
+      28
+    ],
+    "role": "clarification",
+    "intended_focus_not_spoken_instruction": "ts_rank는 BM25 아님",
+    "prompt": {
+      "emotion_type": "preset",
+      "emotion_preset": "normal",
+      "emotion_intensity": 1.0
+    }
+  },
+  {
+    "source_lines": [
+      29,
+      30
+    ],
+    "role": "response_measures",
+    "intended_focus_not_spoken_instruction": "방법 A 역할 분담",
+    "prompt": {
+      "emotion_type": "preset",
+      "emotion_preset": "normal",
+      "emotion_intensity": 0.8
+    }
+  },
+  {
+    "source_lines": [
+      31,
+      31
+    ],
+    "role": "uncertainty_limit",
+    "intended_focus_not_spoken_instruction": "장점과 주의",
+    "prompt": {
+      "emotion_type": "preset",
+      "emotion_preset": "normal",
+      "emotion_intensity": 1.0
+    }
+  },
+  {
+    "source_lines": [
+      32,
+      32
+    ],
+    "role": "explanation",
+    "intended_focus_not_spoken_instruction": "RRF도 파이썬",
+    "prompt": {
+      "emotion_type": "preset",
+      "emotion_preset": "normal",
+      "emotion_intensity": 0.8
+    }
+  },
+  {
+    "source_lines": [
+      33,
+      33
+    ],
+    "role": "clarification",
+    "intended_focus_not_spoken_instruction": "저장 위치 vs 계산 위치",
+    "prompt": {
+      "emotion_type": "preset",
+      "emotion_preset": "normal",
+      "emotion_intensity": 1.0
+    }
+  }
+]

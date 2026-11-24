@@ -1,0 +1,13 @@
+{
+  "duration_seconds": 110.541,
+  "request_seconds": 11.8,
+  "sample_rate": 44100,
+  "tempo": 1.05,
+  "tts_segments": 13,
+  "chars": 904,
+  "peak_pcm16": 32768,
+  "clipped_samples": 74,
+  "sha256": "9591e6f5324ecb6bf76401868fa112258e2d9b9ca34656840047652300372b27",
+  "synthesis_requests": 1,
+  "listening_review": "pending"
+}

@@ -12,6 +12,10 @@ F07의 반복 카테터 컷을 미사용 Flow 테이크 0f8e1484의 치료 선�
 
 공통 지침 정리 후 기존 단위 테스트 11개가 통과했다. [Notion 제작 계획](https://app.notion.com/p/41ddb49922e5813582c3d45a55b0012a)에도 새 주제 제작 순서를 기록했다.
 
+## 진행 중: rag-concepts-longform (2026-11-20)
+
+개념 공유용 롱폼 **완성본 전달**: `projects/rag-concepts-longform/renders/RAG-핵심개념_완성본_1080p.mp4`(626.79초). Flow 12(15%)·모션 31·자막 300큐. 남은 것: 사용자 시청·청취 확인(7줄), 피드백 반영. 상세: [편 README](../projects/rag-concepts-longform/README.md). 공통 도구 변경: `typecast_compose.py concat`, `transcribe_narration.py`(ASR 단어 선저장·끝 글자 대체·difflib 정렬 대체).
+
 ## PFA 파일럿을 재개할 때 먼저 읽을 파일
 
 1. 루트 `AGENTS.md`, `README.md`, 이 문서.

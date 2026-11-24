@@ -1,0 +1,273 @@
+{
+  "version": 1,
+  "project": {
+    "id": "rag-concepts-longform",
+    "title": "처음 읽는 래그 — 질문 하나가 답이 되기까지",
+    "aspect_ratio": "16:9",
+    "duration_seconds": 626.8,
+    "audio_path": "projects/rag-concepts-longform/narration/local-short-window-v1/narration_balanced.wav",
+    "audio_source_sha256": "ba6de965351ae9f870fde1a48625227e45e2c7939139442a57bc09569ab31427",
+    "audio_balanced_sha256": "4053da30a01159634daf03e9605bfbec99eddc8f7c77111e1d2fae1e3e550dc7",
+    "audio_duration_seconds": 625.69,
+    "timing_source": "narration/local-short-window-v1/sentence-boundaries.json",
+    "style": "template-spec.md — 물류 센터 출고 라인. Flow 15.0%(사용자 합의 롱폼 예외)"
+  },
+  "sources": [
+    {
+      "id": "N",
+      "url": "https://app.notion.com/p/41edb49922e5817b869dc73ce1759cca"
+    },
+    {
+      "id": "G",
+      "url": "https://app.notion.com/p/41d2dc3ef51480288d60e850c0d02beb"
+    }
+  ],
+  "narration_lines": 91,
+  "edits": [
+    {
+      "id": "F01",
+      "type": "flow",
+      "start": 0.0,
+      "end": 8.0,
+      "lines": [
+        1
+      ],
+      "description": "번호 한 글자 다른 두 레이저 복합기 명판",
+      "generate_seconds": 8,
+      "source_in": 0.0,
+      "source_out": 8.0
+    },
+    {
+      "id": "F02",
+      "type": "flow",
+      "start": 8.0,
+      "end": 16.0,
+      "lines": [
+        1,
+        2
+      ],
+      "description": "밝은 물류 센터, 주문 카드 한 장이 입고 레인에 올라감",
+      "generate_seconds": 8,
+      "source_in": 0.0,
+      "source_out": 8.0
+    },
+    {
+      "id": "M01",
+      "type": "motion",
+      "start": 16.0,
+      "end": 80.3,
+      "description": "모션그래픽 구간(장면 세분은 모션 단계에서 template-spec 기준으로 확정)"
+    },
+    {
+      "id": "F03",
+      "type": "flow",
+      "start": 80.3,
+      "end": 88.3,
+      "lines": [
+        12
+      ],
+      "description": "작업대에서 두꺼운 매뉴얼을 풀어 조각을 상자에 나눠 담음",
+      "generate_seconds": 8,
+      "source_in": 0.0,
+      "source_out": 8.0
+    },
+    {
+      "id": "M02",
+      "type": "motion",
+      "start": 88.3,
+      "end": 147.4,
+      "description": "모션그래픽 구간(장면 세분은 모션 단계에서 template-spec 기준으로 확정)"
+    },
+    {
+      "id": "F04",
+      "type": "flow",
+      "start": 147.4,
+      "end": 155.4,
+      "lines": [
+        22,
+        23
+      ],
+      "description": "비슷한 물건끼리 모인 선반 구역을 피킹 카트가 훑음(벡터)",
+      "generate_seconds": 8,
+      "source_in": 0.0,
+      "source_out": 8.0
+    },
+    {
+      "id": "M03",
+      "type": "motion",
+      "start": 155.4,
+      "end": 171.1,
+      "description": "모션그래픽 구간(장면 세분은 모션 단계에서 template-spec 기준으로 확정)"
+    },
+    {
+      "id": "F05",
+      "type": "flow",
+      "start": 171.1,
+      "end": 177.9,
+      "lines": [
+        26
+      ],
+      "description": "바코드 스캐너가 상자 송장의 품번을 읽음(BM25)",
+      "generate_seconds": 8,
+      "source_in": 0.0,
+      "source_out": 6.8
+    },
+    {
+      "id": "M04",
+      "type": "motion",
+      "start": 177.9,
+      "end": 274.8,
+      "description": "모션그래픽 구간(장면 세분은 모션 단계에서 template-spec 기준으로 확정)"
+    },
+    {
+      "id": "F06",
+      "type": "flow",
+      "start": 274.8,
+      "end": 282.8,
+      "lines": [
+        42
+      ],
+      "description": "행·열 번호가 붙은 보관 랙과 옆 작업대(Supabase / 파이썬)",
+      "generate_seconds": 8,
+      "source_in": 0.0,
+      "source_out": 8.0
+    },
+    {
+      "id": "M05",
+      "type": "motion",
+      "start": 282.8,
+      "end": 379.2,
+      "description": "모션그래픽 구간(장면 세분은 모션 단계에서 template-spec 기준으로 확정)"
+    },
+    {
+      "id": "F07",
+      "type": "flow",
+      "start": 379.2,
+      "end": 387.2,
+      "lines": [
+        57
+      ],
+      "description": "출고대에서 상자 송장 번호와 주문 카드를 대조",
+      "generate_seconds": 8,
+      "source_in": 0.0,
+      "source_out": 8.0
+    },
+    {
+      "id": "M06",
+      "type": "motion",
+      "start": 387.2,
+      "end": 394.1,
+      "description": "모션그래픽 구간(장면 세분은 모션 단계에서 template-spec 기준으로 확정)"
+    },
+    {
+      "id": "F08",
+      "type": "flow",
+      "start": 394.1,
+      "end": 402.1,
+      "lines": [
+        59,
+        60
+      ],
+      "description": "빈 선반 칸 앞에서 주문 카드에 빨간 보류 도장",
+      "generate_seconds": 8,
+      "source_in": 0.0,
+      "source_out": 8.0
+    },
+    {
+      "id": "M07",
+      "type": "motion",
+      "start": 402.1,
+      "end": 428.4,
+      "description": "모션그래픽 구간(장면 세분은 모션 단계에서 template-spec 기준으로 확정)"
+    },
+    {
+      "id": "F09",
+      "type": "flow",
+      "start": 428.4,
+      "end": 435.9,
+      "lines": [
+        65
+      ],
+      "description": "자주 나가는 상자를 출고대 바로 옆 앞칸 선반으로 옮김",
+      "generate_seconds": 8,
+      "source_in": 0.0,
+      "source_out": 7.5
+    },
+    {
+      "id": "M08",
+      "type": "motion",
+      "start": 435.9,
+      "end": 477.1,
+      "description": "모션그래픽 구간(장면 세분은 모션 단계에서 template-spec 기준으로 확정)"
+    },
+    {
+      "id": "F10",
+      "type": "flow",
+      "start": 477.1,
+      "end": 485.1,
+      "lines": [
+        72,
+        73
+      ],
+      "description": "주문 카드가 컨베이어를 따라 정거장들을 지나는 추적 샷",
+      "generate_seconds": 8,
+      "source_in": 0.0,
+      "source_out": 8.0
+    },
+    {
+      "id": "M09",
+      "type": "motion",
+      "start": 485.1,
+      "end": 515.2,
+      "description": "모션그래픽 구간(장면 세분은 모션 단계에서 template-spec 기준으로 확정)"
+    },
+    {
+      "id": "F11",
+      "type": "flow",
+      "start": 515.2,
+      "end": 523.2,
+      "lines": [
+        78
+      ],
+      "description": "출고 품질 검사: 클립보드 체크와 스톱워치",
+      "generate_seconds": 8,
+      "source_in": 0.0,
+      "source_out": 8.0
+    },
+    {
+      "id": "M10",
+      "type": "motion",
+      "start": 523.2,
+      "end": 612.4,
+      "description": "모션그래픽 구간(장면 세분은 모션 단계에서 template-spec 기준으로 확정)"
+    },
+    {
+      "id": "F12",
+      "type": "flow",
+      "start": 612.4,
+      "end": 620.4,
+      "lines": [
+        90,
+        91
+      ],
+      "description": "두 복합기 앞, 맞는 쪽에 맞는 상자가 도착",
+      "generate_seconds": 8,
+      "source_in": 0.0,
+      "source_out": 8.0
+    },
+    {
+      "id": "M11",
+      "type": "motion",
+      "start": 620.4,
+      "end": 626.8,
+      "description": "결말: 전체 정거장 한 장 요약, 마지막 발화 625.38 후 약 1.4초 여운"
+    }
+  ],
+  "validation": {
+    "edits_contiguous": true,
+    "starts_at_zero": true,
+    "ends": 626.8,
+    "flow_seconds": 94.3,
+    "motion_seconds": 532.5
+  }
+}

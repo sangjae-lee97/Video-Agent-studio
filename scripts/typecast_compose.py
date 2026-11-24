@@ -12,6 +12,9 @@ segments.json 형식 (role은 docs/narration-defaults.json의 emotion_by_role �
 ]
 속도·화자·모델·감정 강도는 docs/narration-defaults.json에서 읽는다. 키는 저장소 루트 .env의 TYPECAST_API_KEY.
 에이전트 환경에서 api.typecast.ai가 막혀 있으면 build가 만든 run_narration.ps1을 사용자가 PowerShell에서 실행한다.
+3) concat — Compose 한도(2,000자·50구간)를 넘는 긴 원고: 장 경계로 나눈 part 폴더를 각각 build·synth한 뒤
+   하나의 narration.wav·source.txt로 잇는다(구간 휴지와 같은 segment_pause_seconds 무음, 재합성 없음).
+   python scripts/typecast_compose.py concat projects/<편명>/narration projects/<편명>/narration/part1 ...part2 ...
 """
 from array import array
 import argparse
@@ -123,10 +126,54 @@ def synth(out: Path) -> None:
     print(json.dumps(report, indent=2))
 
 
+def concat(out: Path, parts: list) -> None:
+    out = out.resolve()
+    if (out / 'narration.wav').exists():
+        sys.exit('이미 narration.wav가 있습니다. 덮어쓰지 않습니다.')
+    D = json.loads((ROOT / 'docs/narration-defaults.json').read_text(encoding='utf-8'))
+    pause = D['segment_pause_seconds']
+    params, chunks, lines, info, t = None, [], [], [], 0.0
+    for i, p in enumerate(parts):
+        p = Path(p).resolve()
+        with wave.open(str(p / 'narration.wav'), 'rb') as w:
+            pr = (w.getnchannels(), w.getsampwidth(), w.getframerate())
+            if params and pr != params:
+                sys.exit(f'{p.name}: 형식 불일치 {pr} != {params}')
+            params = pr
+            data = w.readframes(w.getnframes())
+            dur = w.getnframes() / pr[2]
+        if i:
+            chunks.append(b'\x00' * (round(pause * pr[2]) * pr[0] * pr[1]))
+            t += pause
+        part_lines = (p / 'source.txt').read_text(encoding='utf-8').splitlines()
+        info.append({'part': p.name, 'start_seconds': round(t, 3), 'duration_seconds': round(dur, 3),
+                     'first_line': len(lines) + 1, 'last_line': len(lines) + len(part_lines),
+                     'sha256': hashlib.sha256((p / 'narration.wav').read_bytes()).hexdigest()})
+        lines += part_lines
+        chunks.append(data)
+        t += dur
+    out.mkdir(parents=True, exist_ok=True)
+    with wave.open(str(out / 'narration.wav'), 'wb') as w:
+        w.setnchannels(params[0]); w.setsampwidth(params[1]); w.setframerate(params[2])
+        w.writeframes(b''.join(chunks))
+    (out / 'source.txt').write_text('\n'.join(lines) + '\n', encoding='utf-8')
+    report = {'duration_seconds': round(t, 3), 'sample_rate': params[2], 'parts': info, 'join_pause_seconds': pause,
+              'chars': sum(len(l) for l in lines), 'synthesis_requests': len(parts),
+              'sha256': hashlib.sha256((out / 'narration.wav').read_bytes()).hexdigest(), 'listening_review': 'pending'}
+    (out / 'report.json').write_text(json.dumps(report, ensure_ascii=False, indent=2), encoding='utf-8')
+    print(json.dumps(report, ensure_ascii=False, indent=2))
+
+
 if __name__ == '__main__':
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
     sub = ap.add_subparsers(dest='cmd', required=True)
     b = sub.add_parser('build'); b.add_argument('segments_json')
     s = sub.add_parser('synth'); s.add_argument('narration_dir')
+    c = sub.add_parser('concat'); c.add_argument('out_dir'); c.add_argument('part_dirs', nargs='+')
     a = ap.parse_args()
-    build(Path(a.segments_json)) if a.cmd == 'build' else synth(Path(a.narration_dir))
+    if a.cmd == 'build':
+        build(Path(a.segments_json))
+    elif a.cmd == 'synth':
+        synth(Path(a.narration_dir))
+    else:
+        concat(Path(a.out_dir), a.part_dirs)

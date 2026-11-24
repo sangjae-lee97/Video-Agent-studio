@@ -1,0 +1,171 @@
+[
+  {
+    "source_lines": [
+      1,
+      1
+    ],
+    "role": "explanation",
+    "intended_focus_not_spoken_instruction": "여섯 가지 질문",
+    "prompt": {
+      "emotion_type": "preset",
+      "emotion_preset": "normal",
+      "emotion_intensity": 0.8
+    }
+  },
+  {
+    "source_lines": [
+      2,
+      2
+    ],
+    "role": "definition_details",
+    "intended_focus_not_spoken_instruction": "Hit@5",
+    "prompt": {
+      "emotion_type": "preset",
+      "emotion_preset": "normal",
+      "emotion_intensity": 0.8
+    }
+  },
+  {
+    "source_lines": [
+      3,
+      3
+    ],
+    "role": "clarification",
+    "intended_focus_not_spoken_instruction": "찾음≠맞음, 답변 정확도",
+    "prompt": {
+      "emotion_type": "preset",
+      "emotion_preset": "normal",
+      "emotion_intensity": 1.0
+    }
+  },
+  {
+    "source_lines": [
+      4,
+      4
+    ],
+    "role": "definition_details",
+    "intended_focus_not_spoken_instruction": "근거 정확도",
+    "prompt": {
+      "emotion_type": "preset",
+      "emotion_preset": "normal",
+      "emotion_intensity": 0.8
+    }
+  },
+  {
+    "source_lines": [
+      5,
+      5
+    ],
+    "role": "uncertainty_limit",
+    "intended_focus_not_spoken_instruction": "인용 0건 100% 실수",
+    "prompt": {
+      "emotion_type": "preset",
+      "emotion_preset": "normal",
+      "emotion_intensity": 1.0
+    }
+  },
+  {
+    "source_lines": [
+      6,
+      6
+    ],
+    "role": "definition_details",
+    "intended_focus_not_spoken_instruction": "거부 정확도",
+    "prompt": {
+      "emotion_type": "preset",
+      "emotion_preset": "normal",
+      "emotion_intensity": 0.8
+    }
+  },
+  {
+    "source_lines": [
+      7,
+      7
+    ],
+    "role": "explanation",
+    "intended_focus_not_spoken_instruction": "속도·비용",
+    "prompt": {
+      "emotion_type": "preset",
+      "emotion_preset": "normal",
+      "emotion_intensity": 0.8
+    }
+  },
+  {
+    "source_lines": [
+      8,
+      8
+    ],
+    "role": "clarification",
+    "intended_focus_not_spoken_instruction": "P50/P95, 최댓값 아님",
+    "prompt": {
+      "emotion_type": "preset",
+      "emotion_preset": "normal",
+      "emotion_intensity": 1.0
+    }
+  },
+  {
+    "source_lines": [
+      9,
+      9
+    ],
+    "role": "definition_details",
+    "intended_focus_not_spoken_instruction": "토큰·질문당 비용",
+    "prompt": {
+      "emotion_type": "preset",
+      "emotion_preset": "normal",
+      "emotion_intensity": 0.8
+    }
+  },
+  {
+    "source_lines": [
+      10,
+      10
+    ],
+    "role": "balanced_comparison",
+    "intended_focus_not_spoken_instruction": "성공률 vs 정확도",
+    "prompt": {
+      "emotion_type": "preset",
+      "emotion_preset": "toneup",
+      "emotion_intensity": 0.55
+    }
+  },
+  {
+    "source_lines": [
+      11,
+      12
+    ],
+    "role": "response_measures",
+    "intended_focus_not_spoken_instruction": "공정한 비교",
+    "prompt": {
+      "emotion_type": "preset",
+      "emotion_preset": "normal",
+      "emotion_intensity": 0.8
+    }
+  },
+  {
+    "source_lines": [
+      13,
+      13
+    ],
+    "role": "clarification",
+    "intended_focus_not_spoken_instruction": "한 글자 차이 회수",
+    "prompt": {
+      "emotion_type": "preset",
+      "emotion_preset": "normal",
+      "emotion_intensity": 1.0
+    }
+  },
+  {
+    "source_lines": [
+      14,
+      14
+    ],
+    "role": "balanced_conclusion",
+    "intended_focus_not_spoken_instruction": "과정 전체",
+    "prompt": {
+      "emotion_type": "preset",
+      "emotion_preset": "normal",
+      "emotion_intensity": 1.0
+    }
+  }
+]

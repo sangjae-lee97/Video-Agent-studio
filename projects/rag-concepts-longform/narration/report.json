@@ -1,0 +1,43 @@
+{
+  "duration_seconds": 625.69,
+  "sample_rate": 44100,
+  "parts": [
+    {
+      "part": "part1",
+      "start_seconds": 0.0,
+      "duration_seconds": 129.552,
+      "first_line": 1,
+      "last_line": 18,
+      "sha256": "058cc017fa0380f2e3b79ab1c7cb08f69c6a14dab792bd49275f024d9751be65"
+    },
+    {
+      "part": "part2",
+      "start_seconds": 129.732,
+      "duration_seconds": 218.474,
+      "first_line": 19,
+      "last_line": 51,
+      "sha256": "e7ac8ea4b1b5fa38ff60959c0f60f40ad47f6d27ca1fb8f5854960b48653fc2c"
+    },
+    {
+      "part": "part3",
+      "start_seconds": 348.385,
+      "duration_seconds": 166.584,
+      "first_line": 52,
+      "last_line": 77,
+      "sha256": "0b9405dddaa8df184eaf6954cd24d83f6e4b3ed51eaac2d5a30bfc01d1d7ed14"
+    },
+    {
+      "part": "part4",
+      "start_seconds": 515.149,
+      "duration_seconds": 110.541,
+      "first_line": 78,
+      "last_line": 91,
+      "sha256": "9591e6f5324ecb6bf76401868fa112258e2d9b9ca34656840047652300372b27"
+    }
+  ],
+  "join_pause_seconds": 0.18,
+  "chars": 5371,
+  "synthesis_requests": 4,
+  "sha256": "ba6de965351ae9f870fde1a48625227e45e2c7939139442a57bc09569ab31427",
+  "listening_review": "pending"
+}

@@ -1,0 +1,158 @@
+[
+  {
+    "source_lines": [
+      1,
+      1
+    ],
+    "role": "opening_question",
+    "intended_focus_not_spoken_instruction": "두 프린터 훅 질문",
+    "prompt": {
+      "emotion_type": "smart",
+      "previous_text": "",
+      "next_text": "오늘은 천 쪽이 넘는 프린터 매뉴얼로 질문에 답하는 AI를 예로 들어, 래그가 어떻게 움직이는지 처음부터 끝까지 따라가 보겠습니다.\n큰 흐름은 세 덩어리입니다. 자료를 미리 준비하고, 질문이 오면 찾아서 답하고, 마지막으로 얼마나 잘했는지 잽니다."
+    }
+  },
+  {
+    "source_lines": [
+      2,
+      3
+    ],
+    "role": "explanation",
+    "intended_focus_not_spoken_instruction": "영상 범위·세 덩어리",
+    "prompt": {
+      "emotion_type": "preset",
+      "emotion_preset": "normal",
+      "emotion_intensity": 0.8
+    }
+  },
+  {
+    "source_lines": [
+      4,
+      5
+    ],
+    "role": "clarification",
+    "intended_focus_not_spoken_instruction": "래그 정의",
+    "prompt": {
+      "emotion_type": "preset",
+      "emotion_preset": "normal",
+      "emotion_intensity": 1.0
+    }
+  },
+  {
+    "source_lines": [
+      6,
+      6
+    ],
+    "role": "safety_transition",
+    "intended_focus_not_spoken_instruction": "왜 필요한가",
+    "prompt": {
+      "emotion_type": "smart",
+      "previous_text": "래그는 검색 증강 생성의 줄임말입니다.\n질문에 필요한 자료를 문서에서 찾고, 그 자료를 AI에게 함께 건네서, 그걸 근거로 답하게 만드는 방식이죠.",
+      "next_text": "다만, 래그를 쓴다고 환각이 저절로 사라지는 건 아닙니다. 그래서 뒤에 검증과 평가가 붙습니다.\n첫 단계는 파싱입니다. 피디에프 안의 글자와 표, 각주와 페이지 정보를 프로그램이 쓸 수 있게 꺼내는 일이죠."
+    }
+  },
+  {
+    "source_lines": [
+      7,
+      7
+    ],
+    "role": "uncertainty_limit",
+    "intended_focus_not_spoken_instruction": "환각이 저절로 사라지지 않음",
+    "prompt": {
+      "emotion_type": "preset",
+      "emotion_preset": "normal",
+      "emotion_intensity": 1.0
+    }
+  },
+  {
+    "source_lines": [
+      8,
+      10
+    ],
+    "role": "explanation",
+    "intended_focus_not_spoken_instruction": "파싱과 표 깨짐",
+    "prompt": {
+      "emotion_type": "preset",
+      "emotion_preset": "normal",
+      "emotion_intensity": 0.8
+    }
+  },
+  {
+    "source_lines": [
+      11,
+      11
+    ],
+    "role": "response_measures",
+    "intended_focus_not_spoken_instruction": "도구 비교는 원문 대조로",
+    "prompt": {
+      "emotion_type": "preset",
+      "emotion_preset": "normal",
+      "emotion_intensity": 0.8
+    }
+  },
+  {
+    "source_lines": [
+      12,
+      12
+    ],
+    "role": "clarification",
+    "intended_focus_not_spoken_instruction": "청킹 정의",
+    "prompt": {
+      "emotion_type": "preset",
+      "emotion_preset": "normal",
+      "emotion_intensity": 1.0
+    }
+  },
+  {
+    "source_lines": [
+      13,
+      13
+    ],
+    "role": "key_result",
+    "intended_focus_not_spoken_instruction": "가장 중요한 원칙",
+    "prompt": {
+      "emotion_type": "preset",
+      "emotion_preset": "toneup",
+      "emotion_intensity": 0.6
+    }
+  },
+  {
+    "source_lines": [
+      14,
+      14
+    ],
+    "role": "risk_or_serious_event",
+    "intended_focus_not_spoken_instruction": "조건이 갈라지면 절반짜리 답(예시)",
+    "prompt": {
+      "emotion_type": "preset",
+      "emotion_preset": "tonedown",
+      "emotion_intensity": 0.25
+    }
+  },
+  {
+    "source_lines": [
+      15,
+      16
+    ],
+    "role": "definition_details",
+    "intended_focus_not_spoken_instruction": "메타데이터 정의·필드",
+    "prompt": {
+      "emotion_type": "preset",
+      "emotion_preset": "normal",
+      "emotion_intensity": 0.8
+    }
+  },
+  {
+    "source_lines": [
+      17,
+      18
+    ],
+    "role": "response_measures",
+    "intended_focus_not_spoken_instruction": "모델 필터·역추적·다중 적용",
+    "prompt": {
+      "emotion_type": "preset",
+      "emotion_preset": "normal",
+      "emotion_intensity": 0.8
+    }
+  }
+]

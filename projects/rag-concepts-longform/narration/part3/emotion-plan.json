@@ -1,0 +1,236 @@
+[
+  {
+    "source_lines": [
+      1,
+      3
+    ],
+    "role": "explanation",
+    "intended_focus_not_spoken_instruction": "생성 입력 세 가지",
+    "prompt": {
+      "emotion_type": "preset",
+      "emotion_preset": "normal",
+      "emotion_intensity": 0.8
+    }
+  },
+  {
+    "source_lines": [
+      4,
+      4
+    ],
+    "role": "risk_or_serious_event",
+    "intended_focus_not_spoken_instruction": "근거 오독",
+    "prompt": {
+      "emotion_type": "preset",
+      "emotion_preset": "tonedown",
+      "emotion_intensity": 0.25
+    }
+  },
+  {
+    "source_lines": [
+      5,
+      5
+    ],
+    "role": "clarification",
+    "intended_focus_not_spoken_instruction": "인용 vs 검증",
+    "prompt": {
+      "emotion_type": "preset",
+      "emotion_preset": "normal",
+      "emotion_intensity": 1.0
+    }
+  },
+  {
+    "source_lines": [
+      6,
+      6
+    ],
+    "role": "definition_details",
+    "intended_focus_not_spoken_instruction": "세 가지 확인",
+    "prompt": {
+      "emotion_type": "preset",
+      "emotion_preset": "normal",
+      "emotion_intensity": 0.8
+    }
+  },
+  {
+    "source_lines": [
+      7,
+      7
+    ],
+    "role": "risk_or_serious_event",
+    "intended_focus_not_spoken_instruction": "교차 모델 인용",
+    "prompt": {
+      "emotion_type": "preset",
+      "emotion_preset": "tonedown",
+      "emotion_intensity": 0.25
+    }
+  },
+  {
+    "source_lines": [
+      8,
+      8
+    ],
+    "role": "safety_transition",
+    "intended_focus_not_spoken_instruction": "근거 없으면?",
+    "prompt": {
+      "emotion_type": "smart",
+      "previous_text": "답에 붙은 근거 번호가 실제로 찾은 조각인지, 그 조각이 질문한 모델에 해당하는지, 수치와 조건이 원문에 있는지를 확인합니다.\n질문은 이팔공오인데 이팔팔오 페이지를 인용했다면? 숫자가 우연히 같아도, 근거로는 실패입니다.",
+      "next_text": "그럴듯하게 지어내지 않고, 답을 보류합니다. 이걸 앱스텐션이라고 합니다.\n하지만 무조건 거부하는 게 좋은 건 아닙니다. 매뉴얼에 답이 있는데 검색을 못 해서 모른다고 하면, 그건 부당한 거부예요."
+    }
+  },
+  {
+    "source_lines": [
+      9,
+      9
+    ],
+    "role": "clarification",
+    "intended_focus_not_spoken_instruction": "앱스텐션 정의",
+    "prompt": {
+      "emotion_type": "preset",
+      "emotion_preset": "normal",
+      "emotion_intensity": 1.0
+    }
+  },
+  {
+    "source_lines": [
+      10,
+      10
+    ],
+    "role": "uncertainty_limit",
+    "intended_focus_not_spoken_instruction": "부당 거부",
+    "prompt": {
+      "emotion_type": "preset",
+      "emotion_preset": "normal",
+      "emotion_intensity": 1.0
+    }
+  },
+  {
+    "source_lines": [
+      11,
+      11
+    ],
+    "role": "definition_details",
+    "intended_focus_not_spoken_instruction": "실패 원인 구분",
+    "prompt": {
+      "emotion_type": "preset",
+      "emotion_preset": "normal",
+      "emotion_intensity": 0.8
+    }
+  },
+  {
+    "source_lines": [
+      12,
+      12
+    ],
+    "role": "balanced_conclusion",
+    "intended_focus_not_spoken_instruction": "좋은 래그",
+    "prompt": {
+      "emotion_type": "preset",
+      "emotion_preset": "normal",
+      "emotion_intensity": 1.0
+    }
+  },
+  {
+    "source_lines": [
+      13,
+      14
+    ],
+    "role": "explanation",
+    "intended_focus_not_spoken_instruction": "캐싱",
+    "prompt": {
+      "emotion_type": "preset",
+      "emotion_preset": "normal",
+      "emotion_intensity": 0.8
+    }
+  },
+  {
+    "source_lines": [
+      15,
+      15
+    ],
+    "role": "risk_or_serious_event",
+    "intended_focus_not_spoken_instruction": "엉뚱한 답 재사용",
+    "prompt": {
+      "emotion_type": "preset",
+      "emotion_preset": "tonedown",
+      "emotion_intensity": 0.25
+    }
+  },
+  {
+    "source_lines": [
+      16,
+      16
+    ],
+    "role": "response_measures",
+    "intended_focus_not_spoken_instruction": "정확 일치·무효화",
+    "prompt": {
+      "emotion_type": "preset",
+      "emotion_preset": "normal",
+      "emotion_intensity": 0.8
+    }
+  },
+  {
+    "source_lines": [
+      17,
+      18
+    ],
+    "role": "explanation",
+    "intended_focus_not_spoken_instruction": "쿼리 리라이트",
+    "prompt": {
+      "emotion_type": "preset",
+      "emotion_preset": "normal",
+      "emotion_intensity": 0.8
+    }
+  },
+  {
+    "source_lines": [
+      19,
+      19
+    ],
+    "role": "uncertainty_limit",
+    "intended_focus_not_spoken_instruction": "보존·측정",
+    "prompt": {
+      "emotion_type": "preset",
+      "emotion_preset": "normal",
+      "emotion_intensity": 1.0
+    }
+  },
+  {
+    "source_lines": [
+      20,
+      20
+    ],
+    "role": "safety_transition",
+    "intended_focus_not_spoken_instruction": "전체 경로 시작",
+    "prompt": {
+      "emotion_type": "smart",
+      "previous_text": "종이가 씹혀요는 용지 걸림으로, 와이파이가 안 돼요는 무선 네트워크 연결로. 매뉴얼이 쓰는 말로 옮기는 거죠.\n단, 모델 코드와 오류 코드, 수치와 조건은 절대 바꾸면 안 됩니다. 그리고 바꾼 질문이 정말 검색을 개선했는지, 원래 질문과 나란히 기록해서 확인합니다.",
+      "next_text": "이팔공오로 원본을 연속 스캔할 때, 몇 장까지 넣을 수 있냐는 질문이 들어옵니다.\n먼저 모델 코드를 따로 뽑아내고, 같은 질문의 저장된 답이 있는지 캐시를 확인합니다."
+    }
+  },
+  {
+    "source_lines": [
+      21,
+      25
+    ],
+    "role": "explanation",
+    "intended_focus_not_spoken_instruction": "질문 하나의 경로",
+    "prompt": {
+      "emotion_type": "preset",
+      "emotion_preset": "normal",
+      "emotion_intensity": 0.8
+    }
+  },
+  {
+    "source_lines": [
+      26,
+      26
+    ],
+    "role": "response_measures",
+    "intended_focus_not_spoken_instruction": "로그",
+    "prompt": {
+      "emotion_type": "preset",
+      "emotion_preset": "normal",
+      "emotion_intensity": 0.8
+    }
+  }
+]

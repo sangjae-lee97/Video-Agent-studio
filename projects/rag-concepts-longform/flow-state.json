@@ -1,0 +1,141 @@
+{
+  "project": "rag-concepts-longform",
+  "updated": "2026-11-20",
+  "current_stage": "완성본 전달",
+  "waiting_for": "사용자 시청·청취 확인",
+  "clips": [
+    {
+      "id": "F01",
+      "edit": [
+        0.0,
+        8.0
+      ],
+      "use_seconds": 8.0,
+      "status": "adopted",
+      "take": null,
+      "notes": ""
+    },
+    {
+      "id": "F02",
+      "edit": [
+        8.0,
+        16.0
+      ],
+      "use_seconds": 8.0,
+      "status": "adopted",
+      "take": null,
+      "notes": ""
+    },
+    {
+      "id": "F03",
+      "edit": [
+        80.3,
+        88.3
+      ],
+      "use_seconds": 8.0,
+      "status": "adopted",
+      "take": null,
+      "notes": ""
+    },
+    {
+      "id": "F04",
+      "edit": [
+        147.4,
+        155.4
+      ],
+      "use_seconds": 8.0,
+      "status": "adopted",
+      "take": null,
+      "notes": ""
+    },
+    {
+      "id": "F05",
+      "edit": [
+        171.1,
+        177.9
+      ],
+      "use_seconds": 6.8,
+      "status": "adopted",
+      "take": null,
+      "notes": ""
+    },
+    {
+      "id": "F06",
+      "edit": [
+        274.8,
+        282.8
+      ],
+      "use_seconds": 8.0,
+      "status": "adopted",
+      "take": null,
+      "notes": ""
+    },
+    {
+      "id": "F07",
+      "edit": [
+        379.2,
+        387.2
+      ],
+      "use_seconds": 8.0,
+      "status": "adopted",
+      "take": null,
+      "notes": ""
+    },
+    {
+      "id": "F08",
+      "edit": [
+        394.1,
+        402.1
+      ],
+      "use_seconds": 8.0,
+      "status": "adopted",
+      "take": null,
+      "notes": ""
+    },
+    {
+      "id": "F09",
+      "edit": [
+        428.4,
+        435.9
+      ],
+      "use_seconds": 7.5,
+      "status": "adopted",
+      "take": null,
+      "notes": ""
+    },
+    {
+      "id": "F10",
+      "edit": [
+        477.1,
+        485.1
+      ],
+      "use_seconds": 8.0,
+      "status": "adopted",
+      "take": null,
+      "notes": ""
+    },
+    {
+      "id": "F11",
+      "edit": [
+        515.2,
+        523.2
+      ],
+      "use_seconds": 8.0,
+      "status": "adopted",
+      "take": null,
+      "notes": ""
+    },
+    {
+      "id": "F12",
+      "edit": [
+        612.4,
+        620.4
+      ],
+      "use_seconds": 8.0,
+      "status": "adopted",
+      "take": null,
+      "notes": ""
+    }
+  ],
+  "next_action": "피드백 반영(줄 단위 재합성·장면 수정)"
+}
