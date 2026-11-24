@@ -7,7 +7,7 @@
   data-dim="12.3"                    흐려짐(강조 대상 외 항목) / data-hl="12.3" data-c="#E39A1E" 테두리 강조
   <path data-draw="12.3" data-d=".6"> SVG 선 그리기
   window.extra = T => {...}          그 밖의 장면별 동작
-기본 팔레트는 밝은 오피스형 Flow 톤(공통 지침: 모션 색은 같은 편 Flow 톤에 맞춘다). 편마다 CSS_EXTRA로 덮어쓴다.
+기본 팔레트는 밝은 오피스형(첫 편 기준). 편마다 template-spec의 팔레트로 CSS_EXTRA에서 덮어쓴다.
 """
 CSS = r"""
 *{margin:0;padding:0;box-sizing:border-box}

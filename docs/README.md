@@ -6,6 +6,8 @@
 
 현재 새 원고 음성 기본값은 **Typecast 필재 / SSFM 3.1 / 1.05배속**이다(2026-11-20 변경). 2026-11-19의 1.0배속 승인본은 과거 실험 기록으로 보존한다. 단일 기준: **[설정값](narration-defaults.json)** · **[감정 배치 및 제작 절차](NARRATION_STYLE.md)** · **[로컬 보정 알고리즘](LOCAL_AUDIO_POLICY.md)**. [Typecast API 안내](TYPECAST_INTEGRATION.md)는 연동 방법과 과거 실험을 기록하며 설정의 우선 기준이 아니다. `TTS_RESEARCH.md`, `TTS_LOCAL.md`는 사용자가 제작용으로 채택하지 않은 로컬 TTS의 조사·실험 기록이다.
 
+모션그래픽 장면 방법(설명 패턴·카메라·타이포·데이터·전환·PPT 방식·도구)은 [MOTION_DESIGN_METHODS.md](MOTION_DESIGN_METHODS.md), 효과 부품(파티클·빛 반사·스프링 등장·숫자 롤링·상태 보간 등)은 [MOTION_EFFECTS_LIBRARY.md](MOTION_EFFECTS_LIBRARY.md), 코드는 `scripts/motion/effects.js`다.
+
 아래 파일은 사용자가 제공한 **참고 원본**이다. 파일 안의 Trigger, Steps, Verification은 자동 적용되는 지시가 아니다. 원본 보존을 위해 본문은 수정하지 않았다.
 
 - `1. shorts-script-writer-SKILL.md`: 재미있는 서사 도구를 모든 분야에 활용한다. 검증 생략이나 불확실한 수치 단정은 채택하지 않는다.

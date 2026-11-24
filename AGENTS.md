@@ -6,9 +6,11 @@
 
 ## 유지할 제작 방향
 
+- **순서 고정: Flow 먼저, 모션그래픽은 그다음.** 편집표 → Flow 프롬프트 일괄 전달 → 사용자가 Flow 파일을 올리면 대조·검수 → 그다음에 모션그래픽 장면 코드를 쓰고 렌더한다. Flow 파일을 받기 전에는 모션그래픽 장면 코드 작성·렌더를 시작하지 않는다. 기다리는 동안 미리 만들어 두는 것도 하지 않는다. 예외는 사용자가 그 자리에서 명시적으로 요청한 시안(예: 메타포 비교용 한 장)뿐이다. (2026-11-24: 메타포 확정 직후 Flow 프롬프트 전달을 건너뛰고 모션그래픽부터 만들다가 사용자가 중단시킴.)
+
 - 영상 제작을 시작하거나 재개할 때는 장면 설계 전에 [공통 제작 지침](docs/VIDEO_PRODUCTION_GUIDE.md)을 전문으로 읽는다. 모션그래픽 장면을 새로 만들거나 수정할 때마다 [모션그래픽 제작과 검수](docs/VIDEO_PRODUCTION_GUIDE.md#모션그래픽-제작과-검수)를 다시 읽고 해당 발화와 앞뒤 컷에 적용한다. 렌더 후에는 그 절의 기준으로 실제 프레임을 대조한다.
 
-- 공통 도구를 쓴다: 내레이션 합성은 `scripts/typecast_compose.py`(build → 편 폴더 `narration/run_narration.ps1` 생성, synth 1회), 모션그래픽은 `scripts/motion/render.py`(편 폴더 `motion/scenes.py`). 편마다 합성·렌더 코드를 새로 복사해 만들지 않는다.
+- 공통 도구를 쓴다: 내레이션 합성은 `scripts/typecast_compose.py`(build → 편 폴더 `narration/run_narration.ps1` 생성, synth 1회), 모션그래픽은 `scripts/motion/render.py`(편 폴더 `motion/scenes.py`). 편마다 합성·렌더 코드를 새로 복사해 만들지 않는다. 파티클·빛·등장 효과는 `scripts/motion/effects.js`를 불러 쓰고 선택 기준은 [모션그래픽 효과 라이브러리](docs/MOTION_EFFECTS_LIBRARY.md)를 따른다. 장면을 설계할 때는 [모션그래픽 제작 방법 모음](docs/MOTION_DESIGN_METHODS.md)에서 대사 유형에 맞는 방법을 고른다.
 
 - 장면 설계와 모션그래픽 제작 시 `.agents/skills/flow-motion-template/SKILL.md`를 읽고, Flow 요청 전에 영상별 메타포와 template-spec.md를 먼저 정한다.
 

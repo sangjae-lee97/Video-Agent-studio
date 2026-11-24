@@ -74,6 +74,8 @@ Flow는 가로 16:9·720p(1280×720)로 생성하고, 채택한 테이크만 무
 | [VIDEO_HANDOFF_PROMPT.md](docs/VIDEO_HANDOFF_PROMPT.md) | 다음 영상 채팅 전달문 |
 | [NARRATION_STYLE.md](docs/NARRATION_STYLE.md) | 승인된 감정·합성·보정 절차 |
 | [reference-review.md](docs/reference-review.md) | 참고 원본 해석·채택 규칙 |
+| [MOTION_DESIGN_METHODS.md](docs/MOTION_DESIGN_METHODS.md) | 모션그래픽 장면 방법: 연구 원칙, 대사 유형별 설명 패턴, 카메라·타이포·데이터·전환, PPT 모프·빌드 방식, 도구 선택 |
+| [MOTION_EFFECTS_LIBRARY.md](docs/MOTION_EFFECTS_LIBRARY.md) | 모션그래픽 효과(파티클·빛·타이포·전환) 목록, 대사별 선택 기준, 지난 편에서 쓴 효과 |
 | [첫 영상 시험 안내](projects/pfa-pilot/README.md) | 첫 MP4·컷·검증·재현 방법 |
 | [legacy 상태](legacy/phase01/STATUS.md) | 보관 코드의 한계 |
 
